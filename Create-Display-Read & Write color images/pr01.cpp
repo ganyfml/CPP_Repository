@@ -32,6 +32,12 @@ using namespace std;
 // =============================================================================
 int width, height;
 unsigned char *pixmap;
+const char* RED = "red";
+const char* GREEN = "green";
+const char* BLUE = "blue";
+const char* ALL = "all";
+const char* CIRCLE = "circle";
+
 
 
 // =============================================================================
@@ -40,14 +46,16 @@ unsigned char *pixmap;
 // This function stores the RGB values of each pixel to "pixmap."
 // Then, "glutDisplayFunc" below will use pixmap to display the pixel colors.
 // =============================================================================
-void setPixels()
+void setPixels(int value)
 {
+	if(value == 0 || value == 1|| value == 2)
+	
    for(int y = 0; y < height ; y++) {
      for(int x = 0; x < width; x++) {
        int i = (y * width + x) * 3; 
        pixmap[i++] = 255;
-       pixmap[i++] = 0xFF; //Do you know what "0xFF" represents? Google it!
-       pixmap[i] = 0x00; //Learn to use the "0x" notation to your advantage.
+       pixmap[i++] = 128 ; //Do you know what "0xFF" represents? Google it!
+       pixmap[i] = 255; //Learn to use the "0x" notation to your advantage.
      }
    }
 }
@@ -91,6 +99,21 @@ static void init(void)
 // =============================================================================
 // main() Program Entry
 // =============================================================================
+
+int translate_input(char* input)
+{
+	stringstream ss;
+	string input_string;
+	ss << input;
+	ss >> input_string; 
+	if(input_string.compare(RED) == 0)		return 0;
+	else if(input_string.compare(GREEN) == 0)	return 1;
+	else if(input_string.compare(BLUE) == 0)	return 2;
+	else if(input_string.compare(ALL) == 0)	return 3;
+	else if(input_string.compare(CIRCLE) == 0)	return 4;
+	else return -1;
+}
+
 int main(int argc, char *argv[])
 {
 
@@ -99,7 +122,8 @@ int main(int argc, char *argv[])
   height = 300;
   pixmap = new unsigned char[width * height * 3];  //Do you know why "3" is used?
 
-  setPixels();
+  int imag = translate_input(argv[1]);
+  setPixels(2);
 
 
   // OpenGL Commands:
