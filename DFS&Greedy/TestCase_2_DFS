@@ -1,0 +1,179 @@
+vertices=275, edges=641, 
+start=(1,1), goal=(20,20), vertices: 0 and 274
+iter=1, frontier =0, popped=0 (1,1), depth=0
+pushed 1 (1,2) 
+pushed 20 (2,1) 
+pushed 21 (2,2) 
+iter=2, frontier =2, popped=21 (2,2), depth=1
+pushed 22 (2,3) 
+pushed 41 (3,2) 
+pushed 42 (3,3) 
+iter=3, frontier =4, popped=42 (3,3), depth=2
+pushed 43 (3,4) 
+pushed 61 (4,3) 
+pushed 62 (4,4) 
+iter=4, frontier =6, popped=62 (4,4), depth=3
+pushed 63 (4,5) 
+iter=5, frontier =6, popped=63 (4,5), depth=4
+pushed 64 (4,6) 
+pushed 44 (3,5) 
+iter=6, frontier =7, popped=44 (3,5), depth=5
+pushed 45 (3,6) 
+pushed 24 (2,5) 
+pushed 23 (2,4) 
+iter=7, frontier =9, popped=23 (2,4), depth=6
+pushed 3 (1,4) 
+pushed 2 (1,3) 
+iter=8, frontier =10, popped=2 (1,3), depth=7
+iter=9, frontier =9, popped=3 (1,4), depth=7
+pushed 4 (1,5) 
+iter=10, frontier =9, popped=4 (1,5), depth=8
+pushed 5 (1,6) 
+pushed 25 (2,6) 
+iter=11, frontier =10, popped=25 (2,6), depth=9
+pushed 26 (2,7) 
+pushed 46 (3,7) 
+iter=12, frontier =11, popped=46 (3,7), depth=10
+pushed 47 (3,8) 
+pushed 65 (4,7) 
+pushed 66 (4,8) 
+iter=13, frontier =13, popped=66 (4,8), depth=11
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=14, frontier =14, popped=78 (5,8), depth=12
+pushed 90 (6,8) 
+iter=15, frontier =14, popped=90 (6,8), depth=13
+pushed 104 (7,8) 
+iter=16, frontier =14, popped=104 (7,8), depth=14
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=17, frontier =17, popped=119 (8,9), depth=15
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=18, frontier =19, popped=137 (9,10), depth=16
+pushed 138 (9,11) 
+iter=19, frontier =19, popped=138 (9,11), depth=17
+pushed 139 (9,12) 
+pushed 121 (8,11) 
+iter=20, frontier =20, popped=121 (8,11), depth=18
+pushed 122 (8,12) 
+pushed 106 (7,10) 
+iter=21, frontier =21, popped=106 (7,10), depth=19
+iter=22, frontier =20, popped=122 (8,12), depth=19
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=23, frontier =21, popped=140 (9,13), depth=20
+pushed 141 (9,14) 
+iter=24, frontier =21, popped=141 (9,14), depth=21
+pushed 142 (9,15) 
+iter=25, frontier =21, popped=142 (9,15), depth=22
+pushed 124 (8,15) 
+iter=26, frontier =21, popped=124 (8,15), depth=23
+pushed 125 (8,16) 
+pushed 107 (7,15) 
+iter=27, frontier =22, popped=107 (7,15), depth=24
+pushed 108 (7,16) 
+pushed 93 (6,15) 
+pushed 92 (6,14) 
+iter=28, frontier =24, popped=92 (6,14), depth=25
+pushed 91 (6,13) 
+pushed 80 (5,14) 
+pushed 79 (5,13) 
+iter=29, frontier =26, popped=79 (5,13), depth=26
+iter=30, frontier =25, popped=80 (5,14), depth=26
+pushed 81 (5,15) 
+iter=31, frontier =25, popped=81 (5,15), depth=27
+pushed 82 (5,16) 
+pushed 69 (4,15) 
+pushed 94 (6,16) 
+iter=32, frontier =27, popped=94 (6,16), depth=28
+pushed 95 (6,17) 
+pushed 109 (7,17) 
+iter=33, frontier =28, popped=109 (7,17), depth=29
+pushed 110 (7,18) 
+pushed 126 (8,17) 
+pushed 127 (8,18) 
+iter=34, frontier =30, popped=127 (8,18), depth=30
+pushed 128 (8,19) 
+pushed 143 (9,19) 
+pushed 148 (10,19) 
+pushed 153 (11,19) 
+iter=35, frontier =33, popped=153 (11,19), depth=31
+pushed 154 (11,20) 
+pushed 158 (12,19) 
+pushed 159 (12,20) 
+iter=36, frontier =35, popped=159 (12,20), depth=32
+pushed 172 (13,20) 
+iter=37, frontier =35, popped=172 (13,20), depth=33
+pushed 171 (13,19) 
+pushed 184 (14,20) 
+iter=38, frontier =36, popped=184 (14,20), depth=34
+pushed 183 (14,19) 
+pushed 197 (15,20) 
+iter=39, frontier =37, popped=197 (15,20), depth=35
+pushed 196 (15,19) 
+pushed 210 (16,20) 
+iter=40, frontier =38, popped=210 (16,20), depth=36
+pushed 209 (16,19) 
+pushed 222 (17,20) 
+iter=41, frontier =39, popped=222 (17,20), depth=37
+pushed 221 (17,19) 
+pushed 236 (18,20) 
+iter=42, frontier =40, popped=236 (18,20), depth=38
+pushed 235 (18,19) 
+pushed 254 (19,20) 
+iter=43, frontier =41, popped=254 (19,20), depth=39
+pushed 253 (19,19) 
+pushed 274 (20,20) 
+iter=44, frontier =42, popped=274 (20,20), depth=40
+=========================================================
+solution path:
+ vertex 0 (1,1)
+ vertex 21 (2,2)
+ vertex 42 (3,3)
+ vertex 62 (4,4)
+ vertex 63 (4,5)
+ vertex 44 (3,5)
+ vertex 23 (2,4)
+ vertex 3 (1,4)
+ vertex 4 (1,5)
+ vertex 25 (2,6)
+ vertex 46 (3,7)
+ vertex 66 (4,8)
+ vertex 78 (5,8)
+ vertex 90 (6,8)
+ vertex 104 (7,8)
+ vertex 119 (8,9)
+ vertex 137 (9,10)
+ vertex 138 (9,11)
+ vertex 121 (8,11)
+ vertex 122 (8,12)
+ vertex 140 (9,13)
+ vertex 141 (9,14)
+ vertex 142 (9,15)
+ vertex 124 (8,15)
+ vertex 107 (7,15)
+ vertex 92 (6,14)
+ vertex 80 (5,14)
+ vertex 81 (5,15)
+ vertex 94 (6,16)
+ vertex 109 (7,17)
+ vertex 127 (8,18)
+ vertex 153 (11,19)
+ vertex 159 (12,20)
+ vertex 172 (13,20)
+ vertex 184 (14,20)
+ vertex 197 (15,20)
+ vertex 210 (16,20)
+ vertex 222 (17,20)
+ vertex 236 (18,20)
+ vertex 254 (19,20)
+ vertex 274 (20,20)
+search algorithm  = DFS
+total iteration   = 44
+max frontier size = 43
+vertices visted   = 86/275
+path length       = 40

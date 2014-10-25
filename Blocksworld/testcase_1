@@ -1,0 +1,69 @@
+initial state:
+
+0:  ||3 
+1:  ||1 2 4 
+2:  ||5 
+
+iter= 0, f = g+h = 31, queue= 0, depth = 0
+iter= 1, f = g+h = 21, queue= 2, depth = 1
+iter= 2, f = g+h = 17, queue= 3, depth = 2
+iter= 3, f = g+h = 19, queue= 4, depth = 3
+iter= 4, f = g+h = 19, queue= 5, depth = 4
+iter= 5, f = g+h = 13, queue= 6, depth = 5
+iter= 6, f = g+h = 10, queue= 7, depth = 6
+iter= 7, f = g+h = 9, queue= 8, depth = 7
+iter= 8, f = g+h = 9, queue= 11, depth = 8
+iter= 9, f = g+h = 9, queue= 12, depth = 9
+
+Success!!depth =9, total_goal_tests=25, max_queue_size=12
+Solution path:
+
+0:  ||3 
+1:  ||1 2 4 
+2:  ||5 
+
+
+0:  ||
+1:  ||1 2 4 
+2:  ||5 3 
+
+
+0:  ||
+1:  ||1 2 
+2:  ||5 3 4 
+
+
+0:  ||
+1:  ||1 
+2:  ||5 3 4 2 
+
+
+0:  ||1 
+1:  ||
+2:  ||5 3 4 2 
+
+
+0:  ||1 2 
+1:  ||
+2:  ||5 3 4 
+
+
+0:  ||1 2 
+1:  ||4 
+2:  ||5 3 
+
+
+0:  ||1 2 3 
+1:  ||4 
+2:  ||5 
+
+
+0:  ||1 2 3 4 
+1:  ||
+2:  ||5 
+
+
+0:  ||1 2 3 4 5 
+1:  ||
+2:  ||
+

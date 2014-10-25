@@ -1,0 +1,337 @@
+initial state:
+
+0:  ||4 6 
+1:  ||2 7 10 
+2:  ||3 8 11 12 
+3:  ||1 5 
+4:  ||9 
+
+iter= 0, f = g+h = 146, queue= 0, depth = 0
+iter= 1, f = g+h = 125, queue= 6, depth = 1
+iter= 2, f = g+h = 111, queue= 21, depth = 2
+iter= 3, f = g+h = 113, queue= 32, depth = 3
+iter= 4, f = g+h = 115, queue= 42, depth = 3
+iter= 5, f = g+h = 115, queue= 53, depth = 3
+iter= 6, f = g+h = 115, queue= 63, depth = 3
+iter= 7, f = g+h = 115, queue= 73, depth = 3
+iter= 8, f = g+h = 115, queue= 84, depth = 3
+iter= 9, f = g+h = 116, queue= 94, depth = 4
+iter= 10, f = g+h = 114, queue= 104, depth = 5
+iter= 11, f = g+h = 115, queue= 113, depth = 5
+iter= 12, f = g+h = 116, queue= 124, depth = 4
+iter= 13, f = g+h = 114, queue= 134, depth = 5
+iter= 14, f = g+h = 115, queue= 143, depth = 5
+iter= 15, f = g+h = 116, queue= 154, depth = 4
+iter= 16, f = g+h = 114, queue= 164, depth = 5
+iter= 17, f = g+h = 116, queue= 171, depth = 4
+iter= 18, f = g+h = 114, queue= 181, depth = 5
+iter= 19, f = g+h = 117, queue= 188, depth = 5
+iter= 20, f = g+h = 117, queue= 199, depth = 5
+iter= 21, f = g+h = 118, queue= 210, depth = 6
+iter= 22, f = g+h = 118, queue= 209, depth = 6
+iter= 23, f = g+h = 118, queue= 208, depth = 3
+iter= 24, f = g+h = 114, queue= 217, depth = 4
+iter= 25, f = g+h = 112, queue= 228, depth = 5
+iter= 26, f = g+h = 113, queue= 239, depth = 6
+iter= 27, f = g+h = 114, queue= 250, depth = 5
+iter= 28, f = g+h = 113, queue= 259, depth = 6
+iter= 29, f = g+h = 113, queue= 270, depth = 7
+iter= 30, f = g+h = 114, queue= 281, depth = 7
+iter= 31, f = g+h = 115, queue= 291, depth = 7
+iter= 32, f = g+h = 114, queue= 302, depth = 8
+iter= 33, f = g+h = 116, queue= 313, depth = 9
+iter= 34, f = g+h = 116, queue= 323, depth = 8
+iter= 35, f = g+h = 116, queue= 334, depth = 9
+iter= 36, f = g+h = 116, queue= 341, depth = 7
+iter= 37, f = g+h = 116, queue= 349, depth = 6
+iter= 38, f = g+h = 117, queue= 359, depth = 8
+iter= 39, f = g+h = 117, queue= 370, depth = 7
+iter= 40, f = g+h = 117, queue= 379, depth = 7
+iter= 41, f = g+h = 117, queue= 388, depth = 7
+iter= 42, f = g+h = 117, queue= 399, depth = 5
+iter= 43, f = g+h = 116, queue= 408, depth = 6
+iter= 44, f = g+h = 113, queue= 418, depth = 7
+iter= 45, f = g+h = 114, queue= 429, depth = 7
+iter= 46, f = g+h = 116, queue= 438, depth = 8
+iter= 47, f = g+h = 116, queue= 448, depth = 9
+iter= 48, f = g+h = 118, queue= 455, depth = 7
+iter= 49, f = g+h = 114, queue= 465, depth = 8
+iter= 50, f = g+h = 116, queue= 476, depth = 9
+iter= 51, f = g+h = 117, queue= 483, depth = 8
+iter= 52, f = g+h = 118, queue= 494, depth = 6
+iter= 53, f = g+h = 116, queue= 502, depth = 7
+iter= 54, f = g+h = 117, queue= 509, depth = 7
+iter= 55, f = g+h = 118, queue= 518, depth = 8
+iter= 56, f = g+h = 116, queue= 528, depth = 9
+iter= 57, f = g+h = 117, queue= 538, depth = 10
+iter= 58, f = g+h = 118, queue= 549, depth = 9
+iter= 59, f = g+h = 117, queue= 560, depth = 10
+iter= 60, f = g+h = 117, queue= 570, depth = 11
+iter= 61, f = g+h = 118, queue= 581, depth = 11
+iter= 62, f = g+h = 118, queue= 591, depth = 8
+iter= 63, f = g+h = 116, queue= 602, depth = 9
+iter= 64, f = g+h = 117, queue= 609, depth = 10
+iter= 65, f = g+h = 118, queue= 620, depth = 8
+iter= 66, f = g+h = 116, queue= 630, depth = 9
+iter= 67, f = g+h = 117, queue= 637, depth = 10
+iter= 68, f = g+h = 118, queue= 648, depth = 9
+iter= 69, f = g+h = 117, queue= 659, depth = 10
+iter= 70, f = g+h = 117, queue= 669, depth = 11
+iter= 71, f = g+h = 118, queue= 680, depth = 11
+iter= 72, f = g+h = 118, queue= 690, depth = 6
+iter= 73, f = g+h = 118, queue= 699, depth = 4
+iter= 74, f = g+h = 101, queue= 710, depth = 5
+iter= 75, f = g+h = 93, queue= 721, depth = 6
+iter= 76, f = g+h = 86, queue= 732, depth = 7
+iter= 77, f = g+h = 84, queue= 743, depth = 8
+iter= 78, f = g+h = 88, queue= 754, depth = 9
+iter= 79, f = g+h = 88, queue= 765, depth = 9
+iter= 80, f = g+h = 88, queue= 776, depth = 10
+iter= 81, f = g+h = 75, queue= 787, depth = 11
+iter= 82, f = g+h = 71, queue= 797, depth = 12
+iter= 83, f = g+h = 71, queue= 808, depth = 13
+iter= 84, f = g+h = 72, queue= 819, depth = 12
+iter= 85, f = g+h = 71, queue= 830, depth = 13
+iter= 86, f = g+h = 72, queue= 841, depth = 14
+iter= 87, f = g+h = 72, queue= 851, depth = 13
+iter= 88, f = g+h = 72, queue= 862, depth = 14
+iter= 89, f = g+h = 72, queue= 873, depth = 14
+iter= 90, f = g+h = 72, queue= 883, depth = 13
+iter= 91, f = g+h = 72, queue= 894, depth = 14
+iter= 92, f = g+h = 72, queue= 901, depth = 14
+iter= 93, f = g+h = 61, queue= 911, depth = 15
+iter= 94, f = g+h = 51, queue= 922, depth = 16
+iter= 95, f = g+h = 45, queue= 933, depth = 17
+iter= 96, f = g+h = 43, queue= 944, depth = 18
+iter= 97, f = g+h = 43, queue= 955, depth = 19
+iter= 98, f = g+h = 38, queue= 966, depth = 20
+iter= 99, f = g+h = 34, queue= 977, depth = 21
+iter= 100, f = g+h = 34, queue= 991, depth = 22
+iter= 101, f = g+h = 34, queue= 1002, depth = 23
+iter= 102, f = g+h = 31, queue= 1012, depth = 24
+iter= 103, f = g+h = 31, queue= 1023, depth = 25
+iter= 104, f = g+h = 30, queue= 1033, depth = 26
+iter= 105, f = g+h = 30, queue= 1044, depth = 27
+iter= 106, f = g+h = 30, queue= 1054, depth = 28
+iter= 107, f = g+h = 30, queue= 1061, depth = 29
+iter= 108, f = g+h = 30, queue= 1064, depth = 30
+
+Success!!depth =30, total_goal_tests=876, max_queue_size=1064
+Solution path:
+
+0:  ||4 6 
+1:  ||2 7 10 
+2:  ||3 8 11 12 
+3:  ||1 5 
+4:  ||9 
+
+
+0:  ||4 
+1:  ||2 7 10 
+2:  ||3 8 11 12 
+3:  ||1 5 
+4:  ||9 6 
+
+
+0:  ||
+1:  ||2 7 10 
+2:  ||3 8 11 12 
+3:  ||1 5 
+4:  ||9 6 4 
+
+
+0:  ||
+1:  ||2 7 10 
+2:  ||3 8 11 12 5 
+3:  ||1 
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 7 10 
+2:  ||3 8 11 12 5 
+3:  ||
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 7 10 
+2:  ||3 8 11 12 
+3:  ||5 
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 7 10 
+2:  ||3 8 11 
+3:  ||5 12 
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 7 
+2:  ||3 8 11 
+3:  ||5 12 10 
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 7 
+2:  ||3 8 
+3:  ||5 12 10 11 
+4:  ||9 6 4 
+
+
+0:  ||1 
+1:  ||2 
+2:  ||3 8 
+3:  ||5 12 10 11 7 
+4:  ||9 6 4 
+
+
+0:  ||1 2 
+1:  ||
+2:  ||3 8 
+3:  ||5 12 10 11 7 
+4:  ||9 6 4 
+
+
+0:  ||1 2 
+1:  ||7 
+2:  ||3 8 
+3:  ||5 12 10 11 
+4:  ||9 6 4 
+
+
+0:  ||1 2 
+1:  ||7 8 
+2:  ||3 
+3:  ||5 12 10 11 
+4:  ||9 6 4 
+
+
+0:  ||1 2 
+1:  ||7 8 11 
+2:  ||3 
+3:  ||5 12 10 
+4:  ||9 6 4 
+
+
+0:  ||1 2 3 
+1:  ||7 8 11 
+2:  ||
+3:  ||5 12 10 
+4:  ||9 6 4 
+
+
+0:  ||1 2 3 4 
+1:  ||7 8 11 
+2:  ||
+3:  ||5 12 10 
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 
+1:  ||7 8 
+2:  ||11 
+3:  ||5 12 10 
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 
+1:  ||7 8 
+2:  ||11 10 
+3:  ||5 12 
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 
+1:  ||7 8 
+2:  ||11 10 12 
+3:  ||5 
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 5 
+1:  ||7 8 
+2:  ||11 10 12 
+3:  ||
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 5 
+1:  ||7 
+2:  ||11 10 12 
+3:  ||8 
+4:  ||9 6 
+
+
+0:  ||1 2 3 4 5 6 
+1:  ||7 
+2:  ||11 10 12 
+3:  ||8 
+4:  ||9 
+
+
+0:  ||1 2 3 4 5 6 
+1:  ||7 
+2:  ||11 10 
+3:  ||8 
+4:  ||9 12 
+
+
+0:  ||1 2 3 4 5 6 7 
+1:  ||
+2:  ||11 10 
+3:  ||8 
+4:  ||9 12 
+
+
+0:  ||1 2 3 4 5 6 7 
+1:  ||12 
+2:  ||11 10 
+3:  ||8 
+4:  ||9 
+
+
+0:  ||1 2 3 4 5 6 7 8 
+1:  ||12 
+2:  ||11 10 
+3:  ||
+4:  ||9 
+
+
+0:  ||1 2 3 4 5 6 7 8 
+1:  ||12 
+2:  ||11 
+3:  ||10 
+4:  ||9 
+
+
+0:  ||1 2 3 4 5 6 7 8 9 
+1:  ||12 
+2:  ||11 
+3:  ||10 
+4:  ||
+
+
+0:  ||1 2 3 4 5 6 7 8 9 10 
+1:  ||12 
+2:  ||11 
+3:  ||
+4:  ||
+
+
+0:  ||1 2 3 4 5 6 7 8 9 10 11 
+1:  ||12 
+2:  ||
+3:  ||
+4:  ||
+
+
+0:  ||1 2 3 4 5 6 7 8 9 10 11 12 
+1:  ||
+2:  ||
+3:  ||
+4:  ||
+

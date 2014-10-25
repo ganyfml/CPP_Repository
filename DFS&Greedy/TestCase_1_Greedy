@@ -1,0 +1,26 @@
+vertices=275, edges=641, 
+start=(1,1), goal=(4,4), vertices: 0 and 62
+iter=1, frontier =0, popped=0 (1,1), depth=0
+pushed 1 (1,2) 
+pushed 20 (2,1) 
+pushed 21 (2,2) 
+iter=2, frontier =2, popped=21 (2,2), depth=1
+pushed 22 (2,3) 
+pushed 41 (3,2) 
+pushed 42 (3,3) 
+iter=3, frontier =4, popped=42 (3,3), depth=2
+pushed 43 (3,4) 
+pushed 61 (4,3) 
+pushed 62 (4,4) 
+iter=4, frontier =6, popped=62 (4,4), depth=3
+=========================================================
+solution path:
+ vertex 0 (1,1)
+ vertex 21 (2,2)
+ vertex 42 (3,3)
+ vertex 62 (4,4)
+search algorithm  = Greedy
+total iteration   = 4
+max frontier size = 7
+vertices visted   = 10/275
+path length       = 3

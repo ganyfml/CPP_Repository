@@ -1,0 +1,3055 @@
+vertices=275, edges=641, 
+start=(1,20), goal=(20,1), vertices: 19 and 255
+iter=1, frontier =0, popped=19 (1,20), depth=0
+pushed 18 (1,19) 
+pushed 39 (2,20) 
+iter=2, frontier =1, popped=39 (2,20), depth=1
+pushed 38 (2,19) 
+pushed 58 (3,20) 
+iter=3, frontier =2, popped=58 (3,20), depth=2
+pushed 57 (3,19) 
+pushed 74 (4,20) 
+iter=4, frontier =3, popped=74 (4,20), depth=3
+pushed 73 (4,19) 
+pushed 86 (5,20) 
+iter=5, frontier =4, popped=86 (5,20), depth=4
+pushed 85 (5,19) 
+pushed 98 (6,20) 
+iter=6, frontier =5, popped=98 (6,20), depth=5
+pushed 97 (6,19) 
+pushed 112 (7,20) 
+iter=7, frontier =6, popped=112 (7,20), depth=6
+pushed 111 (7,19) 
+pushed 129 (8,20) 
+iter=8, frontier =7, popped=129 (8,20), depth=7
+pushed 128 (8,19) 
+pushed 144 (9,20) 
+iter=9, frontier =8, popped=144 (9,20), depth=8
+pushed 143 (9,19) 
+pushed 149 (10,20) 
+iter=10, frontier =9, popped=149 (10,20), depth=9
+pushed 148 (10,19) 
+pushed 154 (11,20) 
+iter=11, frontier =10, popped=154 (11,20), depth=10
+pushed 153 (11,19) 
+pushed 159 (12,20) 
+iter=12, frontier =11, popped=159 (12,20), depth=11
+pushed 158 (12,19) 
+pushed 172 (13,20) 
+iter=13, frontier =12, popped=172 (13,20), depth=12
+pushed 171 (13,19) 
+pushed 184 (14,20) 
+iter=14, frontier =13, popped=184 (14,20), depth=13
+pushed 183 (14,19) 
+pushed 197 (15,20) 
+iter=15, frontier =14, popped=197 (15,20), depth=14
+pushed 196 (15,19) 
+pushed 210 (16,20) 
+iter=16, frontier =15, popped=210 (16,20), depth=15
+pushed 209 (16,19) 
+pushed 222 (17,20) 
+iter=17, frontier =16, popped=222 (17,20), depth=16
+pushed 221 (17,19) 
+pushed 236 (18,20) 
+iter=18, frontier =17, popped=236 (18,20), depth=17
+pushed 235 (18,19) 
+pushed 254 (19,20) 
+iter=19, frontier =18, popped=254 (19,20), depth=18
+pushed 253 (19,19) 
+pushed 274 (20,20) 
+iter=20, frontier =19, popped=274 (20,20), depth=19
+pushed 273 (20,19) 
+iter=21, frontier =19, popped=273 (20,19), depth=20
+pushed 272 (20,18) 
+pushed 252 (19,18) 
+iter=22, frontier =20, popped=252 (19,18), depth=21
+pushed 251 (19,17) 
+pushed 234 (18,18) 
+pushed 233 (18,17) 
+iter=23, frontier =22, popped=233 (18,17), depth=22
+pushed 232 (18,16) 
+pushed 219 (17,17) 
+pushed 218 (17,16) 
+iter=24, frontier =24, popped=218 (17,16), depth=23
+pushed 217 (17,15) 
+pushed 206 (16,16) 
+pushed 205 (16,15) 
+iter=25, frontier =26, popped=205 (16,15), depth=24
+pushed 204 (16,14) 
+pushed 192 (15,15) 
+pushed 191 (15,14) 
+iter=26, frontier =28, popped=191 (15,14), depth=25
+pushed 190 (15,13) 
+iter=27, frontier =28, popped=190 (15,13), depth=26
+pushed 189 (15,12) 
+iter=28, frontier =28, popped=189 (15,12), depth=27
+iter=29, frontier =27, popped=192 (15,15), depth=25
+pushed 193 (15,16) 
+pushed 179 (14,15) 
+iter=30, frontier =28, popped=179 (14,15), depth=26
+pushed 180 (14,16) 
+pushed 170 (13,15) 
+iter=31, frontier =29, popped=170 (13,15), depth=27
+iter=32, frontier =28, popped=180 (14,16), depth=27
+pushed 181 (14,17) 
+pushed 194 (15,17) 
+iter=33, frontier =29, popped=194 (15,17), depth=28
+pushed 195 (15,18) 
+pushed 207 (16,17) 
+pushed 208 (16,18) 
+iter=34, frontier =31, popped=208 (16,18), depth=29
+pushed 220 (17,18) 
+iter=35, frontier =31, popped=220 (17,18), depth=30
+iter=36, frontier =30, popped=207 (16,17), depth=29
+iter=37, frontier =29, popped=195 (15,18), depth=29
+pushed 182 (14,18) 
+iter=38, frontier =29, popped=182 (14,18), depth=30
+iter=39, frontier =28, popped=181 (14,17), depth=28
+pushed 182 (14,18) 
+iter=40, frontier =28, popped=182 (14,18), depth=29
+iter=41, frontier =27, popped=193 (15,16), depth=26
+pushed 194 (15,17) 
+pushed 207 (16,17) 
+iter=42, frontier =28, popped=207 (16,17), depth=27
+pushed 208 (16,18) 
+pushed 220 (17,18) 
+iter=43, frontier =29, popped=220 (17,18), depth=28
+iter=44, frontier =28, popped=208 (16,18), depth=28
+iter=45, frontier =27, popped=194 (15,17), depth=27
+pushed 195 (15,18) 
+iter=46, frontier =27, popped=195 (15,18), depth=28
+iter=47, frontier =26, popped=204 (16,14), depth=25
+pushed 216 (17,13) 
+pushed 215 (17,12) 
+pushed 231 (18,15) 
+iter=48, frontier =28, popped=231 (18,15), depth=26
+pushed 249 (19,15) 
+pushed 250 (19,16) 
+pushed 268 (20,14) 
+iter=49, frontier =30, popped=268 (20,14), depth=27
+pushed 269 (20,15) 
+pushed 267 (20,13) 
+pushed 248 (19,13) 
+iter=50, frontier =32, popped=248 (19,13), depth=28
+pushed 247 (19,12) 
+iter=51, frontier =32, popped=247 (19,12), depth=29
+pushed 246 (19,11) 
+pushed 266 (20,12) 
+iter=52, frontier =33, popped=266 (20,12), depth=30
+pushed 265 (20,11) 
+iter=53, frontier =33, popped=265 (20,11), depth=31
+pushed 264 (20,10) 
+pushed 245 (19,10) 
+iter=54, frontier =34, popped=245 (19,10), depth=32
+pushed 263 (20,9) 
+iter=55, frontier =34, popped=263 (20,9), depth=33
+pushed 262 (20,8) 
+pushed 244 (19,8) 
+iter=56, frontier =35, popped=244 (19,8), depth=34
+pushed 243 (19,7) 
+pushed 230 (18,8) 
+pushed 229 (18,7) 
+iter=57, frontier =37, popped=229 (18,7), depth=35
+pushed 228 (18,6) 
+pushed 214 (17,8) 
+iter=58, frontier =38, popped=214 (17,8), depth=36
+pushed 201 (16,8) 
+pushed 202 (16,9) 
+pushed 203 (16,10) 
+pushed 227 (18,5) 
+iter=59, frontier =41, popped=227 (18,5), depth=37
+pushed 226 (18,4) 
+pushed 241 (19,5) 
+pushed 242 (19,6) 
+pushed 213 (17,3) 
+iter=60, frontier =44, popped=213 (17,3), depth=38
+pushed 212 (17,2) 
+pushed 200 (16,3) 
+pushed 225 (18,3) 
+pushed 199 (16,2) 
+iter=61, frontier =47, popped=199 (16,2), depth=39
+pushed 198 (16,1) 
+pushed 186 (15,2) 
+pushed 185 (15,1) 
+iter=62, frontier =49, popped=185 (15,1), depth=40
+pushed 173 (14,1) 
+iter=63, frontier =49, popped=173 (14,1), depth=41
+pushed 174 (14,2) 
+pushed 160 (13,1) 
+iter=64, frontier =50, popped=160 (13,1), depth=42
+pushed 161 (13,2) 
+pushed 155 (12,1) 
+iter=65, frontier =51, popped=155 (12,1), depth=43
+pushed 156 (12,2) 
+pushed 150 (11,1) 
+iter=66, frontier =52, popped=150 (11,1), depth=44
+pushed 151 (11,2) 
+pushed 145 (10,1) 
+iter=67, frontier =53, popped=145 (10,1), depth=45
+pushed 146 (10,2) 
+pushed 130 (9,1) 
+iter=68, frontier =54, popped=130 (9,1), depth=46
+pushed 131 (9,2) 
+pushed 113 (8,1) 
+iter=69, frontier =55, popped=113 (8,1), depth=47
+pushed 114 (8,2) 
+pushed 99 (7,1) 
+iter=70, frontier =56, popped=99 (7,1), depth=48
+pushed 100 (7,2) 
+pushed 87 (6,1) 
+iter=71, frontier =57, popped=87 (6,1), depth=49
+pushed 88 (6,2) 
+pushed 75 (5,1) 
+iter=72, frontier =58, popped=75 (5,1), depth=50
+pushed 76 (5,2) 
+pushed 59 (4,1) 
+iter=73, frontier =59, popped=59 (4,1), depth=51
+pushed 60 (4,2) 
+pushed 40 (3,1) 
+iter=74, frontier =60, popped=40 (3,1), depth=52
+pushed 41 (3,2) 
+pushed 20 (2,1) 
+iter=75, frontier =61, popped=20 (2,1), depth=53
+pushed 21 (2,2) 
+pushed 0 (1,1) 
+iter=76, frontier =62, popped=0 (1,1), depth=54
+pushed 1 (1,2) 
+iter=77, frontier =62, popped=1 (1,2), depth=55
+pushed 2 (1,3) 
+pushed 22 (2,3) 
+iter=78, frontier =63, popped=22 (2,3), depth=56
+pushed 23 (2,4) 
+pushed 42 (3,3) 
+pushed 43 (3,4) 
+iter=79, frontier =65, popped=43 (3,4), depth=57
+pushed 44 (3,5) 
+pushed 62 (4,4) 
+pushed 63 (4,5) 
+iter=80, frontier =67, popped=63 (4,5), depth=58
+pushed 64 (4,6) 
+iter=81, frontier =67, popped=64 (4,6), depth=59
+pushed 65 (4,7) 
+pushed 45 (3,6) 
+iter=82, frontier =68, popped=45 (3,6), depth=60
+pushed 46 (3,7) 
+pushed 25 (2,6) 
+pushed 24 (2,5) 
+iter=83, frontier =70, popped=24 (2,5), depth=61
+pushed 4 (1,5) 
+pushed 3 (1,4) 
+iter=84, frontier =71, popped=3 (1,4), depth=62
+iter=85, frontier =70, popped=4 (1,5), depth=62
+pushed 5 (1,6) 
+iter=86, frontier =70, popped=5 (1,6), depth=63
+pushed 6 (1,7) 
+pushed 26 (2,7) 
+iter=87, frontier =71, popped=26 (2,7), depth=64
+pushed 27 (2,8) 
+pushed 47 (3,8) 
+iter=88, frontier =72, popped=47 (3,8), depth=65
+pushed 48 (3,9) 
+pushed 66 (4,8) 
+pushed 67 (4,9) 
+iter=89, frontier =74, popped=67 (4,9), depth=66
+pushed 68 (4,10) 
+iter=90, frontier =74, popped=68 (4,10), depth=67
+pushed 49 (3,10) 
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=91, frontier =77, popped=52 (3,13), depth=68
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=92, frontier =78, popped=31 (2,12), depth=69
+pushed 30 (2,11) 
+pushed 11 (1,12) 
+pushed 10 (1,11) 
+iter=93, frontier =80, popped=10 (1,11), depth=70
+pushed 9 (1,10) 
+iter=94, frontier =80, popped=9 (1,10), depth=71
+pushed 8 (1,9) 
+pushed 29 (2,10) 
+iter=95, frontier =81, popped=29 (2,10), depth=72
+pushed 28 (2,9) 
+iter=96, frontier =81, popped=28 (2,9), depth=73
+pushed 7 (1,8) 
+iter=97, frontier =81, popped=7 (1,8), depth=74
+iter=98, frontier =80, popped=8 (1,9), depth=72
+pushed 7 (1,8) 
+iter=99, frontier =80, popped=7 (1,8), depth=73
+iter=100, frontier =79, popped=11 (1,12), depth=70
+pushed 12 (1,13) 
+iter=101, frontier =79, popped=12 (1,13), depth=71
+pushed 13 (1,14) 
+pushed 33 (2,14) 
+iter=102, frontier =80, popped=33 (2,14), depth=72
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=103, frontier =81, popped=53 (3,15), depth=73
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=104, frontier =83, popped=70 (4,16), depth=74
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=105, frontier =85, popped=83 (5,17), depth=75
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=106, frontier =87, popped=96 (6,18), depth=76
+pushed 110 (7,18) 
+iter=107, frontier =87, popped=110 (7,18), depth=77
+pushed 109 (7,17) 
+pushed 127 (8,18) 
+iter=108, frontier =88, popped=127 (8,18), depth=78
+pushed 126 (8,17) 
+iter=109, frontier =88, popped=126 (8,17), depth=79
+pushed 125 (8,16) 
+pushed 108 (7,16) 
+iter=110, frontier =89, popped=108 (7,16), depth=80
+pushed 107 (7,15) 
+pushed 94 (6,16) 
+pushed 93 (6,15) 
+iter=111, frontier =91, popped=93 (6,15), depth=81
+pushed 92 (6,14) 
+pushed 81 (5,15) 
+pushed 80 (5,14) 
+iter=112, frontier =93, popped=80 (5,14), depth=82
+pushed 79 (5,13) 
+iter=113, frontier =93, popped=79 (5,13), depth=83
+pushed 91 (6,13) 
+iter=114, frontier =93, popped=91 (6,13), depth=84
+iter=115, frontier =92, popped=81 (5,15), depth=82
+iter=116, frontier =91, popped=92 (6,14), depth=82
+pushed 91 (6,13) 
+iter=117, frontier =91, popped=91 (6,13), depth=83
+iter=118, frontier =90, popped=94 (6,16), depth=81
+iter=119, frontier =89, popped=107 (7,15), depth=81
+pushed 124 (8,15) 
+iter=120, frontier =89, popped=124 (8,15), depth=82
+pushed 142 (9,15) 
+iter=121, frontier =89, popped=142 (9,15), depth=83
+pushed 141 (9,14) 
+iter=122, frontier =89, popped=141 (9,14), depth=84
+pushed 140 (9,13) 
+iter=123, frontier =89, popped=140 (9,13), depth=85
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=124, frontier =91, popped=122 (8,12), depth=86
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=125, frontier =92, popped=106 (7,10), depth=87
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=126, frontier =93, popped=120 (8,10), depth=88
+pushed 119 (8,9) 
+pushed 137 (9,10) 
+pushed 138 (9,11) 
+iter=127, frontier =95, popped=138 (9,11), depth=89
+iter=128, frontier =94, popped=137 (9,10), depth=89
+pushed 136 (9,9) 
+iter=129, frontier =94, popped=136 (9,9), depth=90
+pushed 135 (9,8) 
+pushed 118 (8,8) 
+iter=130, frontier =95, popped=118 (8,8), depth=91
+pushed 117 (8,7) 
+pushed 104 (7,8) 
+pushed 103 (7,7) 
+iter=131, frontier =97, popped=103 (7,7), depth=92
+pushed 102 (7,6) 
+iter=132, frontier =97, popped=102 (7,6), depth=93
+pushed 116 (8,6) 
+iter=133, frontier =97, popped=116 (8,6), depth=94
+pushed 133 (9,6) 
+pushed 134 (9,7) 
+iter=134, frontier =98, popped=134 (9,7), depth=95
+iter=135, frontier =97, popped=133 (9,6), depth=95
+iter=136, frontier =96, popped=104 (7,8), depth=92
+pushed 90 (6,8) 
+iter=137, frontier =96, popped=90 (6,8), depth=93
+pushed 78 (5,8) 
+iter=138, frontier =96, popped=78 (5,8), depth=94
+iter=139, frontier =95, popped=117 (8,7), depth=92
+pushed 116 (8,6) 
+pushed 134 (9,7) 
+iter=140, frontier =96, popped=134 (9,7), depth=93
+pushed 133 (9,6) 
+iter=141, frontier =96, popped=133 (9,6), depth=94
+iter=142, frontier =95, popped=116 (8,6), depth=93
+iter=143, frontier =94, popped=135 (9,8), depth=91
+pushed 134 (9,7) 
+iter=144, frontier =94, popped=134 (9,7), depth=92
+pushed 133 (9,6) 
+iter=145, frontier =94, popped=133 (9,6), depth=93
+iter=146, frontier =93, popped=119 (8,9), depth=89
+pushed 118 (8,8) 
+pushed 104 (7,8) 
+iter=147, frontier =94, popped=104 (7,8), depth=90
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=148, frontier =95, popped=90 (6,8), depth=91
+pushed 78 (5,8) 
+iter=149, frontier =95, popped=78 (5,8), depth=92
+iter=150, frontier =94, popped=103 (7,7), depth=91
+pushed 102 (7,6) 
+iter=151, frontier =94, popped=102 (7,6), depth=92
+iter=152, frontier =93, popped=118 (8,8), depth=90
+pushed 117 (8,7) 
+iter=153, frontier =93, popped=117 (8,7), depth=91
+pushed 116 (8,6) 
+iter=154, frontier =93, popped=116 (8,6), depth=92
+iter=155, frontier =92, popped=105 (7,9), depth=88
+pushed 104 (7,8) 
+iter=156, frontier =92, popped=104 (7,8), depth=89
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=157, frontier =93, popped=90 (6,8), depth=90
+pushed 78 (5,8) 
+iter=158, frontier =93, popped=78 (5,8), depth=91
+iter=159, frontier =92, popped=103 (7,7), depth=90
+pushed 102 (7,6) 
+iter=160, frontier =92, popped=102 (7,6), depth=91
+iter=161, frontier =91, popped=121 (8,11), depth=87
+pushed 138 (9,11) 
+iter=162, frontier =91, popped=138 (9,11), depth=88
+iter=163, frontier =90, popped=123 (8,13), depth=86
+iter=164, frontier =89, popped=139 (9,12), depth=86
+pushed 138 (9,11) 
+iter=165, frontier =89, popped=138 (9,11), depth=87
+pushed 137 (9,10) 
+iter=166, frontier =89, popped=137 (9,10), depth=88
+pushed 136 (9,9) 
+iter=167, frontier =89, popped=136 (9,9), depth=89
+pushed 135 (9,8) 
+iter=168, frontier =89, popped=135 (9,8), depth=90
+pushed 134 (9,7) 
+iter=169, frontier =89, popped=134 (9,7), depth=91
+pushed 133 (9,6) 
+iter=170, frontier =89, popped=133 (9,6), depth=92
+iter=171, frontier =88, popped=125 (8,16), depth=80
+pushed 124 (8,15) 
+iter=172, frontier =88, popped=124 (8,15), depth=81
+pushed 142 (9,15) 
+iter=173, frontier =88, popped=142 (9,15), depth=82
+pushed 141 (9,14) 
+iter=174, frontier =88, popped=141 (9,14), depth=83
+pushed 140 (9,13) 
+iter=175, frontier =88, popped=140 (9,13), depth=84
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=176, frontier =90, popped=122 (8,12), depth=85
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=177, frontier =91, popped=106 (7,10), depth=86
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=178, frontier =92, popped=120 (8,10), depth=87
+pushed 119 (8,9) 
+iter=179, frontier =92, popped=119 (8,9), depth=88
+pushed 118 (8,8) 
+iter=180, frontier =92, popped=118 (8,8), depth=89
+pushed 117 (8,7) 
+iter=181, frontier =92, popped=117 (8,7), depth=90
+pushed 116 (8,6) 
+iter=182, frontier =92, popped=116 (8,6), depth=91
+iter=183, frontier =91, popped=105 (7,9), depth=87
+pushed 104 (7,8) 
+iter=184, frontier =91, popped=104 (7,8), depth=88
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=185, frontier =92, popped=90 (6,8), depth=89
+pushed 78 (5,8) 
+iter=186, frontier =92, popped=78 (5,8), depth=90
+iter=187, frontier =91, popped=103 (7,7), depth=89
+pushed 102 (7,6) 
+iter=188, frontier =91, popped=102 (7,6), depth=90
+iter=189, frontier =90, popped=121 (8,11), depth=86
+iter=190, frontier =89, popped=123 (8,13), depth=85
+iter=191, frontier =88, popped=139 (9,12), depth=85
+pushed 138 (9,11) 
+iter=192, frontier =88, popped=138 (9,11), depth=86
+pushed 137 (9,10) 
+iter=193, frontier =88, popped=137 (9,10), depth=87
+pushed 136 (9,9) 
+iter=194, frontier =88, popped=136 (9,9), depth=88
+pushed 135 (9,8) 
+iter=195, frontier =88, popped=135 (9,8), depth=89
+pushed 134 (9,7) 
+iter=196, frontier =88, popped=134 (9,7), depth=90
+pushed 133 (9,6) 
+iter=197, frontier =88, popped=133 (9,6), depth=91
+iter=198, frontier =87, popped=109 (7,17), depth=78
+pushed 108 (7,16) 
+pushed 94 (6,16) 
+iter=199, frontier =88, popped=94 (6,16), depth=79
+pushed 93 (6,15) 
+pushed 81 (5,15) 
+iter=200, frontier =89, popped=81 (5,15), depth=80
+pushed 80 (5,14) 
+iter=201, frontier =89, popped=80 (5,14), depth=81
+pushed 79 (5,13) 
+iter=202, frontier =89, popped=79 (5,13), depth=82
+iter=203, frontier =88, popped=93 (6,15), depth=80
+pushed 92 (6,14) 
+iter=204, frontier =88, popped=92 (6,14), depth=81
+pushed 91 (6,13) 
+iter=205, frontier =88, popped=91 (6,13), depth=82
+iter=206, frontier =87, popped=108 (7,16), depth=79
+pushed 107 (7,15) 
+iter=207, frontier =87, popped=107 (7,15), depth=80
+iter=208, frontier =86, popped=95 (6,17), depth=76
+pushed 94 (6,16) 
+pushed 109 (7,17) 
+iter=209, frontier =87, popped=109 (7,17), depth=77
+pushed 108 (7,16) 
+pushed 126 (8,17) 
+iter=210, frontier =88, popped=126 (8,17), depth=78
+pushed 125 (8,16) 
+iter=211, frontier =88, popped=125 (8,16), depth=79
+pushed 124 (8,15) 
+iter=212, frontier =88, popped=124 (8,15), depth=80
+pushed 142 (9,15) 
+iter=213, frontier =88, popped=142 (9,15), depth=81
+pushed 141 (9,14) 
+iter=214, frontier =88, popped=141 (9,14), depth=82
+pushed 140 (9,13) 
+iter=215, frontier =88, popped=140 (9,13), depth=83
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=216, frontier =90, popped=122 (8,12), depth=84
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=217, frontier =91, popped=106 (7,10), depth=85
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=218, frontier =92, popped=120 (8,10), depth=86
+pushed 119 (8,9) 
+iter=219, frontier =92, popped=119 (8,9), depth=87
+pushed 118 (8,8) 
+iter=220, frontier =92, popped=118 (8,8), depth=88
+pushed 117 (8,7) 
+iter=221, frontier =92, popped=117 (8,7), depth=89
+pushed 116 (8,6) 
+iter=222, frontier =92, popped=116 (8,6), depth=90
+iter=223, frontier =91, popped=105 (7,9), depth=86
+pushed 104 (7,8) 
+iter=224, frontier =91, popped=104 (7,8), depth=87
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=225, frontier =92, popped=90 (6,8), depth=88
+pushed 78 (5,8) 
+iter=226, frontier =92, popped=78 (5,8), depth=89
+iter=227, frontier =91, popped=103 (7,7), depth=88
+pushed 102 (7,6) 
+iter=228, frontier =91, popped=102 (7,6), depth=89
+iter=229, frontier =90, popped=121 (8,11), depth=85
+iter=230, frontier =89, popped=123 (8,13), depth=84
+iter=231, frontier =88, popped=139 (9,12), depth=84
+pushed 138 (9,11) 
+iter=232, frontier =88, popped=138 (9,11), depth=85
+pushed 137 (9,10) 
+iter=233, frontier =88, popped=137 (9,10), depth=86
+pushed 136 (9,9) 
+iter=234, frontier =88, popped=136 (9,9), depth=87
+pushed 135 (9,8) 
+iter=235, frontier =88, popped=135 (9,8), depth=88
+pushed 134 (9,7) 
+iter=236, frontier =88, popped=134 (9,7), depth=89
+pushed 133 (9,6) 
+iter=237, frontier =88, popped=133 (9,6), depth=90
+iter=238, frontier =87, popped=108 (7,16), depth=78
+pushed 107 (7,15) 
+pushed 93 (6,15) 
+iter=239, frontier =88, popped=93 (6,15), depth=79
+pushed 92 (6,14) 
+pushed 80 (5,14) 
+iter=240, frontier =89, popped=80 (5,14), depth=80
+pushed 79 (5,13) 
+iter=241, frontier =89, popped=79 (5,13), depth=81
+iter=242, frontier =88, popped=92 (6,14), depth=80
+pushed 91 (6,13) 
+iter=243, frontier =88, popped=91 (6,13), depth=81
+iter=244, frontier =87, popped=107 (7,15), depth=79
+iter=245, frontier =86, popped=94 (6,16), depth=77
+pushed 93 (6,15) 
+pushed 81 (5,15) 
+iter=246, frontier =87, popped=81 (5,15), depth=78
+pushed 80 (5,14) 
+iter=247, frontier =87, popped=80 (5,14), depth=79
+pushed 79 (5,13) 
+iter=248, frontier =87, popped=79 (5,13), depth=80
+iter=249, frontier =86, popped=93 (6,15), depth=78
+pushed 92 (6,14) 
+iter=250, frontier =86, popped=92 (6,14), depth=79
+pushed 91 (6,13) 
+iter=251, frontier =86, popped=91 (6,13), depth=80
+iter=252, frontier =85, popped=84 (5,18), depth=76
+pushed 72 (4,18) 
+iter=253, frontier =85, popped=72 (4,18), depth=77
+pushed 56 (3,18) 
+pushed 55 (3,17) 
+iter=254, frontier =86, popped=55 (3,17), depth=78
+pushed 36 (2,17) 
+pushed 35 (2,16) 
+iter=255, frontier =87, popped=35 (2,16), depth=79
+pushed 15 (1,16) 
+pushed 14 (1,15) 
+iter=256, frontier =88, popped=14 (1,15), depth=80
+iter=257, frontier =87, popped=15 (1,16), depth=80
+pushed 16 (1,17) 
+iter=258, frontier =87, popped=16 (1,17), depth=81
+pushed 17 (1,18) 
+pushed 37 (2,18) 
+iter=259, frontier =88, popped=37 (2,18), depth=82
+iter=260, frontier =87, popped=17 (1,18), depth=82
+iter=261, frontier =86, popped=36 (2,17), depth=79
+pushed 37 (2,18) 
+pushed 16 (1,17) 
+iter=262, frontier =87, popped=16 (1,17), depth=80
+pushed 17 (1,18) 
+iter=263, frontier =87, popped=17 (1,18), depth=81
+iter=264, frontier =86, popped=37 (2,18), depth=80
+iter=265, frontier =85, popped=56 (3,18), depth=78
+pushed 37 (2,18) 
+iter=266, frontier =85, popped=37 (2,18), depth=79
+pushed 17 (1,18) 
+iter=267, frontier =85, popped=17 (1,18), depth=80
+iter=268, frontier =84, popped=82 (5,16), depth=75
+pushed 81 (5,15) 
+pushed 94 (6,16) 
+iter=269, frontier =85, popped=94 (6,16), depth=76
+pushed 93 (6,15) 
+pushed 108 (7,16) 
+iter=270, frontier =86, popped=108 (7,16), depth=77
+pushed 107 (7,15) 
+pushed 125 (8,16) 
+iter=271, frontier =87, popped=125 (8,16), depth=78
+pushed 124 (8,15) 
+iter=272, frontier =87, popped=124 (8,15), depth=79
+pushed 142 (9,15) 
+iter=273, frontier =87, popped=142 (9,15), depth=80
+pushed 141 (9,14) 
+iter=274, frontier =87, popped=141 (9,14), depth=81
+pushed 140 (9,13) 
+iter=275, frontier =87, popped=140 (9,13), depth=82
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=276, frontier =89, popped=122 (8,12), depth=83
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=277, frontier =90, popped=106 (7,10), depth=84
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=278, frontier =91, popped=120 (8,10), depth=85
+pushed 119 (8,9) 
+iter=279, frontier =91, popped=119 (8,9), depth=86
+pushed 118 (8,8) 
+iter=280, frontier =91, popped=118 (8,8), depth=87
+pushed 117 (8,7) 
+iter=281, frontier =91, popped=117 (8,7), depth=88
+pushed 116 (8,6) 
+iter=282, frontier =91, popped=116 (8,6), depth=89
+iter=283, frontier =90, popped=105 (7,9), depth=85
+pushed 104 (7,8) 
+iter=284, frontier =90, popped=104 (7,8), depth=86
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=285, frontier =91, popped=90 (6,8), depth=87
+pushed 78 (5,8) 
+iter=286, frontier =91, popped=78 (5,8), depth=88
+iter=287, frontier =90, popped=103 (7,7), depth=87
+pushed 102 (7,6) 
+iter=288, frontier =90, popped=102 (7,6), depth=88
+iter=289, frontier =89, popped=121 (8,11), depth=84
+iter=290, frontier =88, popped=123 (8,13), depth=83
+iter=291, frontier =87, popped=139 (9,12), depth=83
+pushed 138 (9,11) 
+iter=292, frontier =87, popped=138 (9,11), depth=84
+pushed 137 (9,10) 
+iter=293, frontier =87, popped=137 (9,10), depth=85
+pushed 136 (9,9) 
+iter=294, frontier =87, popped=136 (9,9), depth=86
+pushed 135 (9,8) 
+iter=295, frontier =87, popped=135 (9,8), depth=87
+pushed 134 (9,7) 
+iter=296, frontier =87, popped=134 (9,7), depth=88
+pushed 133 (9,6) 
+iter=297, frontier =87, popped=133 (9,6), depth=89
+iter=298, frontier =86, popped=107 (7,15), depth=78
+iter=299, frontier =85, popped=93 (6,15), depth=77
+pushed 92 (6,14) 
+pushed 80 (5,14) 
+iter=300, frontier =86, popped=80 (5,14), depth=78
+pushed 79 (5,13) 
+iter=301, frontier =86, popped=79 (5,13), depth=79
+iter=302, frontier =85, popped=92 (6,14), depth=78
+pushed 91 (6,13) 
+iter=303, frontier =85, popped=91 (6,13), depth=79
+iter=304, frontier =84, popped=81 (5,15), depth=76
+pushed 80 (5,14) 
+iter=305, frontier =84, popped=80 (5,14), depth=77
+pushed 79 (5,13) 
+iter=306, frontier =84, popped=79 (5,13), depth=78
+iter=307, frontier =83, popped=71 (4,17), depth=75
+pushed 72 (4,18) 
+pushed 55 (3,17) 
+iter=308, frontier =84, popped=55 (3,17), depth=76
+pushed 56 (3,18) 
+pushed 36 (2,17) 
+pushed 35 (2,16) 
+iter=309, frontier =86, popped=35 (2,16), depth=77
+pushed 15 (1,16) 
+pushed 14 (1,15) 
+iter=310, frontier =87, popped=14 (1,15), depth=78
+iter=311, frontier =86, popped=15 (1,16), depth=78
+pushed 16 (1,17) 
+iter=312, frontier =86, popped=16 (1,17), depth=79
+iter=313, frontier =85, popped=36 (2,17), depth=77
+pushed 37 (2,18) 
+pushed 16 (1,17) 
+iter=314, frontier =86, popped=16 (1,17), depth=78
+pushed 17 (1,18) 
+iter=315, frontier =86, popped=17 (1,18), depth=79
+iter=316, frontier =85, popped=37 (2,18), depth=78
+iter=317, frontier =84, popped=56 (3,18), depth=77
+iter=318, frontier =83, popped=72 (4,18), depth=76
+iter=319, frontier =82, popped=69 (4,15), depth=74
+pushed 81 (5,15) 
+iter=320, frontier =82, popped=81 (5,15), depth=75
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=321, frontier =83, popped=93 (6,15), depth=76
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=322, frontier =84, popped=107 (7,15), depth=77
+pushed 124 (8,15) 
+iter=323, frontier =84, popped=124 (8,15), depth=78
+pushed 142 (9,15) 
+iter=324, frontier =84, popped=142 (9,15), depth=79
+pushed 141 (9,14) 
+iter=325, frontier =84, popped=141 (9,14), depth=80
+pushed 140 (9,13) 
+iter=326, frontier =84, popped=140 (9,13), depth=81
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=327, frontier =86, popped=122 (8,12), depth=82
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=328, frontier =87, popped=106 (7,10), depth=83
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=329, frontier =88, popped=120 (8,10), depth=84
+pushed 119 (8,9) 
+iter=330, frontier =88, popped=119 (8,9), depth=85
+pushed 118 (8,8) 
+iter=331, frontier =88, popped=118 (8,8), depth=86
+pushed 117 (8,7) 
+iter=332, frontier =88, popped=117 (8,7), depth=87
+pushed 116 (8,6) 
+iter=333, frontier =88, popped=116 (8,6), depth=88
+iter=334, frontier =87, popped=105 (7,9), depth=84
+pushed 104 (7,8) 
+iter=335, frontier =87, popped=104 (7,8), depth=85
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=336, frontier =88, popped=90 (6,8), depth=86
+pushed 78 (5,8) 
+iter=337, frontier =88, popped=78 (5,8), depth=87
+iter=338, frontier =87, popped=103 (7,7), depth=86
+pushed 102 (7,6) 
+iter=339, frontier =87, popped=102 (7,6), depth=87
+iter=340, frontier =86, popped=121 (8,11), depth=83
+iter=341, frontier =85, popped=123 (8,13), depth=82
+iter=342, frontier =84, popped=139 (9,12), depth=82
+pushed 138 (9,11) 
+iter=343, frontier =84, popped=138 (9,11), depth=83
+pushed 137 (9,10) 
+iter=344, frontier =84, popped=137 (9,10), depth=84
+pushed 136 (9,9) 
+iter=345, frontier =84, popped=136 (9,9), depth=85
+pushed 135 (9,8) 
+iter=346, frontier =84, popped=135 (9,8), depth=86
+pushed 134 (9,7) 
+iter=347, frontier =84, popped=134 (9,7), depth=87
+pushed 133 (9,6) 
+iter=348, frontier =84, popped=133 (9,6), depth=88
+iter=349, frontier =83, popped=92 (6,14), depth=77
+pushed 91 (6,13) 
+iter=350, frontier =83, popped=91 (6,13), depth=78
+iter=351, frontier =82, popped=80 (5,14), depth=76
+pushed 79 (5,13) 
+iter=352, frontier =82, popped=79 (5,13), depth=77
+iter=353, frontier =81, popped=54 (3,16), depth=74
+pushed 55 (3,17) 
+pushed 35 (2,16) 
+iter=354, frontier =82, popped=35 (2,16), depth=75
+pushed 36 (2,17) 
+pushed 15 (1,16) 
+pushed 14 (1,15) 
+iter=355, frontier =84, popped=14 (1,15), depth=76
+iter=356, frontier =83, popped=15 (1,16), depth=76
+pushed 16 (1,17) 
+iter=357, frontier =83, popped=16 (1,17), depth=77
+pushed 17 (1,18) 
+iter=358, frontier =83, popped=17 (1,18), depth=78
+iter=359, frontier =82, popped=36 (2,17), depth=76
+pushed 37 (2,18) 
+iter=360, frontier =82, popped=37 (2,18), depth=77
+iter=361, frontier =81, popped=55 (3,17), depth=75
+pushed 56 (3,18) 
+iter=362, frontier =81, popped=56 (3,18), depth=76
+iter=363, frontier =80, popped=34 (2,15), depth=73
+pushed 35 (2,16) 
+pushed 14 (1,15) 
+iter=364, frontier =81, popped=14 (1,15), depth=74
+pushed 15 (1,16) 
+iter=365, frontier =81, popped=15 (1,16), depth=75
+pushed 16 (1,17) 
+iter=366, frontier =81, popped=16 (1,17), depth=76
+pushed 17 (1,18) 
+iter=367, frontier =81, popped=17 (1,18), depth=77
+iter=368, frontier =80, popped=35 (2,16), depth=74
+pushed 36 (2,17) 
+iter=369, frontier =80, popped=36 (2,17), depth=75
+pushed 37 (2,18) 
+iter=370, frontier =80, popped=37 (2,18), depth=76
+iter=371, frontier =79, popped=13 (1,14), depth=72
+pushed 14 (1,15) 
+iter=372, frontier =79, popped=14 (1,15), depth=73
+pushed 15 (1,16) 
+iter=373, frontier =79, popped=15 (1,16), depth=74
+pushed 16 (1,17) 
+iter=374, frontier =79, popped=16 (1,17), depth=75
+pushed 17 (1,18) 
+iter=375, frontier =79, popped=17 (1,18), depth=76
+iter=376, frontier =78, popped=30 (2,11), depth=70
+pushed 29 (2,10) 
+iter=377, frontier =78, popped=29 (2,10), depth=71
+pushed 28 (2,9) 
+iter=378, frontier =78, popped=28 (2,9), depth=72
+iter=379, frontier =77, popped=32 (2,13), depth=69
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=380, frontier =78, popped=12 (1,13), depth=70
+pushed 13 (1,14) 
+iter=381, frontier =78, popped=13 (1,14), depth=71
+pushed 14 (1,15) 
+pushed 34 (2,15) 
+iter=382, frontier =79, popped=34 (2,15), depth=72
+pushed 35 (2,16) 
+pushed 54 (3,16) 
+iter=383, frontier =80, popped=54 (3,16), depth=73
+pushed 55 (3,17) 
+pushed 71 (4,17) 
+iter=384, frontier =81, popped=71 (4,17), depth=74
+pushed 72 (4,18) 
+pushed 84 (5,18) 
+iter=385, frontier =82, popped=84 (5,18), depth=75
+iter=386, frontier =81, popped=72 (4,18), depth=75
+iter=387, frontier =80, popped=55 (3,17), depth=74
+pushed 56 (3,18) 
+iter=388, frontier =80, popped=56 (3,18), depth=75
+iter=389, frontier =79, popped=35 (2,16), depth=73
+pushed 36 (2,17) 
+iter=390, frontier =79, popped=36 (2,17), depth=74
+pushed 37 (2,18) 
+iter=391, frontier =79, popped=37 (2,18), depth=75
+iter=392, frontier =78, popped=14 (1,15), depth=72
+pushed 15 (1,16) 
+iter=393, frontier =78, popped=15 (1,16), depth=73
+pushed 16 (1,17) 
+iter=394, frontier =78, popped=16 (1,17), depth=74
+pushed 17 (1,18) 
+iter=395, frontier =78, popped=17 (1,18), depth=75
+iter=396, frontier =77, popped=33 (2,14), depth=70
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=397, frontier =78, popped=53 (3,15), depth=71
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=398, frontier =80, popped=70 (4,16), depth=72
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=399, frontier =82, popped=83 (5,17), depth=73
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=400, frontier =84, popped=96 (6,18), depth=74
+pushed 110 (7,18) 
+iter=401, frontier =84, popped=110 (7,18), depth=75
+pushed 109 (7,17) 
+pushed 127 (8,18) 
+iter=402, frontier =85, popped=127 (8,18), depth=76
+pushed 126 (8,17) 
+iter=403, frontier =85, popped=126 (8,17), depth=77
+iter=404, frontier =84, popped=109 (7,17), depth=76
+iter=405, frontier =83, popped=95 (6,17), depth=74
+pushed 94 (6,16) 
+pushed 109 (7,17) 
+iter=406, frontier =84, popped=109 (7,17), depth=75
+pushed 108 (7,16) 
+pushed 126 (8,17) 
+iter=407, frontier =85, popped=126 (8,17), depth=76
+pushed 125 (8,16) 
+iter=408, frontier =85, popped=125 (8,16), depth=77
+iter=409, frontier =84, popped=108 (7,16), depth=76
+iter=410, frontier =83, popped=94 (6,16), depth=75
+iter=411, frontier =82, popped=84 (5,18), depth=74
+iter=412, frontier =81, popped=82 (5,16), depth=73
+pushed 81 (5,15) 
+pushed 94 (6,16) 
+iter=413, frontier =82, popped=94 (6,16), depth=74
+pushed 93 (6,15) 
+pushed 108 (7,16) 
+iter=414, frontier =83, popped=108 (7,16), depth=75
+pushed 107 (7,15) 
+pushed 125 (8,16) 
+iter=415, frontier =84, popped=125 (8,16), depth=76
+pushed 124 (8,15) 
+iter=416, frontier =84, popped=124 (8,15), depth=77
+pushed 142 (9,15) 
+iter=417, frontier =84, popped=142 (9,15), depth=78
+pushed 141 (9,14) 
+iter=418, frontier =84, popped=141 (9,14), depth=79
+pushed 140 (9,13) 
+iter=419, frontier =84, popped=140 (9,13), depth=80
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=420, frontier =86, popped=122 (8,12), depth=81
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=421, frontier =87, popped=106 (7,10), depth=82
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=422, frontier =88, popped=120 (8,10), depth=83
+pushed 119 (8,9) 
+iter=423, frontier =88, popped=119 (8,9), depth=84
+pushed 118 (8,8) 
+iter=424, frontier =88, popped=118 (8,8), depth=85
+pushed 117 (8,7) 
+iter=425, frontier =88, popped=117 (8,7), depth=86
+pushed 116 (8,6) 
+iter=426, frontier =88, popped=116 (8,6), depth=87
+iter=427, frontier =87, popped=105 (7,9), depth=83
+pushed 104 (7,8) 
+iter=428, frontier =87, popped=104 (7,8), depth=84
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=429, frontier =88, popped=90 (6,8), depth=85
+pushed 78 (5,8) 
+iter=430, frontier =88, popped=78 (5,8), depth=86
+iter=431, frontier =87, popped=103 (7,7), depth=85
+pushed 102 (7,6) 
+iter=432, frontier =87, popped=102 (7,6), depth=86
+iter=433, frontier =86, popped=121 (8,11), depth=82
+iter=434, frontier =85, popped=123 (8,13), depth=81
+iter=435, frontier =84, popped=139 (9,12), depth=81
+pushed 138 (9,11) 
+iter=436, frontier =84, popped=138 (9,11), depth=82
+pushed 137 (9,10) 
+iter=437, frontier =84, popped=137 (9,10), depth=83
+pushed 136 (9,9) 
+iter=438, frontier =84, popped=136 (9,9), depth=84
+pushed 135 (9,8) 
+iter=439, frontier =84, popped=135 (9,8), depth=85
+pushed 134 (9,7) 
+iter=440, frontier =84, popped=134 (9,7), depth=86
+pushed 133 (9,6) 
+iter=441, frontier =84, popped=133 (9,6), depth=87
+iter=442, frontier =83, popped=107 (7,15), depth=76
+iter=443, frontier =82, popped=93 (6,15), depth=75
+pushed 92 (6,14) 
+iter=444, frontier =82, popped=92 (6,14), depth=76
+pushed 91 (6,13) 
+iter=445, frontier =82, popped=91 (6,13), depth=77
+iter=446, frontier =81, popped=81 (5,15), depth=74
+pushed 80 (5,14) 
+iter=447, frontier =81, popped=80 (5,14), depth=75
+pushed 79 (5,13) 
+iter=448, frontier =81, popped=79 (5,13), depth=76
+iter=449, frontier =80, popped=71 (4,17), depth=73
+pushed 72 (4,18) 
+iter=450, frontier =80, popped=72 (4,18), depth=74
+iter=451, frontier =79, popped=69 (4,15), depth=72
+pushed 81 (5,15) 
+iter=452, frontier =79, popped=81 (5,15), depth=73
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=453, frontier =80, popped=93 (6,15), depth=74
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=454, frontier =81, popped=107 (7,15), depth=75
+pushed 124 (8,15) 
+iter=455, frontier =81, popped=124 (8,15), depth=76
+pushed 142 (9,15) 
+iter=456, frontier =81, popped=142 (9,15), depth=77
+pushed 141 (9,14) 
+iter=457, frontier =81, popped=141 (9,14), depth=78
+pushed 140 (9,13) 
+iter=458, frontier =81, popped=140 (9,13), depth=79
+pushed 139 (9,12) 
+pushed 123 (8,13) 
+pushed 122 (8,12) 
+iter=459, frontier =83, popped=122 (8,12), depth=80
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=460, frontier =84, popped=106 (7,10), depth=81
+pushed 105 (7,9) 
+pushed 120 (8,10) 
+iter=461, frontier =85, popped=120 (8,10), depth=82
+pushed 119 (8,9) 
+iter=462, frontier =85, popped=119 (8,9), depth=83
+pushed 118 (8,8) 
+iter=463, frontier =85, popped=118 (8,8), depth=84
+pushed 117 (8,7) 
+iter=464, frontier =85, popped=117 (8,7), depth=85
+pushed 116 (8,6) 
+iter=465, frontier =85, popped=116 (8,6), depth=86
+iter=466, frontier =84, popped=105 (7,9), depth=82
+pushed 104 (7,8) 
+iter=467, frontier =84, popped=104 (7,8), depth=83
+pushed 103 (7,7) 
+pushed 90 (6,8) 
+iter=468, frontier =85, popped=90 (6,8), depth=84
+pushed 78 (5,8) 
+iter=469, frontier =85, popped=78 (5,8), depth=85
+iter=470, frontier =84, popped=103 (7,7), depth=84
+pushed 102 (7,6) 
+iter=471, frontier =84, popped=102 (7,6), depth=85
+iter=472, frontier =83, popped=121 (8,11), depth=81
+iter=473, frontier =82, popped=123 (8,13), depth=80
+iter=474, frontier =81, popped=139 (9,12), depth=80
+pushed 138 (9,11) 
+iter=475, frontier =81, popped=138 (9,11), depth=81
+pushed 137 (9,10) 
+iter=476, frontier =81, popped=137 (9,10), depth=82
+pushed 136 (9,9) 
+iter=477, frontier =81, popped=136 (9,9), depth=83
+pushed 135 (9,8) 
+iter=478, frontier =81, popped=135 (9,8), depth=84
+pushed 134 (9,7) 
+iter=479, frontier =81, popped=134 (9,7), depth=85
+pushed 133 (9,6) 
+iter=480, frontier =81, popped=133 (9,6), depth=86
+iter=481, frontier =80, popped=92 (6,14), depth=75
+pushed 91 (6,13) 
+iter=482, frontier =80, popped=91 (6,13), depth=76
+iter=483, frontier =79, popped=80 (5,14), depth=74
+pushed 79 (5,13) 
+iter=484, frontier =79, popped=79 (5,13), depth=75
+iter=485, frontier =78, popped=54 (3,16), depth=72
+pushed 55 (3,17) 
+iter=486, frontier =78, popped=55 (3,17), depth=73
+pushed 56 (3,18) 
+iter=487, frontier =78, popped=56 (3,18), depth=74
+iter=488, frontier =77, popped=34 (2,15), depth=71
+pushed 35 (2,16) 
+iter=489, frontier =77, popped=35 (2,16), depth=72
+pushed 36 (2,17) 
+iter=490, frontier =77, popped=36 (2,17), depth=73
+pushed 37 (2,18) 
+iter=491, frontier =77, popped=37 (2,18), depth=74
+iter=492, frontier =76, popped=51 (3,12), depth=68
+pushed 30 (2,11) 
+iter=493, frontier =76, popped=30 (2,11), depth=69
+pushed 29 (2,10) 
+pushed 9 (1,10) 
+iter=494, frontier =77, popped=9 (1,10), depth=70
+pushed 8 (1,9) 
+iter=495, frontier =77, popped=8 (1,9), depth=71
+pushed 7 (1,8) 
+iter=496, frontier =77, popped=7 (1,8), depth=72
+iter=497, frontier =76, popped=29 (2,10), depth=70
+pushed 28 (2,9) 
+iter=498, frontier =76, popped=28 (2,9), depth=71
+iter=499, frontier =75, popped=50 (3,11), depth=68
+pushed 29 (2,10) 
+iter=500, frontier =75, popped=29 (2,10), depth=69
+pushed 28 (2,9) 
+pushed 8 (1,9) 
+iter=501, frontier =76, popped=8 (1,9), depth=70
+pushed 7 (1,8) 
+iter=502, frontier =76, popped=7 (1,8), depth=71
+iter=503, frontier =75, popped=28 (2,9), depth=70
+iter=504, frontier =74, popped=49 (3,10), depth=68
+pushed 28 (2,9) 
+iter=505, frontier =74, popped=28 (2,9), depth=69
+pushed 7 (1,8) 
+iter=506, frontier =74, popped=7 (1,8), depth=70
+iter=507, frontier =73, popped=66 (4,8), depth=66
+pushed 78 (5,8) 
+iter=508, frontier =73, popped=78 (5,8), depth=67
+pushed 90 (6,8) 
+iter=509, frontier =73, popped=90 (6,8), depth=68
+pushed 104 (7,8) 
+iter=510, frontier =73, popped=104 (7,8), depth=69
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=511, frontier =76, popped=119 (8,9), depth=70
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=512, frontier =78, popped=137 (9,10), depth=71
+pushed 138 (9,11) 
+iter=513, frontier =78, popped=138 (9,11), depth=72
+pushed 139 (9,12) 
+pushed 121 (8,11) 
+iter=514, frontier =79, popped=121 (8,11), depth=73
+pushed 122 (8,12) 
+pushed 106 (7,10) 
+iter=515, frontier =80, popped=106 (7,10), depth=74
+iter=516, frontier =79, popped=122 (8,12), depth=74
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=517, frontier =80, popped=140 (9,13), depth=75
+pushed 141 (9,14) 
+iter=518, frontier =80, popped=141 (9,14), depth=76
+iter=519, frontier =79, popped=123 (8,13), depth=75
+iter=520, frontier =78, popped=139 (9,12), depth=73
+pushed 140 (9,13) 
+iter=521, frontier =78, popped=140 (9,13), depth=74
+pushed 141 (9,14) 
+iter=522, frontier =78, popped=141 (9,14), depth=75
+pushed 142 (9,15) 
+iter=523, frontier =78, popped=142 (9,15), depth=76
+iter=524, frontier =77, popped=136 (9,9), depth=71
+pushed 135 (9,8) 
+iter=525, frontier =77, popped=135 (9,8), depth=72
+pushed 134 (9,7) 
+pushed 117 (8,7) 
+iter=526, frontier =78, popped=117 (8,7), depth=73
+pushed 116 (8,6) 
+pushed 102 (7,6) 
+iter=527, frontier =79, popped=102 (7,6), depth=74
+iter=528, frontier =78, popped=116 (8,6), depth=74
+pushed 133 (9,6) 
+iter=529, frontier =78, popped=133 (9,6), depth=75
+iter=530, frontier =77, popped=134 (9,7), depth=73
+pushed 133 (9,6) 
+iter=531, frontier =77, popped=133 (9,6), depth=74
+iter=532, frontier =76, popped=120 (8,10), depth=71
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=533, frontier =77, popped=106 (7,10), depth=72
+pushed 122 (8,12) 
+iter=534, frontier =77, popped=122 (8,12), depth=73
+pushed 123 (8,13) 
+iter=535, frontier =77, popped=123 (8,13), depth=74
+iter=536, frontier =76, popped=121 (8,11), depth=72
+iter=537, frontier =75, popped=118 (8,8), depth=70
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=538, frontier =76, popped=135 (9,8), depth=71
+pushed 134 (9,7) 
+iter=539, frontier =76, popped=134 (9,7), depth=72
+pushed 133 (9,6) 
+pushed 116 (8,6) 
+iter=540, frontier =77, popped=116 (8,6), depth=73
+iter=541, frontier =76, popped=133 (9,6), depth=73
+iter=542, frontier =75, popped=117 (8,7), depth=71
+pushed 116 (8,6) 
+pushed 102 (7,6) 
+iter=543, frontier =76, popped=102 (7,6), depth=72
+iter=544, frontier =75, popped=116 (8,6), depth=72
+iter=545, frontier =74, popped=105 (7,9), depth=70
+pushed 106 (7,10) 
+iter=546, frontier =74, popped=106 (7,10), depth=71
+pushed 122 (8,12) 
+iter=547, frontier =74, popped=122 (8,12), depth=72
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=548, frontier =75, popped=140 (9,13), depth=73
+pushed 141 (9,14) 
+iter=549, frontier =75, popped=141 (9,14), depth=74
+pushed 142 (9,15) 
+iter=550, frontier =75, popped=142 (9,15), depth=75
+iter=551, frontier =74, popped=123 (8,13), depth=73
+iter=552, frontier =73, popped=103 (7,7), depth=70
+pushed 102 (7,6) 
+iter=553, frontier =73, popped=102 (7,6), depth=71
+iter=554, frontier =72, popped=48 (3,9), depth=66
+pushed 49 (3,10) 
+pushed 28 (2,9) 
+iter=555, frontier =73, popped=28 (2,9), depth=67
+pushed 29 (2,10) 
+pushed 8 (1,9) 
+pushed 7 (1,8) 
+iter=556, frontier =75, popped=7 (1,8), depth=68
+iter=557, frontier =74, popped=8 (1,9), depth=68
+pushed 9 (1,10) 
+iter=558, frontier =74, popped=9 (1,10), depth=69
+iter=559, frontier =73, popped=29 (2,10), depth=68
+iter=560, frontier =72, popped=49 (3,10), depth=67
+iter=561, frontier =71, popped=27 (2,8), depth=65
+pushed 28 (2,9) 
+pushed 7 (1,8) 
+iter=562, frontier =72, popped=7 (1,8), depth=66
+pushed 8 (1,9) 
+iter=563, frontier =72, popped=8 (1,9), depth=67
+pushed 9 (1,10) 
+iter=564, frontier =72, popped=9 (1,10), depth=68
+pushed 10 (1,11) 
+iter=565, frontier =72, popped=10 (1,11), depth=69
+iter=566, frontier =71, popped=28 (2,9), depth=66
+pushed 29 (2,10) 
+iter=567, frontier =71, popped=29 (2,10), depth=67
+pushed 30 (2,11) 
+iter=568, frontier =71, popped=30 (2,11), depth=68
+iter=569, frontier =70, popped=6 (1,7), depth=64
+pushed 7 (1,8) 
+iter=570, frontier =70, popped=7 (1,8), depth=65
+pushed 8 (1,9) 
+iter=571, frontier =70, popped=8 (1,9), depth=66
+pushed 9 (1,10) 
+iter=572, frontier =70, popped=9 (1,10), depth=67
+pushed 10 (1,11) 
+iter=573, frontier =70, popped=10 (1,11), depth=68
+pushed 11 (1,12) 
+iter=574, frontier =70, popped=11 (1,12), depth=69
+iter=575, frontier =69, popped=25 (2,6), depth=61
+pushed 26 (2,7) 
+pushed 5 (1,6) 
+iter=576, frontier =70, popped=5 (1,6), depth=62
+pushed 6 (1,7) 
+iter=577, frontier =70, popped=6 (1,7), depth=63
+pushed 7 (1,8) 
+pushed 27 (2,8) 
+iter=578, frontier =71, popped=27 (2,8), depth=64
+pushed 28 (2,9) 
+pushed 48 (3,9) 
+iter=579, frontier =72, popped=48 (3,9), depth=65
+pushed 49 (3,10) 
+pushed 68 (4,10) 
+iter=580, frontier =73, popped=68 (4,10), depth=66
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=581, frontier =75, popped=52 (3,13), depth=67
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=582, frontier =76, popped=31 (2,12), depth=68
+iter=583, frontier =75, popped=32 (2,13), depth=68
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=584, frontier =76, popped=12 (1,13), depth=69
+pushed 13 (1,14) 
+iter=585, frontier =76, popped=13 (1,14), depth=70
+pushed 14 (1,15) 
+iter=586, frontier =76, popped=14 (1,15), depth=71
+pushed 15 (1,16) 
+iter=587, frontier =76, popped=15 (1,16), depth=72
+pushed 16 (1,17) 
+iter=588, frontier =76, popped=16 (1,17), depth=73
+pushed 17 (1,18) 
+iter=589, frontier =76, popped=17 (1,18), depth=74
+iter=590, frontier =75, popped=33 (2,14), depth=69
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=591, frontier =76, popped=53 (3,15), depth=70
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=592, frontier =78, popped=70 (4,16), depth=71
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=593, frontier =80, popped=83 (5,17), depth=72
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=594, frontier =82, popped=96 (6,18), depth=73
+pushed 110 (7,18) 
+iter=595, frontier =82, popped=110 (7,18), depth=74
+pushed 127 (8,18) 
+iter=596, frontier =82, popped=127 (8,18), depth=75
+iter=597, frontier =81, popped=95 (6,17), depth=73
+pushed 109 (7,17) 
+iter=598, frontier =81, popped=109 (7,17), depth=74
+pushed 126 (8,17) 
+iter=599, frontier =81, popped=126 (8,17), depth=75
+iter=600, frontier =80, popped=84 (5,18), depth=73
+iter=601, frontier =79, popped=82 (5,16), depth=72
+pushed 94 (6,16) 
+iter=602, frontier =79, popped=94 (6,16), depth=73
+pushed 108 (7,16) 
+iter=603, frontier =79, popped=108 (7,16), depth=74
+pushed 125 (8,16) 
+iter=604, frontier =79, popped=125 (8,16), depth=75
+iter=605, frontier =78, popped=71 (4,17), depth=72
+pushed 72 (4,18) 
+iter=606, frontier =78, popped=72 (4,18), depth=73
+iter=607, frontier =77, popped=69 (4,15), depth=71
+pushed 81 (5,15) 
+iter=608, frontier =77, popped=81 (5,15), depth=72
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=609, frontier =78, popped=93 (6,15), depth=73
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=610, frontier =79, popped=107 (7,15), depth=74
+pushed 124 (8,15) 
+iter=611, frontier =79, popped=124 (8,15), depth=75
+iter=612, frontier =78, popped=92 (6,14), depth=74
+pushed 91 (6,13) 
+iter=613, frontier =78, popped=91 (6,13), depth=75
+iter=614, frontier =77, popped=80 (5,14), depth=73
+pushed 79 (5,13) 
+iter=615, frontier =77, popped=79 (5,13), depth=74
+iter=616, frontier =76, popped=54 (3,16), depth=71
+pushed 55 (3,17) 
+iter=617, frontier =76, popped=55 (3,17), depth=72
+pushed 56 (3,18) 
+iter=618, frontier =76, popped=56 (3,18), depth=73
+iter=619, frontier =75, popped=34 (2,15), depth=70
+pushed 35 (2,16) 
+iter=620, frontier =75, popped=35 (2,16), depth=71
+pushed 36 (2,17) 
+iter=621, frontier =75, popped=36 (2,17), depth=72
+pushed 37 (2,18) 
+iter=622, frontier =75, popped=37 (2,18), depth=73
+iter=623, frontier =74, popped=51 (3,12), depth=67
+iter=624, frontier =73, popped=50 (3,11), depth=67
+iter=625, frontier =72, popped=49 (3,10), depth=66
+iter=626, frontier =71, popped=28 (2,9), depth=65
+pushed 29 (2,10) 
+iter=627, frontier =71, popped=29 (2,10), depth=66
+pushed 30 (2,11) 
+iter=628, frontier =71, popped=30 (2,11), depth=67
+iter=629, frontier =70, popped=7 (1,8), depth=64
+pushed 8 (1,9) 
+iter=630, frontier =70, popped=8 (1,9), depth=65
+pushed 9 (1,10) 
+iter=631, frontier =70, popped=9 (1,10), depth=66
+pushed 10 (1,11) 
+iter=632, frontier =70, popped=10 (1,11), depth=67
+pushed 11 (1,12) 
+iter=633, frontier =70, popped=11 (1,12), depth=68
+iter=634, frontier =69, popped=26 (2,7), depth=62
+pushed 27 (2,8) 
+pushed 47 (3,8) 
+iter=635, frontier =70, popped=47 (3,8), depth=63
+pushed 48 (3,9) 
+pushed 66 (4,8) 
+pushed 67 (4,9) 
+iter=636, frontier =72, popped=67 (4,9), depth=64
+pushed 68 (4,10) 
+iter=637, frontier =72, popped=68 (4,10), depth=65
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=638, frontier =74, popped=52 (3,13), depth=66
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=639, frontier =75, popped=31 (2,12), depth=67
+iter=640, frontier =74, popped=32 (2,13), depth=67
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=641, frontier =75, popped=12 (1,13), depth=68
+pushed 13 (1,14) 
+iter=642, frontier =75, popped=13 (1,14), depth=69
+pushed 14 (1,15) 
+iter=643, frontier =75, popped=14 (1,15), depth=70
+pushed 15 (1,16) 
+iter=644, frontier =75, popped=15 (1,16), depth=71
+pushed 16 (1,17) 
+iter=645, frontier =75, popped=16 (1,17), depth=72
+pushed 17 (1,18) 
+iter=646, frontier =75, popped=17 (1,18), depth=73
+iter=647, frontier =74, popped=33 (2,14), depth=68
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=648, frontier =75, popped=53 (3,15), depth=69
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=649, frontier =77, popped=70 (4,16), depth=70
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=650, frontier =79, popped=83 (5,17), depth=71
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=651, frontier =81, popped=96 (6,18), depth=72
+pushed 110 (7,18) 
+iter=652, frontier =81, popped=110 (7,18), depth=73
+pushed 127 (8,18) 
+iter=653, frontier =81, popped=127 (8,18), depth=74
+iter=654, frontier =80, popped=95 (6,17), depth=72
+pushed 109 (7,17) 
+iter=655, frontier =80, popped=109 (7,17), depth=73
+pushed 126 (8,17) 
+iter=656, frontier =80, popped=126 (8,17), depth=74
+iter=657, frontier =79, popped=84 (5,18), depth=72
+iter=658, frontier =78, popped=82 (5,16), depth=71
+pushed 94 (6,16) 
+iter=659, frontier =78, popped=94 (6,16), depth=72
+pushed 108 (7,16) 
+iter=660, frontier =78, popped=108 (7,16), depth=73
+pushed 125 (8,16) 
+iter=661, frontier =78, popped=125 (8,16), depth=74
+iter=662, frontier =77, popped=71 (4,17), depth=71
+pushed 72 (4,18) 
+iter=663, frontier =77, popped=72 (4,18), depth=72
+iter=664, frontier =76, popped=69 (4,15), depth=70
+pushed 81 (5,15) 
+iter=665, frontier =76, popped=81 (5,15), depth=71
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=666, frontier =77, popped=93 (6,15), depth=72
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=667, frontier =78, popped=107 (7,15), depth=73
+pushed 124 (8,15) 
+iter=668, frontier =78, popped=124 (8,15), depth=74
+iter=669, frontier =77, popped=92 (6,14), depth=73
+pushed 91 (6,13) 
+iter=670, frontier =77, popped=91 (6,13), depth=74
+iter=671, frontier =76, popped=80 (5,14), depth=72
+pushed 79 (5,13) 
+iter=672, frontier =76, popped=79 (5,13), depth=73
+iter=673, frontier =75, popped=54 (3,16), depth=70
+pushed 55 (3,17) 
+iter=674, frontier =75, popped=55 (3,17), depth=71
+pushed 56 (3,18) 
+iter=675, frontier =75, popped=56 (3,18), depth=72
+iter=676, frontier =74, popped=34 (2,15), depth=69
+pushed 35 (2,16) 
+iter=677, frontier =74, popped=35 (2,16), depth=70
+pushed 36 (2,17) 
+iter=678, frontier =74, popped=36 (2,17), depth=71
+pushed 37 (2,18) 
+iter=679, frontier =74, popped=37 (2,18), depth=72
+iter=680, frontier =73, popped=51 (3,12), depth=66
+iter=681, frontier =72, popped=50 (3,11), depth=66
+iter=682, frontier =71, popped=66 (4,8), depth=64
+pushed 78 (5,8) 
+iter=683, frontier =71, popped=78 (5,8), depth=65
+pushed 90 (6,8) 
+iter=684, frontier =71, popped=90 (6,8), depth=66
+pushed 104 (7,8) 
+iter=685, frontier =71, popped=104 (7,8), depth=67
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=686, frontier =74, popped=119 (8,9), depth=68
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=687, frontier =76, popped=137 (9,10), depth=69
+pushed 138 (9,11) 
+iter=688, frontier =76, popped=138 (9,11), depth=70
+pushed 139 (9,12) 
+pushed 121 (8,11) 
+iter=689, frontier =77, popped=121 (8,11), depth=71
+iter=690, frontier =76, popped=139 (9,12), depth=71
+pushed 140 (9,13) 
+iter=691, frontier =76, popped=140 (9,13), depth=72
+pushed 141 (9,14) 
+iter=692, frontier =76, popped=141 (9,14), depth=73
+pushed 142 (9,15) 
+iter=693, frontier =76, popped=142 (9,15), depth=74
+iter=694, frontier =75, popped=136 (9,9), depth=69
+pushed 135 (9,8) 
+iter=695, frontier =75, popped=135 (9,8), depth=70
+pushed 134 (9,7) 
+iter=696, frontier =75, popped=134 (9,7), depth=71
+pushed 133 (9,6) 
+iter=697, frontier =75, popped=133 (9,6), depth=72
+iter=698, frontier =74, popped=120 (8,10), depth=69
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=699, frontier =75, popped=106 (7,10), depth=70
+pushed 122 (8,12) 
+iter=700, frontier =75, popped=122 (8,12), depth=71
+pushed 123 (8,13) 
+iter=701, frontier =75, popped=123 (8,13), depth=72
+iter=702, frontier =74, popped=121 (8,11), depth=70
+iter=703, frontier =73, popped=118 (8,8), depth=68
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=704, frontier =74, popped=135 (9,8), depth=69
+pushed 134 (9,7) 
+iter=705, frontier =74, popped=134 (9,7), depth=70
+pushed 133 (9,6) 
+pushed 116 (8,6) 
+iter=706, frontier =75, popped=116 (8,6), depth=71
+iter=707, frontier =74, popped=133 (9,6), depth=71
+iter=708, frontier =73, popped=117 (8,7), depth=69
+pushed 116 (8,6) 
+pushed 102 (7,6) 
+iter=709, frontier =74, popped=102 (7,6), depth=70
+iter=710, frontier =73, popped=116 (8,6), depth=70
+iter=711, frontier =72, popped=105 (7,9), depth=68
+pushed 106 (7,10) 
+iter=712, frontier =72, popped=106 (7,10), depth=69
+pushed 122 (8,12) 
+iter=713, frontier =72, popped=122 (8,12), depth=70
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=714, frontier =73, popped=140 (9,13), depth=71
+pushed 141 (9,14) 
+iter=715, frontier =73, popped=141 (9,14), depth=72
+pushed 142 (9,15) 
+iter=716, frontier =73, popped=142 (9,15), depth=73
+iter=717, frontier =72, popped=123 (8,13), depth=71
+iter=718, frontier =71, popped=103 (7,7), depth=68
+pushed 102 (7,6) 
+iter=719, frontier =71, popped=102 (7,6), depth=69
+iter=720, frontier =70, popped=48 (3,9), depth=64
+pushed 49 (3,10) 
+iter=721, frontier =70, popped=49 (3,10), depth=65
+iter=722, frontier =69, popped=27 (2,8), depth=63
+pushed 28 (2,9) 
+iter=723, frontier =69, popped=28 (2,9), depth=64
+pushed 29 (2,10) 
+iter=724, frontier =69, popped=29 (2,10), depth=65
+pushed 30 (2,11) 
+iter=725, frontier =69, popped=30 (2,11), depth=66
+iter=726, frontier =68, popped=46 (3,7), depth=61
+pushed 47 (3,8) 
+pushed 66 (4,8) 
+iter=727, frontier =69, popped=66 (4,8), depth=62
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=728, frontier =70, popped=78 (5,8), depth=63
+pushed 90 (6,8) 
+iter=729, frontier =70, popped=90 (6,8), depth=64
+pushed 104 (7,8) 
+iter=730, frontier =70, popped=104 (7,8), depth=65
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=731, frontier =73, popped=119 (8,9), depth=66
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=732, frontier =75, popped=137 (9,10), depth=67
+pushed 138 (9,11) 
+iter=733, frontier =75, popped=138 (9,11), depth=68
+pushed 139 (9,12) 
+pushed 121 (8,11) 
+iter=734, frontier =76, popped=121 (8,11), depth=69
+iter=735, frontier =75, popped=139 (9,12), depth=69
+pushed 140 (9,13) 
+iter=736, frontier =75, popped=140 (9,13), depth=70
+pushed 141 (9,14) 
+iter=737, frontier =75, popped=141 (9,14), depth=71
+pushed 142 (9,15) 
+iter=738, frontier =75, popped=142 (9,15), depth=72
+pushed 124 (8,15) 
+iter=739, frontier =75, popped=124 (8,15), depth=73
+iter=740, frontier =74, popped=136 (9,9), depth=67
+pushed 135 (9,8) 
+iter=741, frontier =74, popped=135 (9,8), depth=68
+pushed 134 (9,7) 
+iter=742, frontier =74, popped=134 (9,7), depth=69
+pushed 133 (9,6) 
+iter=743, frontier =74, popped=133 (9,6), depth=70
+iter=744, frontier =73, popped=120 (8,10), depth=67
+pushed 121 (8,11) 
+pushed 106 (7,10) 
+iter=745, frontier =74, popped=106 (7,10), depth=68
+pushed 122 (8,12) 
+iter=746, frontier =74, popped=122 (8,12), depth=69
+pushed 123 (8,13) 
+iter=747, frontier =74, popped=123 (8,13), depth=70
+iter=748, frontier =73, popped=121 (8,11), depth=68
+iter=749, frontier =72, popped=118 (8,8), depth=66
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=750, frontier =73, popped=135 (9,8), depth=67
+pushed 134 (9,7) 
+iter=751, frontier =73, popped=134 (9,7), depth=68
+pushed 133 (9,6) 
+pushed 116 (8,6) 
+iter=752, frontier =74, popped=116 (8,6), depth=69
+iter=753, frontier =73, popped=133 (9,6), depth=69
+iter=754, frontier =72, popped=117 (8,7), depth=67
+pushed 116 (8,6) 
+pushed 102 (7,6) 
+iter=755, frontier =73, popped=102 (7,6), depth=68
+iter=756, frontier =72, popped=116 (8,6), depth=68
+iter=757, frontier =71, popped=105 (7,9), depth=66
+pushed 106 (7,10) 
+iter=758, frontier =71, popped=106 (7,10), depth=67
+pushed 122 (8,12) 
+iter=759, frontier =71, popped=122 (8,12), depth=68
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=760, frontier =72, popped=140 (9,13), depth=69
+pushed 141 (9,14) 
+iter=761, frontier =72, popped=141 (9,14), depth=70
+pushed 142 (9,15) 
+iter=762, frontier =72, popped=142 (9,15), depth=71
+pushed 124 (8,15) 
+iter=763, frontier =72, popped=124 (8,15), depth=72
+pushed 125 (8,16) 
+iter=764, frontier =72, popped=125 (8,16), depth=73
+iter=765, frontier =71, popped=123 (8,13), depth=69
+iter=766, frontier =70, popped=103 (7,7), depth=66
+pushed 102 (7,6) 
+iter=767, frontier =70, popped=102 (7,6), depth=67
+iter=768, frontier =69, popped=67 (4,9), depth=63
+pushed 68 (4,10) 
+iter=769, frontier =69, popped=68 (4,10), depth=64
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=770, frontier =71, popped=52 (3,13), depth=65
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=771, frontier =72, popped=31 (2,12), depth=66
+pushed 11 (1,12) 
+iter=772, frontier =72, popped=11 (1,12), depth=67
+iter=773, frontier =71, popped=32 (2,13), depth=66
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=774, frontier =72, popped=12 (1,13), depth=67
+pushed 13 (1,14) 
+iter=775, frontier =72, popped=13 (1,14), depth=68
+pushed 14 (1,15) 
+iter=776, frontier =72, popped=14 (1,15), depth=69
+pushed 15 (1,16) 
+iter=777, frontier =72, popped=15 (1,16), depth=70
+pushed 16 (1,17) 
+iter=778, frontier =72, popped=16 (1,17), depth=71
+pushed 17 (1,18) 
+iter=779, frontier =72, popped=17 (1,18), depth=72
+iter=780, frontier =71, popped=33 (2,14), depth=67
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=781, frontier =72, popped=53 (3,15), depth=68
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=782, frontier =74, popped=70 (4,16), depth=69
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=783, frontier =76, popped=83 (5,17), depth=70
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=784, frontier =78, popped=96 (6,18), depth=71
+pushed 110 (7,18) 
+iter=785, frontier =78, popped=110 (7,18), depth=72
+pushed 127 (8,18) 
+iter=786, frontier =78, popped=127 (8,18), depth=73
+iter=787, frontier =77, popped=95 (6,17), depth=71
+pushed 109 (7,17) 
+iter=788, frontier =77, popped=109 (7,17), depth=72
+pushed 126 (8,17) 
+iter=789, frontier =77, popped=126 (8,17), depth=73
+iter=790, frontier =76, popped=84 (5,18), depth=71
+iter=791, frontier =75, popped=82 (5,16), depth=70
+pushed 94 (6,16) 
+iter=792, frontier =75, popped=94 (6,16), depth=71
+pushed 108 (7,16) 
+iter=793, frontier =75, popped=108 (7,16), depth=72
+iter=794, frontier =74, popped=71 (4,17), depth=70
+pushed 72 (4,18) 
+iter=795, frontier =74, popped=72 (4,18), depth=71
+iter=796, frontier =73, popped=69 (4,15), depth=69
+pushed 81 (5,15) 
+iter=797, frontier =73, popped=81 (5,15), depth=70
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=798, frontier =74, popped=93 (6,15), depth=71
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=799, frontier =75, popped=107 (7,15), depth=72
+iter=800, frontier =74, popped=92 (6,14), depth=72
+pushed 91 (6,13) 
+iter=801, frontier =74, popped=91 (6,13), depth=73
+iter=802, frontier =73, popped=80 (5,14), depth=71
+pushed 79 (5,13) 
+iter=803, frontier =73, popped=79 (5,13), depth=72
+iter=804, frontier =72, popped=54 (3,16), depth=69
+pushed 55 (3,17) 
+iter=805, frontier =72, popped=55 (3,17), depth=70
+pushed 56 (3,18) 
+iter=806, frontier =72, popped=56 (3,18), depth=71
+iter=807, frontier =71, popped=34 (2,15), depth=68
+pushed 35 (2,16) 
+iter=808, frontier =71, popped=35 (2,16), depth=69
+pushed 36 (2,17) 
+iter=809, frontier =71, popped=36 (2,17), depth=70
+pushed 37 (2,18) 
+iter=810, frontier =71, popped=37 (2,18), depth=71
+iter=811, frontier =70, popped=51 (3,12), depth=65
+iter=812, frontier =69, popped=50 (3,11), depth=65
+iter=813, frontier =68, popped=47 (3,8), depth=62
+pushed 48 (3,9) 
+iter=814, frontier =68, popped=48 (3,9), depth=63
+pushed 49 (3,10) 
+iter=815, frontier =68, popped=49 (3,10), depth=64
+iter=816, frontier =67, popped=65 (4,7), depth=60
+pushed 66 (4,8) 
+iter=817, frontier =67, popped=66 (4,8), depth=61
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=818, frontier =68, popped=78 (5,8), depth=62
+pushed 90 (6,8) 
+iter=819, frontier =68, popped=90 (6,8), depth=63
+pushed 104 (7,8) 
+iter=820, frontier =68, popped=104 (7,8), depth=64
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=821, frontier =71, popped=119 (8,9), depth=65
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=822, frontier =73, popped=137 (9,10), depth=66
+pushed 138 (9,11) 
+iter=823, frontier =73, popped=138 (9,11), depth=67
+pushed 139 (9,12) 
+iter=824, frontier =73, popped=139 (9,12), depth=68
+iter=825, frontier =72, popped=136 (9,9), depth=66
+iter=826, frontier =71, popped=120 (8,10), depth=66
+pushed 121 (8,11) 
+iter=827, frontier =71, popped=121 (8,11), depth=67
+iter=828, frontier =70, popped=118 (8,8), depth=65
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=829, frontier =71, popped=135 (9,8), depth=66
+pushed 134 (9,7) 
+iter=830, frontier =71, popped=134 (9,7), depth=67
+pushed 133 (9,6) 
+iter=831, frontier =71, popped=133 (9,6), depth=68
+iter=832, frontier =70, popped=117 (8,7), depth=66
+pushed 116 (8,6) 
+iter=833, frontier =70, popped=116 (8,6), depth=67
+iter=834, frontier =69, popped=105 (7,9), depth=65
+pushed 106 (7,10) 
+iter=835, frontier =69, popped=106 (7,10), depth=66
+pushed 122 (8,12) 
+iter=836, frontier =69, popped=122 (8,12), depth=67
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=837, frontier =70, popped=140 (9,13), depth=68
+pushed 141 (9,14) 
+iter=838, frontier =70, popped=141 (9,14), depth=69
+pushed 142 (9,15) 
+iter=839, frontier =70, popped=142 (9,15), depth=70
+pushed 124 (8,15) 
+iter=840, frontier =70, popped=124 (8,15), depth=71
+pushed 125 (8,16) 
+iter=841, frontier =70, popped=125 (8,16), depth=72
+iter=842, frontier =69, popped=123 (8,13), depth=68
+iter=843, frontier =68, popped=103 (7,7), depth=65
+pushed 102 (7,6) 
+iter=844, frontier =68, popped=102 (7,6), depth=66
+iter=845, frontier =67, popped=67 (4,9), depth=62
+pushed 68 (4,10) 
+iter=846, frontier =67, popped=68 (4,10), depth=63
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=847, frontier =69, popped=52 (3,13), depth=64
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=848, frontier =70, popped=31 (2,12), depth=65
+pushed 11 (1,12) 
+pushed 10 (1,11) 
+iter=849, frontier =71, popped=10 (1,11), depth=66
+iter=850, frontier =70, popped=11 (1,12), depth=66
+iter=851, frontier =69, popped=32 (2,13), depth=65
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=852, frontier =70, popped=12 (1,13), depth=66
+pushed 13 (1,14) 
+iter=853, frontier =70, popped=13 (1,14), depth=67
+pushed 14 (1,15) 
+iter=854, frontier =70, popped=14 (1,15), depth=68
+pushed 15 (1,16) 
+iter=855, frontier =70, popped=15 (1,16), depth=69
+pushed 16 (1,17) 
+iter=856, frontier =70, popped=16 (1,17), depth=70
+pushed 17 (1,18) 
+iter=857, frontier =70, popped=17 (1,18), depth=71
+iter=858, frontier =69, popped=33 (2,14), depth=66
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=859, frontier =70, popped=53 (3,15), depth=67
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=860, frontier =72, popped=70 (4,16), depth=68
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=861, frontier =74, popped=83 (5,17), depth=69
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=862, frontier =76, popped=96 (6,18), depth=70
+pushed 110 (7,18) 
+iter=863, frontier =76, popped=110 (7,18), depth=71
+pushed 127 (8,18) 
+iter=864, frontier =76, popped=127 (8,18), depth=72
+iter=865, frontier =75, popped=95 (6,17), depth=70
+pushed 109 (7,17) 
+iter=866, frontier =75, popped=109 (7,17), depth=71
+pushed 126 (8,17) 
+iter=867, frontier =75, popped=126 (8,17), depth=72
+iter=868, frontier =74, popped=84 (5,18), depth=70
+iter=869, frontier =73, popped=82 (5,16), depth=69
+pushed 94 (6,16) 
+iter=870, frontier =73, popped=94 (6,16), depth=70
+pushed 108 (7,16) 
+iter=871, frontier =73, popped=108 (7,16), depth=71
+iter=872, frontier =72, popped=71 (4,17), depth=69
+pushed 72 (4,18) 
+iter=873, frontier =72, popped=72 (4,18), depth=70
+iter=874, frontier =71, popped=69 (4,15), depth=68
+pushed 81 (5,15) 
+iter=875, frontier =71, popped=81 (5,15), depth=69
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=876, frontier =72, popped=93 (6,15), depth=70
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=877, frontier =73, popped=107 (7,15), depth=71
+iter=878, frontier =72, popped=92 (6,14), depth=71
+pushed 91 (6,13) 
+iter=879, frontier =72, popped=91 (6,13), depth=72
+iter=880, frontier =71, popped=80 (5,14), depth=70
+pushed 79 (5,13) 
+iter=881, frontier =71, popped=79 (5,13), depth=71
+iter=882, frontier =70, popped=54 (3,16), depth=68
+pushed 55 (3,17) 
+iter=883, frontier =70, popped=55 (3,17), depth=69
+pushed 56 (3,18) 
+iter=884, frontier =70, popped=56 (3,18), depth=70
+iter=885, frontier =69, popped=34 (2,15), depth=67
+pushed 35 (2,16) 
+iter=886, frontier =69, popped=35 (2,16), depth=68
+pushed 36 (2,17) 
+iter=887, frontier =69, popped=36 (2,17), depth=69
+pushed 37 (2,18) 
+iter=888, frontier =69, popped=37 (2,18), depth=70
+iter=889, frontier =68, popped=51 (3,12), depth=64
+pushed 30 (2,11) 
+iter=890, frontier =68, popped=30 (2,11), depth=65
+iter=891, frontier =67, popped=50 (3,11), depth=64
+iter=892, frontier =66, popped=62 (4,4), depth=58
+pushed 61 (4,3) 
+iter=893, frontier =66, popped=61 (4,3), depth=59
+pushed 77 (5,3) 
+iter=894, frontier =66, popped=77 (5,3), depth=60
+pushed 89 (6,3) 
+iter=895, frontier =66, popped=89 (6,3), depth=61
+pushed 101 (7,3) 
+iter=896, frontier =66, popped=101 (7,3), depth=62
+pushed 115 (8,3) 
+iter=897, frontier =66, popped=115 (8,3), depth=63
+pushed 132 (9,3) 
+iter=898, frontier =66, popped=132 (9,3), depth=64
+pushed 147 (10,3) 
+iter=899, frontier =66, popped=147 (10,3), depth=65
+pushed 152 (11,3) 
+iter=900, frontier =66, popped=152 (11,3), depth=66
+pushed 157 (12,3) 
+iter=901, frontier =66, popped=157 (12,3), depth=67
+pushed 162 (13,3) 
+iter=902, frontier =66, popped=162 (13,3), depth=68
+pushed 175 (14,3) 
+iter=903, frontier =66, popped=175 (14,3), depth=69
+pushed 187 (15,3) 
+iter=904, frontier =66, popped=187 (15,3), depth=70
+iter=905, frontier =65, popped=44 (3,5), depth=58
+pushed 45 (3,6) 
+pushed 24 (2,5) 
+iter=906, frontier =66, popped=24 (2,5), depth=59
+pushed 25 (2,6) 
+pushed 4 (1,5) 
+pushed 3 (1,4) 
+iter=907, frontier =68, popped=3 (1,4), depth=60
+iter=908, frontier =67, popped=4 (1,5), depth=60
+pushed 5 (1,6) 
+iter=909, frontier =67, popped=5 (1,6), depth=61
+pushed 6 (1,7) 
+iter=910, frontier =67, popped=6 (1,7), depth=62
+pushed 7 (1,8) 
+iter=911, frontier =67, popped=7 (1,8), depth=63
+pushed 8 (1,9) 
+iter=912, frontier =67, popped=8 (1,9), depth=64
+pushed 9 (1,10) 
+iter=913, frontier =67, popped=9 (1,10), depth=65
+iter=914, frontier =66, popped=25 (2,6), depth=60
+pushed 26 (2,7) 
+iter=915, frontier =66, popped=26 (2,7), depth=61
+pushed 27 (2,8) 
+iter=916, frontier =66, popped=27 (2,8), depth=62
+pushed 28 (2,9) 
+iter=917, frontier =66, popped=28 (2,9), depth=63
+pushed 29 (2,10) 
+iter=918, frontier =66, popped=29 (2,10), depth=64
+iter=919, frontier =65, popped=45 (3,6), depth=59
+pushed 46 (3,7) 
+iter=920, frontier =65, popped=46 (3,7), depth=60
+pushed 47 (3,8) 
+iter=921, frontier =65, popped=47 (3,8), depth=61
+pushed 48 (3,9) 
+iter=922, frontier =65, popped=48 (3,9), depth=62
+pushed 49 (3,10) 
+iter=923, frontier =65, popped=49 (3,10), depth=63
+iter=924, frontier =64, popped=42 (3,3), depth=57
+pushed 61 (4,3) 
+iter=925, frontier =64, popped=61 (4,3), depth=58
+pushed 77 (5,3) 
+iter=926, frontier =64, popped=77 (5,3), depth=59
+pushed 89 (6,3) 
+iter=927, frontier =64, popped=89 (6,3), depth=60
+pushed 101 (7,3) 
+iter=928, frontier =64, popped=101 (7,3), depth=61
+pushed 115 (8,3) 
+iter=929, frontier =64, popped=115 (8,3), depth=62
+pushed 132 (9,3) 
+iter=930, frontier =64, popped=132 (9,3), depth=63
+pushed 147 (10,3) 
+iter=931, frontier =64, popped=147 (10,3), depth=64
+pushed 152 (11,3) 
+iter=932, frontier =64, popped=152 (11,3), depth=65
+pushed 157 (12,3) 
+iter=933, frontier =64, popped=157 (12,3), depth=66
+pushed 162 (13,3) 
+iter=934, frontier =64, popped=162 (13,3), depth=67
+pushed 175 (14,3) 
+iter=935, frontier =64, popped=175 (14,3), depth=68
+pushed 187 (15,3) 
+iter=936, frontier =64, popped=187 (15,3), depth=69
+iter=937, frontier =63, popped=23 (2,4), depth=57
+pushed 24 (2,5) 
+pushed 3 (1,4) 
+iter=938, frontier =64, popped=3 (1,4), depth=58
+pushed 4 (1,5) 
+iter=939, frontier =64, popped=4 (1,5), depth=59
+pushed 5 (1,6) 
+iter=940, frontier =64, popped=5 (1,6), depth=60
+pushed 6 (1,7) 
+iter=941, frontier =64, popped=6 (1,7), depth=61
+pushed 7 (1,8) 
+iter=942, frontier =64, popped=7 (1,8), depth=62
+pushed 8 (1,9) 
+iter=943, frontier =64, popped=8 (1,9), depth=63
+pushed 9 (1,10) 
+iter=944, frontier =64, popped=9 (1,10), depth=64
+pushed 10 (1,11) 
+iter=945, frontier =64, popped=10 (1,11), depth=65
+iter=946, frontier =63, popped=24 (2,5), depth=58
+pushed 25 (2,6) 
+iter=947, frontier =63, popped=25 (2,6), depth=59
+pushed 26 (2,7) 
+iter=948, frontier =63, popped=26 (2,7), depth=60
+pushed 27 (2,8) 
+iter=949, frontier =63, popped=27 (2,8), depth=61
+pushed 28 (2,9) 
+iter=950, frontier =63, popped=28 (2,9), depth=62
+pushed 29 (2,10) 
+iter=951, frontier =63, popped=29 (2,10), depth=63
+pushed 30 (2,11) 
+iter=952, frontier =63, popped=30 (2,11), depth=64
+iter=953, frontier =62, popped=2 (1,3), depth=56
+pushed 3 (1,4) 
+iter=954, frontier =62, popped=3 (1,4), depth=57
+pushed 4 (1,5) 
+iter=955, frontier =62, popped=4 (1,5), depth=58
+pushed 5 (1,6) 
+iter=956, frontier =62, popped=5 (1,6), depth=59
+pushed 6 (1,7) 
+iter=957, frontier =62, popped=6 (1,7), depth=60
+pushed 7 (1,8) 
+iter=958, frontier =62, popped=7 (1,8), depth=61
+pushed 8 (1,9) 
+iter=959, frontier =62, popped=8 (1,9), depth=62
+pushed 9 (1,10) 
+iter=960, frontier =62, popped=9 (1,10), depth=63
+pushed 10 (1,11) 
+iter=961, frontier =62, popped=10 (1,11), depth=64
+pushed 11 (1,12) 
+iter=962, frontier =62, popped=11 (1,12), depth=65
+iter=963, frontier =61, popped=21 (2,2), depth=54
+pushed 22 (2,3) 
+pushed 42 (3,3) 
+iter=964, frontier =62, popped=42 (3,3), depth=55
+pushed 43 (3,4) 
+pushed 61 (4,3) 
+pushed 62 (4,4) 
+iter=965, frontier =64, popped=62 (4,4), depth=56
+pushed 63 (4,5) 
+iter=966, frontier =64, popped=63 (4,5), depth=57
+pushed 64 (4,6) 
+iter=967, frontier =64, popped=64 (4,6), depth=58
+pushed 65 (4,7) 
+iter=968, frontier =64, popped=65 (4,7), depth=59
+pushed 66 (4,8) 
+iter=969, frontier =64, popped=66 (4,8), depth=60
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=970, frontier =65, popped=78 (5,8), depth=61
+pushed 90 (6,8) 
+iter=971, frontier =65, popped=90 (6,8), depth=62
+pushed 104 (7,8) 
+iter=972, frontier =65, popped=104 (7,8), depth=63
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=973, frontier =68, popped=119 (8,9), depth=64
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=974, frontier =70, popped=137 (9,10), depth=65
+pushed 138 (9,11) 
+iter=975, frontier =70, popped=138 (9,11), depth=66
+pushed 139 (9,12) 
+iter=976, frontier =70, popped=139 (9,12), depth=67
+iter=977, frontier =69, popped=136 (9,9), depth=65
+iter=978, frontier =68, popped=120 (8,10), depth=65
+pushed 121 (8,11) 
+iter=979, frontier =68, popped=121 (8,11), depth=66
+iter=980, frontier =67, popped=118 (8,8), depth=64
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=981, frontier =68, popped=135 (9,8), depth=65
+pushed 134 (9,7) 
+iter=982, frontier =68, popped=134 (9,7), depth=66
+pushed 133 (9,6) 
+iter=983, frontier =68, popped=133 (9,6), depth=67
+iter=984, frontier =67, popped=117 (8,7), depth=65
+pushed 116 (8,6) 
+iter=985, frontier =67, popped=116 (8,6), depth=66
+iter=986, frontier =66, popped=105 (7,9), depth=64
+pushed 106 (7,10) 
+iter=987, frontier =66, popped=106 (7,10), depth=65
+pushed 122 (8,12) 
+iter=988, frontier =66, popped=122 (8,12), depth=66
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=989, frontier =67, popped=140 (9,13), depth=67
+pushed 141 (9,14) 
+iter=990, frontier =67, popped=141 (9,14), depth=68
+pushed 142 (9,15) 
+iter=991, frontier =67, popped=142 (9,15), depth=69
+pushed 124 (8,15) 
+iter=992, frontier =67, popped=124 (8,15), depth=70
+pushed 125 (8,16) 
+iter=993, frontier =67, popped=125 (8,16), depth=71
+iter=994, frontier =66, popped=123 (8,13), depth=67
+iter=995, frontier =65, popped=103 (7,7), depth=64
+pushed 102 (7,6) 
+iter=996, frontier =65, popped=102 (7,6), depth=65
+iter=997, frontier =64, popped=67 (4,9), depth=61
+pushed 68 (4,10) 
+iter=998, frontier =64, popped=68 (4,10), depth=62
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=999, frontier =66, popped=52 (3,13), depth=63
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=1000, frontier =67, popped=31 (2,12), depth=64
+iter=1001, frontier =66, popped=32 (2,13), depth=64
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=1002, frontier =67, popped=12 (1,13), depth=65
+pushed 13 (1,14) 
+iter=1003, frontier =67, popped=13 (1,14), depth=66
+pushed 14 (1,15) 
+iter=1004, frontier =67, popped=14 (1,15), depth=67
+pushed 15 (1,16) 
+iter=1005, frontier =67, popped=15 (1,16), depth=68
+pushed 16 (1,17) 
+iter=1006, frontier =67, popped=16 (1,17), depth=69
+pushed 17 (1,18) 
+iter=1007, frontier =67, popped=17 (1,18), depth=70
+iter=1008, frontier =66, popped=33 (2,14), depth=65
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=1009, frontier =67, popped=53 (3,15), depth=66
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=1010, frontier =69, popped=70 (4,16), depth=67
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=1011, frontier =71, popped=83 (5,17), depth=68
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=1012, frontier =73, popped=96 (6,18), depth=69
+pushed 110 (7,18) 
+iter=1013, frontier =73, popped=110 (7,18), depth=70
+pushed 127 (8,18) 
+iter=1014, frontier =73, popped=127 (8,18), depth=71
+iter=1015, frontier =72, popped=95 (6,17), depth=69
+pushed 109 (7,17) 
+iter=1016, frontier =72, popped=109 (7,17), depth=70
+pushed 126 (8,17) 
+iter=1017, frontier =72, popped=126 (8,17), depth=71
+iter=1018, frontier =71, popped=84 (5,18), depth=69
+iter=1019, frontier =70, popped=82 (5,16), depth=68
+pushed 94 (6,16) 
+iter=1020, frontier =70, popped=94 (6,16), depth=69
+pushed 108 (7,16) 
+iter=1021, frontier =70, popped=108 (7,16), depth=70
+iter=1022, frontier =69, popped=71 (4,17), depth=68
+pushed 72 (4,18) 
+iter=1023, frontier =69, popped=72 (4,18), depth=69
+iter=1024, frontier =68, popped=69 (4,15), depth=67
+pushed 81 (5,15) 
+iter=1025, frontier =68, popped=81 (5,15), depth=68
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=1026, frontier =69, popped=93 (6,15), depth=69
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=1027, frontier =70, popped=107 (7,15), depth=70
+iter=1028, frontier =69, popped=92 (6,14), depth=70
+pushed 91 (6,13) 
+iter=1029, frontier =69, popped=91 (6,13), depth=71
+iter=1030, frontier =68, popped=80 (5,14), depth=69
+pushed 79 (5,13) 
+iter=1031, frontier =68, popped=79 (5,13), depth=70
+iter=1032, frontier =67, popped=54 (3,16), depth=67
+pushed 55 (3,17) 
+iter=1033, frontier =67, popped=55 (3,17), depth=68
+pushed 56 (3,18) 
+iter=1034, frontier =67, popped=56 (3,18), depth=69
+iter=1035, frontier =66, popped=34 (2,15), depth=66
+pushed 35 (2,16) 
+iter=1036, frontier =66, popped=35 (2,16), depth=67
+pushed 36 (2,17) 
+iter=1037, frontier =66, popped=36 (2,17), depth=68
+pushed 37 (2,18) 
+iter=1038, frontier =66, popped=37 (2,18), depth=69
+iter=1039, frontier =65, popped=51 (3,12), depth=63
+iter=1040, frontier =64, popped=50 (3,11), depth=63
+iter=1041, frontier =63, popped=61 (4,3), depth=56
+pushed 77 (5,3) 
+iter=1042, frontier =63, popped=77 (5,3), depth=57
+pushed 89 (6,3) 
+iter=1043, frontier =63, popped=89 (6,3), depth=58
+pushed 101 (7,3) 
+iter=1044, frontier =63, popped=101 (7,3), depth=59
+pushed 115 (8,3) 
+iter=1045, frontier =63, popped=115 (8,3), depth=60
+pushed 132 (9,3) 
+iter=1046, frontier =63, popped=132 (9,3), depth=61
+pushed 147 (10,3) 
+iter=1047, frontier =63, popped=147 (10,3), depth=62
+pushed 152 (11,3) 
+iter=1048, frontier =63, popped=152 (11,3), depth=63
+pushed 157 (12,3) 
+iter=1049, frontier =63, popped=157 (12,3), depth=64
+pushed 162 (13,3) 
+iter=1050, frontier =63, popped=162 (13,3), depth=65
+pushed 175 (14,3) 
+iter=1051, frontier =63, popped=175 (14,3), depth=66
+pushed 187 (15,3) 
+iter=1052, frontier =63, popped=187 (15,3), depth=67
+iter=1053, frontier =62, popped=43 (3,4), depth=56
+pushed 44 (3,5) 
+iter=1054, frontier =62, popped=44 (3,5), depth=57
+pushed 45 (3,6) 
+iter=1055, frontier =62, popped=45 (3,6), depth=58
+pushed 46 (3,7) 
+iter=1056, frontier =62, popped=46 (3,7), depth=59
+pushed 47 (3,8) 
+iter=1057, frontier =62, popped=47 (3,8), depth=60
+pushed 48 (3,9) 
+iter=1058, frontier =62, popped=48 (3,9), depth=61
+pushed 49 (3,10) 
+iter=1059, frontier =62, popped=49 (3,10), depth=62
+iter=1060, frontier =61, popped=22 (2,3), depth=55
+pushed 23 (2,4) 
+iter=1061, frontier =61, popped=23 (2,4), depth=56
+pushed 24 (2,5) 
+iter=1062, frontier =61, popped=24 (2,5), depth=57
+pushed 25 (2,6) 
+iter=1063, frontier =61, popped=25 (2,6), depth=58
+pushed 26 (2,7) 
+iter=1064, frontier =61, popped=26 (2,7), depth=59
+pushed 27 (2,8) 
+iter=1065, frontier =61, popped=27 (2,8), depth=60
+pushed 28 (2,9) 
+iter=1066, frontier =61, popped=28 (2,9), depth=61
+pushed 29 (2,10) 
+iter=1067, frontier =61, popped=29 (2,10), depth=62
+pushed 30 (2,11) 
+iter=1068, frontier =61, popped=30 (2,11), depth=63
+iter=1069, frontier =60, popped=41 (3,2), depth=53
+pushed 42 (3,3) 
+pushed 61 (4,3) 
+iter=1070, frontier =61, popped=61 (4,3), depth=54
+pushed 62 (4,4) 
+pushed 77 (5,3) 
+iter=1071, frontier =62, popped=77 (5,3), depth=55
+pushed 89 (6,3) 
+iter=1072, frontier =62, popped=89 (6,3), depth=56
+pushed 101 (7,3) 
+iter=1073, frontier =62, popped=101 (7,3), depth=57
+pushed 115 (8,3) 
+iter=1074, frontier =62, popped=115 (8,3), depth=58
+pushed 132 (9,3) 
+iter=1075, frontier =62, popped=132 (9,3), depth=59
+pushed 147 (10,3) 
+iter=1076, frontier =62, popped=147 (10,3), depth=60
+pushed 152 (11,3) 
+iter=1077, frontier =62, popped=152 (11,3), depth=61
+pushed 157 (12,3) 
+iter=1078, frontier =62, popped=157 (12,3), depth=62
+pushed 162 (13,3) 
+iter=1079, frontier =62, popped=162 (13,3), depth=63
+pushed 175 (14,3) 
+iter=1080, frontier =62, popped=175 (14,3), depth=64
+pushed 187 (15,3) 
+iter=1081, frontier =62, popped=187 (15,3), depth=65
+iter=1082, frontier =61, popped=62 (4,4), depth=55
+pushed 63 (4,5) 
+iter=1083, frontier =61, popped=63 (4,5), depth=56
+pushed 64 (4,6) 
+iter=1084, frontier =61, popped=64 (4,6), depth=57
+pushed 65 (4,7) 
+iter=1085, frontier =61, popped=65 (4,7), depth=58
+pushed 66 (4,8) 
+iter=1086, frontier =61, popped=66 (4,8), depth=59
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=1087, frontier =62, popped=78 (5,8), depth=60
+pushed 90 (6,8) 
+iter=1088, frontier =62, popped=90 (6,8), depth=61
+pushed 104 (7,8) 
+iter=1089, frontier =62, popped=104 (7,8), depth=62
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=1090, frontier =65, popped=119 (8,9), depth=63
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=1091, frontier =67, popped=137 (9,10), depth=64
+pushed 138 (9,11) 
+iter=1092, frontier =67, popped=138 (9,11), depth=65
+pushed 139 (9,12) 
+iter=1093, frontier =67, popped=139 (9,12), depth=66
+iter=1094, frontier =66, popped=136 (9,9), depth=64
+iter=1095, frontier =65, popped=120 (8,10), depth=64
+pushed 121 (8,11) 
+iter=1096, frontier =65, popped=121 (8,11), depth=65
+iter=1097, frontier =64, popped=118 (8,8), depth=63
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=1098, frontier =65, popped=135 (9,8), depth=64
+pushed 134 (9,7) 
+iter=1099, frontier =65, popped=134 (9,7), depth=65
+pushed 133 (9,6) 
+iter=1100, frontier =65, popped=133 (9,6), depth=66
+iter=1101, frontier =64, popped=117 (8,7), depth=64
+pushed 116 (8,6) 
+iter=1102, frontier =64, popped=116 (8,6), depth=65
+iter=1103, frontier =63, popped=105 (7,9), depth=63
+pushed 106 (7,10) 
+iter=1104, frontier =63, popped=106 (7,10), depth=64
+pushed 122 (8,12) 
+iter=1105, frontier =63, popped=122 (8,12), depth=65
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=1106, frontier =64, popped=140 (9,13), depth=66
+pushed 141 (9,14) 
+iter=1107, frontier =64, popped=141 (9,14), depth=67
+pushed 142 (9,15) 
+iter=1108, frontier =64, popped=142 (9,15), depth=68
+pushed 124 (8,15) 
+iter=1109, frontier =64, popped=124 (8,15), depth=69
+pushed 125 (8,16) 
+iter=1110, frontier =64, popped=125 (8,16), depth=70
+iter=1111, frontier =63, popped=123 (8,13), depth=66
+iter=1112, frontier =62, popped=103 (7,7), depth=63
+pushed 102 (7,6) 
+iter=1113, frontier =62, popped=102 (7,6), depth=64
+iter=1114, frontier =61, popped=67 (4,9), depth=60
+pushed 68 (4,10) 
+iter=1115, frontier =61, popped=68 (4,10), depth=61
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=1116, frontier =63, popped=52 (3,13), depth=62
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=1117, frontier =64, popped=31 (2,12), depth=63
+pushed 11 (1,12) 
+iter=1118, frontier =64, popped=11 (1,12), depth=64
+iter=1119, frontier =63, popped=32 (2,13), depth=63
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=1120, frontier =64, popped=12 (1,13), depth=64
+pushed 13 (1,14) 
+iter=1121, frontier =64, popped=13 (1,14), depth=65
+pushed 14 (1,15) 
+iter=1122, frontier =64, popped=14 (1,15), depth=66
+pushed 15 (1,16) 
+iter=1123, frontier =64, popped=15 (1,16), depth=67
+pushed 16 (1,17) 
+iter=1124, frontier =64, popped=16 (1,17), depth=68
+pushed 17 (1,18) 
+iter=1125, frontier =64, popped=17 (1,18), depth=69
+iter=1126, frontier =63, popped=33 (2,14), depth=64
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=1127, frontier =64, popped=53 (3,15), depth=65
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=1128, frontier =66, popped=70 (4,16), depth=66
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=1129, frontier =68, popped=83 (5,17), depth=67
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=1130, frontier =70, popped=96 (6,18), depth=68
+pushed 110 (7,18) 
+iter=1131, frontier =70, popped=110 (7,18), depth=69
+pushed 127 (8,18) 
+iter=1132, frontier =70, popped=127 (8,18), depth=70
+iter=1133, frontier =69, popped=95 (6,17), depth=68
+pushed 109 (7,17) 
+iter=1134, frontier =69, popped=109 (7,17), depth=69
+pushed 126 (8,17) 
+iter=1135, frontier =69, popped=126 (8,17), depth=70
+iter=1136, frontier =68, popped=84 (5,18), depth=68
+iter=1137, frontier =67, popped=82 (5,16), depth=67
+pushed 94 (6,16) 
+iter=1138, frontier =67, popped=94 (6,16), depth=68
+pushed 108 (7,16) 
+iter=1139, frontier =67, popped=108 (7,16), depth=69
+iter=1140, frontier =66, popped=71 (4,17), depth=67
+pushed 72 (4,18) 
+iter=1141, frontier =66, popped=72 (4,18), depth=68
+iter=1142, frontier =65, popped=69 (4,15), depth=66
+pushed 81 (5,15) 
+iter=1143, frontier =65, popped=81 (5,15), depth=67
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=1144, frontier =66, popped=93 (6,15), depth=68
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=1145, frontier =67, popped=107 (7,15), depth=69
+iter=1146, frontier =66, popped=92 (6,14), depth=69
+pushed 91 (6,13) 
+iter=1147, frontier =66, popped=91 (6,13), depth=70
+iter=1148, frontier =65, popped=80 (5,14), depth=68
+pushed 79 (5,13) 
+iter=1149, frontier =65, popped=79 (5,13), depth=69
+iter=1150, frontier =64, popped=54 (3,16), depth=66
+pushed 55 (3,17) 
+iter=1151, frontier =64, popped=55 (3,17), depth=67
+pushed 56 (3,18) 
+iter=1152, frontier =64, popped=56 (3,18), depth=68
+iter=1153, frontier =63, popped=34 (2,15), depth=65
+pushed 35 (2,16) 
+iter=1154, frontier =63, popped=35 (2,16), depth=66
+pushed 36 (2,17) 
+iter=1155, frontier =63, popped=36 (2,17), depth=67
+pushed 37 (2,18) 
+iter=1156, frontier =63, popped=37 (2,18), depth=68
+iter=1157, frontier =62, popped=51 (3,12), depth=62
+iter=1158, frontier =61, popped=50 (3,11), depth=62
+iter=1159, frontier =60, popped=42 (3,3), depth=54
+pushed 43 (3,4) 
+iter=1160, frontier =60, popped=43 (3,4), depth=55
+pushed 44 (3,5) 
+iter=1161, frontier =60, popped=44 (3,5), depth=56
+pushed 45 (3,6) 
+iter=1162, frontier =60, popped=45 (3,6), depth=57
+pushed 46 (3,7) 
+iter=1163, frontier =60, popped=46 (3,7), depth=58
+pushed 47 (3,8) 
+iter=1164, frontier =60, popped=47 (3,8), depth=59
+pushed 48 (3,9) 
+iter=1165, frontier =60, popped=48 (3,9), depth=60
+pushed 49 (3,10) 
+iter=1166, frontier =60, popped=49 (3,10), depth=61
+iter=1167, frontier =59, popped=60 (4,2), depth=52
+pushed 61 (4,3) 
+pushed 77 (5,3) 
+iter=1168, frontier =60, popped=77 (5,3), depth=53
+pushed 89 (6,3) 
+iter=1169, frontier =60, popped=89 (6,3), depth=54
+pushed 101 (7,3) 
+iter=1170, frontier =60, popped=101 (7,3), depth=55
+pushed 115 (8,3) 
+iter=1171, frontier =60, popped=115 (8,3), depth=56
+pushed 132 (9,3) 
+iter=1172, frontier =60, popped=132 (9,3), depth=57
+pushed 147 (10,3) 
+iter=1173, frontier =60, popped=147 (10,3), depth=58
+pushed 152 (11,3) 
+iter=1174, frontier =60, popped=152 (11,3), depth=59
+pushed 157 (12,3) 
+iter=1175, frontier =60, popped=157 (12,3), depth=60
+pushed 162 (13,3) 
+iter=1176, frontier =60, popped=162 (13,3), depth=61
+pushed 175 (14,3) 
+iter=1177, frontier =60, popped=175 (14,3), depth=62
+pushed 187 (15,3) 
+iter=1178, frontier =60, popped=187 (15,3), depth=63
+iter=1179, frontier =59, popped=61 (4,3), depth=53
+pushed 62 (4,4) 
+iter=1180, frontier =59, popped=62 (4,4), depth=54
+pushed 63 (4,5) 
+iter=1181, frontier =59, popped=63 (4,5), depth=55
+pushed 64 (4,6) 
+iter=1182, frontier =59, popped=64 (4,6), depth=56
+pushed 65 (4,7) 
+iter=1183, frontier =59, popped=65 (4,7), depth=57
+pushed 66 (4,8) 
+iter=1184, frontier =59, popped=66 (4,8), depth=58
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=1185, frontier =60, popped=78 (5,8), depth=59
+pushed 90 (6,8) 
+iter=1186, frontier =60, popped=90 (6,8), depth=60
+pushed 104 (7,8) 
+iter=1187, frontier =60, popped=104 (7,8), depth=61
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=1188, frontier =63, popped=119 (8,9), depth=62
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=1189, frontier =65, popped=137 (9,10), depth=63
+pushed 138 (9,11) 
+iter=1190, frontier =65, popped=138 (9,11), depth=64
+pushed 139 (9,12) 
+iter=1191, frontier =65, popped=139 (9,12), depth=65
+iter=1192, frontier =64, popped=136 (9,9), depth=63
+iter=1193, frontier =63, popped=120 (8,10), depth=63
+pushed 121 (8,11) 
+iter=1194, frontier =63, popped=121 (8,11), depth=64
+iter=1195, frontier =62, popped=118 (8,8), depth=62
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=1196, frontier =63, popped=135 (9,8), depth=63
+pushed 134 (9,7) 
+iter=1197, frontier =63, popped=134 (9,7), depth=64
+pushed 133 (9,6) 
+iter=1198, frontier =63, popped=133 (9,6), depth=65
+iter=1199, frontier =62, popped=117 (8,7), depth=63
+pushed 116 (8,6) 
+iter=1200, frontier =62, popped=116 (8,6), depth=64
+iter=1201, frontier =61, popped=105 (7,9), depth=62
+pushed 106 (7,10) 
+iter=1202, frontier =61, popped=106 (7,10), depth=63
+pushed 122 (8,12) 
+iter=1203, frontier =61, popped=122 (8,12), depth=64
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=1204, frontier =62, popped=140 (9,13), depth=65
+pushed 141 (9,14) 
+iter=1205, frontier =62, popped=141 (9,14), depth=66
+pushed 142 (9,15) 
+iter=1206, frontier =62, popped=142 (9,15), depth=67
+pushed 124 (8,15) 
+iter=1207, frontier =62, popped=124 (8,15), depth=68
+pushed 125 (8,16) 
+iter=1208, frontier =62, popped=125 (8,16), depth=69
+iter=1209, frontier =61, popped=123 (8,13), depth=65
+iter=1210, frontier =60, popped=103 (7,7), depth=62
+pushed 102 (7,6) 
+iter=1211, frontier =60, popped=102 (7,6), depth=63
+iter=1212, frontier =59, popped=67 (4,9), depth=59
+pushed 68 (4,10) 
+iter=1213, frontier =59, popped=68 (4,10), depth=60
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=1214, frontier =61, popped=52 (3,13), depth=61
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=1215, frontier =62, popped=31 (2,12), depth=62
+pushed 11 (1,12) 
+pushed 10 (1,11) 
+iter=1216, frontier =63, popped=10 (1,11), depth=63
+iter=1217, frontier =62, popped=11 (1,12), depth=63
+iter=1218, frontier =61, popped=32 (2,13), depth=62
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=1219, frontier =62, popped=12 (1,13), depth=63
+pushed 13 (1,14) 
+iter=1220, frontier =62, popped=13 (1,14), depth=64
+pushed 14 (1,15) 
+iter=1221, frontier =62, popped=14 (1,15), depth=65
+pushed 15 (1,16) 
+iter=1222, frontier =62, popped=15 (1,16), depth=66
+pushed 16 (1,17) 
+iter=1223, frontier =62, popped=16 (1,17), depth=67
+pushed 17 (1,18) 
+iter=1224, frontier =62, popped=17 (1,18), depth=68
+iter=1225, frontier =61, popped=33 (2,14), depth=63
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=1226, frontier =62, popped=53 (3,15), depth=64
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=1227, frontier =64, popped=70 (4,16), depth=65
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=1228, frontier =66, popped=83 (5,17), depth=66
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=1229, frontier =68, popped=96 (6,18), depth=67
+pushed 110 (7,18) 
+iter=1230, frontier =68, popped=110 (7,18), depth=68
+pushed 127 (8,18) 
+iter=1231, frontier =68, popped=127 (8,18), depth=69
+iter=1232, frontier =67, popped=95 (6,17), depth=67
+pushed 109 (7,17) 
+iter=1233, frontier =67, popped=109 (7,17), depth=68
+pushed 126 (8,17) 
+iter=1234, frontier =67, popped=126 (8,17), depth=69
+iter=1235, frontier =66, popped=84 (5,18), depth=67
+iter=1236, frontier =65, popped=82 (5,16), depth=66
+pushed 94 (6,16) 
+iter=1237, frontier =65, popped=94 (6,16), depth=67
+pushed 108 (7,16) 
+iter=1238, frontier =65, popped=108 (7,16), depth=68
+iter=1239, frontier =64, popped=71 (4,17), depth=66
+pushed 72 (4,18) 
+iter=1240, frontier =64, popped=72 (4,18), depth=67
+iter=1241, frontier =63, popped=69 (4,15), depth=65
+pushed 81 (5,15) 
+iter=1242, frontier =63, popped=81 (5,15), depth=66
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=1243, frontier =64, popped=93 (6,15), depth=67
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=1244, frontier =65, popped=107 (7,15), depth=68
+iter=1245, frontier =64, popped=92 (6,14), depth=68
+pushed 91 (6,13) 
+iter=1246, frontier =64, popped=91 (6,13), depth=69
+iter=1247, frontier =63, popped=80 (5,14), depth=67
+pushed 79 (5,13) 
+iter=1248, frontier =63, popped=79 (5,13), depth=68
+iter=1249, frontier =62, popped=54 (3,16), depth=65
+pushed 55 (3,17) 
+iter=1250, frontier =62, popped=55 (3,17), depth=66
+pushed 56 (3,18) 
+iter=1251, frontier =62, popped=56 (3,18), depth=67
+iter=1252, frontier =61, popped=34 (2,15), depth=64
+pushed 35 (2,16) 
+iter=1253, frontier =61, popped=35 (2,16), depth=65
+pushed 36 (2,17) 
+iter=1254, frontier =61, popped=36 (2,17), depth=66
+pushed 37 (2,18) 
+iter=1255, frontier =61, popped=37 (2,18), depth=67
+iter=1256, frontier =60, popped=51 (3,12), depth=61
+pushed 30 (2,11) 
+iter=1257, frontier =60, popped=30 (2,11), depth=62
+iter=1258, frontier =59, popped=50 (3,11), depth=61
+iter=1259, frontier =58, popped=76 (5,2), depth=51
+pushed 77 (5,3) 
+pushed 89 (6,3) 
+iter=1260, frontier =59, popped=89 (6,3), depth=52
+pushed 101 (7,3) 
+iter=1261, frontier =59, popped=101 (7,3), depth=53
+pushed 115 (8,3) 
+iter=1262, frontier =59, popped=115 (8,3), depth=54
+pushed 132 (9,3) 
+iter=1263, frontier =59, popped=132 (9,3), depth=55
+pushed 147 (10,3) 
+iter=1264, frontier =59, popped=147 (10,3), depth=56
+pushed 152 (11,3) 
+iter=1265, frontier =59, popped=152 (11,3), depth=57
+pushed 157 (12,3) 
+iter=1266, frontier =59, popped=157 (12,3), depth=58
+pushed 162 (13,3) 
+iter=1267, frontier =59, popped=162 (13,3), depth=59
+pushed 175 (14,3) 
+iter=1268, frontier =59, popped=175 (14,3), depth=60
+pushed 187 (15,3) 
+iter=1269, frontier =59, popped=187 (15,3), depth=61
+iter=1270, frontier =58, popped=77 (5,3), depth=52
+iter=1271, frontier =57, popped=88 (6,2), depth=50
+pushed 89 (6,3) 
+pushed 101 (7,3) 
+iter=1272, frontier =58, popped=101 (7,3), depth=51
+pushed 115 (8,3) 
+iter=1273, frontier =58, popped=115 (8,3), depth=52
+pushed 132 (9,3) 
+iter=1274, frontier =58, popped=132 (9,3), depth=53
+pushed 147 (10,3) 
+iter=1275, frontier =58, popped=147 (10,3), depth=54
+pushed 152 (11,3) 
+iter=1276, frontier =58, popped=152 (11,3), depth=55
+pushed 157 (12,3) 
+iter=1277, frontier =58, popped=157 (12,3), depth=56
+pushed 162 (13,3) 
+iter=1278, frontier =58, popped=162 (13,3), depth=57
+pushed 175 (14,3) 
+iter=1279, frontier =58, popped=175 (14,3), depth=58
+pushed 187 (15,3) 
+iter=1280, frontier =58, popped=187 (15,3), depth=59
+iter=1281, frontier =57, popped=89 (6,3), depth=51
+iter=1282, frontier =56, popped=100 (7,2), depth=49
+pushed 101 (7,3) 
+pushed 115 (8,3) 
+iter=1283, frontier =57, popped=115 (8,3), depth=50
+pushed 132 (9,3) 
+iter=1284, frontier =57, popped=132 (9,3), depth=51
+pushed 147 (10,3) 
+iter=1285, frontier =57, popped=147 (10,3), depth=52
+pushed 152 (11,3) 
+iter=1286, frontier =57, popped=152 (11,3), depth=53
+pushed 157 (12,3) 
+iter=1287, frontier =57, popped=157 (12,3), depth=54
+pushed 162 (13,3) 
+iter=1288, frontier =57, popped=162 (13,3), depth=55
+pushed 175 (14,3) 
+iter=1289, frontier =57, popped=175 (14,3), depth=56
+pushed 187 (15,3) 
+iter=1290, frontier =57, popped=187 (15,3), depth=57
+iter=1291, frontier =56, popped=101 (7,3), depth=50
+iter=1292, frontier =55, popped=114 (8,2), depth=48
+pushed 115 (8,3) 
+pushed 132 (9,3) 
+iter=1293, frontier =56, popped=132 (9,3), depth=49
+pushed 147 (10,3) 
+iter=1294, frontier =56, popped=147 (10,3), depth=50
+pushed 152 (11,3) 
+iter=1295, frontier =56, popped=152 (11,3), depth=51
+pushed 157 (12,3) 
+iter=1296, frontier =56, popped=157 (12,3), depth=52
+pushed 162 (13,3) 
+iter=1297, frontier =56, popped=162 (13,3), depth=53
+pushed 175 (14,3) 
+iter=1298, frontier =56, popped=175 (14,3), depth=54
+pushed 187 (15,3) 
+iter=1299, frontier =56, popped=187 (15,3), depth=55
+iter=1300, frontier =55, popped=115 (8,3), depth=49
+iter=1301, frontier =54, popped=131 (9,2), depth=47
+pushed 132 (9,3) 
+pushed 147 (10,3) 
+iter=1302, frontier =55, popped=147 (10,3), depth=48
+pushed 152 (11,3) 
+iter=1303, frontier =55, popped=152 (11,3), depth=49
+pushed 157 (12,3) 
+iter=1304, frontier =55, popped=157 (12,3), depth=50
+pushed 162 (13,3) 
+iter=1305, frontier =55, popped=162 (13,3), depth=51
+pushed 175 (14,3) 
+iter=1306, frontier =55, popped=175 (14,3), depth=52
+pushed 187 (15,3) 
+iter=1307, frontier =55, popped=187 (15,3), depth=53
+iter=1308, frontier =54, popped=132 (9,3), depth=48
+iter=1309, frontier =53, popped=146 (10,2), depth=46
+pushed 147 (10,3) 
+pushed 152 (11,3) 
+iter=1310, frontier =54, popped=152 (11,3), depth=47
+pushed 157 (12,3) 
+iter=1311, frontier =54, popped=157 (12,3), depth=48
+pushed 162 (13,3) 
+iter=1312, frontier =54, popped=162 (13,3), depth=49
+pushed 175 (14,3) 
+iter=1313, frontier =54, popped=175 (14,3), depth=50
+pushed 187 (15,3) 
+iter=1314, frontier =54, popped=187 (15,3), depth=51
+iter=1315, frontier =53, popped=147 (10,3), depth=47
+iter=1316, frontier =52, popped=151 (11,2), depth=45
+pushed 152 (11,3) 
+pushed 157 (12,3) 
+iter=1317, frontier =53, popped=157 (12,3), depth=46
+pushed 162 (13,3) 
+iter=1318, frontier =53, popped=162 (13,3), depth=47
+pushed 175 (14,3) 
+iter=1319, frontier =53, popped=175 (14,3), depth=48
+pushed 187 (15,3) 
+iter=1320, frontier =53, popped=187 (15,3), depth=49
+iter=1321, frontier =52, popped=152 (11,3), depth=46
+iter=1322, frontier =51, popped=156 (12,2), depth=44
+pushed 157 (12,3) 
+pushed 162 (13,3) 
+iter=1323, frontier =52, popped=162 (13,3), depth=45
+pushed 175 (14,3) 
+iter=1324, frontier =52, popped=175 (14,3), depth=46
+pushed 187 (15,3) 
+iter=1325, frontier =52, popped=187 (15,3), depth=47
+iter=1326, frontier =51, popped=157 (12,3), depth=45
+iter=1327, frontier =50, popped=161 (13,2), depth=43
+pushed 162 (13,3) 
+pushed 175 (14,3) 
+iter=1328, frontier =51, popped=175 (14,3), depth=44
+pushed 187 (15,3) 
+iter=1329, frontier =51, popped=187 (15,3), depth=45
+iter=1330, frontier =50, popped=162 (13,3), depth=44
+iter=1331, frontier =49, popped=174 (14,2), depth=42
+pushed 175 (14,3) 
+pushed 187 (15,3) 
+iter=1332, frontier =50, popped=187 (15,3), depth=43
+iter=1333, frontier =49, popped=175 (14,3), depth=43
+iter=1334, frontier =48, popped=186 (15,2), depth=40
+pushed 187 (15,3) 
+pushed 174 (14,2) 
+iter=1335, frontier =49, popped=174 (14,2), depth=41
+pushed 175 (14,3) 
+pushed 161 (13,2) 
+iter=1336, frontier =50, popped=161 (13,2), depth=42
+pushed 162 (13,3) 
+pushed 156 (12,2) 
+iter=1337, frontier =51, popped=156 (12,2), depth=43
+pushed 157 (12,3) 
+pushed 151 (11,2) 
+iter=1338, frontier =52, popped=151 (11,2), depth=44
+pushed 152 (11,3) 
+pushed 146 (10,2) 
+iter=1339, frontier =53, popped=146 (10,2), depth=45
+pushed 147 (10,3) 
+pushed 131 (9,2) 
+iter=1340, frontier =54, popped=131 (9,2), depth=46
+pushed 132 (9,3) 
+pushed 114 (8,2) 
+iter=1341, frontier =55, popped=114 (8,2), depth=47
+pushed 115 (8,3) 
+pushed 100 (7,2) 
+iter=1342, frontier =56, popped=100 (7,2), depth=48
+pushed 101 (7,3) 
+pushed 88 (6,2) 
+iter=1343, frontier =57, popped=88 (6,2), depth=49
+pushed 89 (6,3) 
+pushed 76 (5,2) 
+iter=1344, frontier =58, popped=76 (5,2), depth=50
+pushed 77 (5,3) 
+pushed 60 (4,2) 
+iter=1345, frontier =59, popped=60 (4,2), depth=51
+pushed 61 (4,3) 
+pushed 41 (3,2) 
+iter=1346, frontier =60, popped=41 (3,2), depth=52
+pushed 42 (3,3) 
+pushed 21 (2,2) 
+iter=1347, frontier =61, popped=21 (2,2), depth=53
+pushed 22 (2,3) 
+pushed 1 (1,2) 
+iter=1348, frontier =62, popped=1 (1,2), depth=54
+pushed 2 (1,3) 
+iter=1349, frontier =62, popped=2 (1,3), depth=55
+pushed 3 (1,4) 
+iter=1350, frontier =62, popped=3 (1,4), depth=56
+pushed 4 (1,5) 
+iter=1351, frontier =62, popped=4 (1,5), depth=57
+pushed 5 (1,6) 
+iter=1352, frontier =62, popped=5 (1,6), depth=58
+pushed 6 (1,7) 
+iter=1353, frontier =62, popped=6 (1,7), depth=59
+pushed 7 (1,8) 
+iter=1354, frontier =62, popped=7 (1,8), depth=60
+pushed 8 (1,9) 
+iter=1355, frontier =62, popped=8 (1,9), depth=61
+pushed 9 (1,10) 
+iter=1356, frontier =62, popped=9 (1,10), depth=62
+iter=1357, frontier =61, popped=22 (2,3), depth=54
+pushed 23 (2,4) 
+iter=1358, frontier =61, popped=23 (2,4), depth=55
+pushed 24 (2,5) 
+iter=1359, frontier =61, popped=24 (2,5), depth=56
+pushed 25 (2,6) 
+iter=1360, frontier =61, popped=25 (2,6), depth=57
+pushed 26 (2,7) 
+iter=1361, frontier =61, popped=26 (2,7), depth=58
+pushed 27 (2,8) 
+iter=1362, frontier =61, popped=27 (2,8), depth=59
+pushed 28 (2,9) 
+iter=1363, frontier =61, popped=28 (2,9), depth=60
+pushed 29 (2,10) 
+iter=1364, frontier =61, popped=29 (2,10), depth=61
+iter=1365, frontier =60, popped=42 (3,3), depth=53
+pushed 43 (3,4) 
+iter=1366, frontier =60, popped=43 (3,4), depth=54
+pushed 44 (3,5) 
+iter=1367, frontier =60, popped=44 (3,5), depth=55
+pushed 45 (3,6) 
+iter=1368, frontier =60, popped=45 (3,6), depth=56
+pushed 46 (3,7) 
+iter=1369, frontier =60, popped=46 (3,7), depth=57
+pushed 47 (3,8) 
+iter=1370, frontier =60, popped=47 (3,8), depth=58
+pushed 48 (3,9) 
+iter=1371, frontier =60, popped=48 (3,9), depth=59
+pushed 49 (3,10) 
+iter=1372, frontier =60, popped=49 (3,10), depth=60
+iter=1373, frontier =59, popped=61 (4,3), depth=52
+pushed 62 (4,4) 
+iter=1374, frontier =59, popped=62 (4,4), depth=53
+pushed 63 (4,5) 
+iter=1375, frontier =59, popped=63 (4,5), depth=54
+pushed 64 (4,6) 
+iter=1376, frontier =59, popped=64 (4,6), depth=55
+pushed 65 (4,7) 
+iter=1377, frontier =59, popped=65 (4,7), depth=56
+pushed 66 (4,8) 
+iter=1378, frontier =59, popped=66 (4,8), depth=57
+pushed 67 (4,9) 
+pushed 78 (5,8) 
+iter=1379, frontier =60, popped=78 (5,8), depth=58
+pushed 90 (6,8) 
+iter=1380, frontier =60, popped=90 (6,8), depth=59
+pushed 104 (7,8) 
+iter=1381, frontier =60, popped=104 (7,8), depth=60
+pushed 103 (7,7) 
+pushed 105 (7,9) 
+pushed 118 (8,8) 
+pushed 119 (8,9) 
+iter=1382, frontier =63, popped=119 (8,9), depth=61
+pushed 120 (8,10) 
+pushed 136 (9,9) 
+pushed 137 (9,10) 
+iter=1383, frontier =65, popped=137 (9,10), depth=62
+pushed 138 (9,11) 
+iter=1384, frontier =65, popped=138 (9,11), depth=63
+pushed 139 (9,12) 
+iter=1385, frontier =65, popped=139 (9,12), depth=64
+iter=1386, frontier =64, popped=136 (9,9), depth=62
+iter=1387, frontier =63, popped=120 (8,10), depth=62
+pushed 121 (8,11) 
+iter=1388, frontier =63, popped=121 (8,11), depth=63
+iter=1389, frontier =62, popped=118 (8,8), depth=61
+pushed 117 (8,7) 
+pushed 135 (9,8) 
+iter=1390, frontier =63, popped=135 (9,8), depth=62
+pushed 134 (9,7) 
+iter=1391, frontier =63, popped=134 (9,7), depth=63
+pushed 133 (9,6) 
+iter=1392, frontier =63, popped=133 (9,6), depth=64
+iter=1393, frontier =62, popped=117 (8,7), depth=62
+pushed 116 (8,6) 
+iter=1394, frontier =62, popped=116 (8,6), depth=63
+iter=1395, frontier =61, popped=105 (7,9), depth=61
+pushed 106 (7,10) 
+iter=1396, frontier =61, popped=106 (7,10), depth=62
+pushed 122 (8,12) 
+iter=1397, frontier =61, popped=122 (8,12), depth=63
+pushed 123 (8,13) 
+pushed 140 (9,13) 
+iter=1398, frontier =62, popped=140 (9,13), depth=64
+pushed 141 (9,14) 
+iter=1399, frontier =62, popped=141 (9,14), depth=65
+pushed 142 (9,15) 
+iter=1400, frontier =62, popped=142 (9,15), depth=66
+pushed 124 (8,15) 
+iter=1401, frontier =62, popped=124 (8,15), depth=67
+pushed 125 (8,16) 
+iter=1402, frontier =62, popped=125 (8,16), depth=68
+iter=1403, frontier =61, popped=123 (8,13), depth=64
+iter=1404, frontier =60, popped=103 (7,7), depth=61
+pushed 102 (7,6) 
+iter=1405, frontier =60, popped=102 (7,6), depth=62
+iter=1406, frontier =59, popped=67 (4,9), depth=58
+pushed 68 (4,10) 
+iter=1407, frontier =59, popped=68 (4,10), depth=59
+pushed 50 (3,11) 
+pushed 51 (3,12) 
+pushed 52 (3,13) 
+iter=1408, frontier =61, popped=52 (3,13), depth=60
+pushed 32 (2,13) 
+pushed 31 (2,12) 
+iter=1409, frontier =62, popped=31 (2,12), depth=61
+pushed 11 (1,12) 
+pushed 10 (1,11) 
+iter=1410, frontier =63, popped=10 (1,11), depth=62
+iter=1411, frontier =62, popped=11 (1,12), depth=62
+iter=1412, frontier =61, popped=32 (2,13), depth=61
+pushed 33 (2,14) 
+pushed 12 (1,13) 
+iter=1413, frontier =62, popped=12 (1,13), depth=62
+pushed 13 (1,14) 
+iter=1414, frontier =62, popped=13 (1,14), depth=63
+pushed 14 (1,15) 
+iter=1415, frontier =62, popped=14 (1,15), depth=64
+pushed 15 (1,16) 
+iter=1416, frontier =62, popped=15 (1,16), depth=65
+pushed 16 (1,17) 
+iter=1417, frontier =62, popped=16 (1,17), depth=66
+pushed 17 (1,18) 
+iter=1418, frontier =62, popped=17 (1,18), depth=67
+iter=1419, frontier =61, popped=33 (2,14), depth=62
+pushed 34 (2,15) 
+pushed 53 (3,15) 
+iter=1420, frontier =62, popped=53 (3,15), depth=63
+pushed 54 (3,16) 
+pushed 69 (4,15) 
+pushed 70 (4,16) 
+iter=1421, frontier =64, popped=70 (4,16), depth=64
+pushed 71 (4,17) 
+pushed 82 (5,16) 
+pushed 83 (5,17) 
+iter=1422, frontier =66, popped=83 (5,17), depth=65
+pushed 84 (5,18) 
+pushed 95 (6,17) 
+pushed 96 (6,18) 
+iter=1423, frontier =68, popped=96 (6,18), depth=66
+pushed 110 (7,18) 
+iter=1424, frontier =68, popped=110 (7,18), depth=67
+pushed 127 (8,18) 
+iter=1425, frontier =68, popped=127 (8,18), depth=68
+iter=1426, frontier =67, popped=95 (6,17), depth=66
+pushed 109 (7,17) 
+iter=1427, frontier =67, popped=109 (7,17), depth=67
+pushed 126 (8,17) 
+iter=1428, frontier =67, popped=126 (8,17), depth=68
+iter=1429, frontier =66, popped=84 (5,18), depth=66
+iter=1430, frontier =65, popped=82 (5,16), depth=65
+pushed 94 (6,16) 
+iter=1431, frontier =65, popped=94 (6,16), depth=66
+pushed 108 (7,16) 
+iter=1432, frontier =65, popped=108 (7,16), depth=67
+iter=1433, frontier =64, popped=71 (4,17), depth=65
+pushed 72 (4,18) 
+iter=1434, frontier =64, popped=72 (4,18), depth=66
+iter=1435, frontier =63, popped=69 (4,15), depth=64
+pushed 81 (5,15) 
+iter=1436, frontier =63, popped=81 (5,15), depth=65
+pushed 80 (5,14) 
+pushed 93 (6,15) 
+iter=1437, frontier =64, popped=93 (6,15), depth=66
+pushed 92 (6,14) 
+pushed 107 (7,15) 
+iter=1438, frontier =65, popped=107 (7,15), depth=67
+iter=1439, frontier =64, popped=92 (6,14), depth=67
+pushed 91 (6,13) 
+iter=1440, frontier =64, popped=91 (6,13), depth=68
+iter=1441, frontier =63, popped=80 (5,14), depth=66
+pushed 79 (5,13) 
+iter=1442, frontier =63, popped=79 (5,13), depth=67
+iter=1443, frontier =62, popped=54 (3,16), depth=64
+pushed 55 (3,17) 
+iter=1444, frontier =62, popped=55 (3,17), depth=65
+pushed 56 (3,18) 
+iter=1445, frontier =62, popped=56 (3,18), depth=66
+iter=1446, frontier =61, popped=34 (2,15), depth=63
+pushed 35 (2,16) 
+iter=1447, frontier =61, popped=35 (2,16), depth=64
+pushed 36 (2,17) 
+iter=1448, frontier =61, popped=36 (2,17), depth=65
+pushed 37 (2,18) 
+iter=1449, frontier =61, popped=37 (2,18), depth=66
+iter=1450, frontier =60, popped=51 (3,12), depth=60
+pushed 30 (2,11) 
+iter=1451, frontier =60, popped=30 (2,11), depth=61
+iter=1452, frontier =59, popped=50 (3,11), depth=60
+iter=1453, frontier =58, popped=77 (5,3), depth=51
+iter=1454, frontier =57, popped=89 (6,3), depth=50
+iter=1455, frontier =56, popped=101 (7,3), depth=49
+iter=1456, frontier =55, popped=115 (8,3), depth=48
+iter=1457, frontier =54, popped=132 (9,3), depth=47
+iter=1458, frontier =53, popped=147 (10,3), depth=46
+iter=1459, frontier =52, popped=152 (11,3), depth=45
+iter=1460, frontier =51, popped=157 (12,3), depth=44
+iter=1461, frontier =50, popped=162 (13,3), depth=43
+iter=1462, frontier =49, popped=175 (14,3), depth=42
+iter=1463, frontier =48, popped=187 (15,3), depth=41
+iter=1464, frontier =47, popped=198 (16,1), depth=40
+pushed 211 (17,1) 
+iter=1465, frontier =47, popped=211 (17,1), depth=41
+pushed 223 (18,1) 
+pushed 224 (18,2) 
+iter=1466, frontier =48, popped=224 (18,2), depth=42
+pushed 238 (19,2) 
+pushed 239 (19,3) 
+iter=1467, frontier =49, popped=239 (19,3), depth=43
+pushed 240 (19,4) 
+pushed 257 (20,3) 
+pushed 258 (20,4) 
+iter=1468, frontier =51, popped=258 (20,4), depth=44
+pushed 259 (20,5) 
+iter=1469, frontier =51, popped=259 (20,5), depth=45
+pushed 260 (20,6) 
+iter=1470, frontier =51, popped=260 (20,6), depth=46
+pushed 261 (20,7) 
+iter=1471, frontier =51, popped=261 (20,7), depth=47
+iter=1472, frontier =50, popped=257 (20,3), depth=44
+pushed 256 (20,2) 
+iter=1473, frontier =50, popped=256 (20,2), depth=45
+pushed 255 (20,1) 
+pushed 237 (19,1) 
+iter=1474, frontier =51, popped=237 (19,1), depth=46
+iter=1475, frontier =50, popped=255 (20,1), depth=46
+=========================================================
+solution path:
+ vertex 19 (1,20)
+ vertex 39 (2,20)
+ vertex 58 (3,20)
+ vertex 74 (4,20)
+ vertex 86 (5,20)
+ vertex 98 (6,20)
+ vertex 112 (7,20)
+ vertex 129 (8,20)
+ vertex 144 (9,20)
+ vertex 149 (10,20)
+ vertex 154 (11,20)
+ vertex 159 (12,20)
+ vertex 172 (13,20)
+ vertex 184 (14,20)
+ vertex 197 (15,20)
+ vertex 210 (16,20)
+ vertex 222 (17,20)
+ vertex 236 (18,20)
+ vertex 254 (19,20)
+ vertex 274 (20,20)
+ vertex 273 (20,19)
+ vertex 252 (19,18)
+ vertex 233 (18,17)
+ vertex 218 (17,16)
+ vertex 205 (16,15)
+ vertex 204 (16,14)
+ vertex 231 (18,15)
+ vertex 268 (20,14)
+ vertex 248 (19,13)
+ vertex 247 (19,12)
+ vertex 266 (20,12)
+ vertex 265 (20,11)
+ vertex 245 (19,10)
+ vertex 263 (20,9)
+ vertex 244 (19,8)
+ vertex 229 (18,7)
+ vertex 214 (17,8)
+ vertex 227 (18,5)
+ vertex 213 (17,3)
+ vertex 199 (16,2)
+ vertex 198 (16,1)
+ vertex 211 (17,1)
+ vertex 224 (18,2)
+ vertex 239 (19,3)
+ vertex 257 (20,3)
+ vertex 256 (20,2)
+ vertex 255 (20,1)
+search algorithm  = DFS
+total iteration   = 1475
+max frontier size = 99
+vertices visted   = 262/275
+path length       = 46
