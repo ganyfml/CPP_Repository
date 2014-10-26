@@ -1,0 +1,16 @@
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include <stdlib.h>
+
+class City
+{
+public:
+
+double x, y;
+
+
+
+
+};

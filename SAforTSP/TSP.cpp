@@ -1,0 +1,145 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <stdlib.h>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+class City;
+
+vector< City* > city_map;
+vector<int> TSP_path;
+
+class City
+{
+public:
+	string name;
+	double x, y;
+	City(string name1, double x1, double y1)
+	{
+		name = name1;
+		x = x1;
+		y = y1;
+	}
+};
+
+void read_map(string filename)
+{
+	ifstream data_file(filename.c_str());
+	while(data_file)
+	{
+		string city_name;
+		double x, y;
+		if(data_file >> city_name >> x >> y)
+			city_map.push_back(new City(city_name, x, y));
+	}
+}
+
+double calculate_distance_2citys(int first, int second)
+{
+	double d_x = (city_map[first]->x - city_map[second]->x)*M_PI/180;
+	double d_y = (city_map[first]->y - city_map[second]->y)*M_PI/180;
+	double a = pow(sin(d_x/2), 2) + pow(sin(d_y/2), 2) * cos((city_map[first]->x)*M_PI/180) * cos((city_map[second]->x)*M_PI/180);
+	double c = 2 * atan2(sqrt(a), sqrt(1-a));
+	return (3961 * c);
+}
+
+double calculate_distance_total_path(vector<int>  path)
+{
+	double total_length = 0;
+	for(unsigned int i = 0; i < (path.size() - 1); i++)
+	{
+		total_length += calculate_distance_2citys(path[i], path[i+1]);
+	}
+	return total_length;
+}
+
+void display_path(vector<int > path)
+{
+		for(unsigned int i = 0; i < path.size(); i++)
+		{
+			cout <<city_map[path[i]]->name<< " ";
+		}
+		cout << endl;
+}
+
+vector<int>* random_move()
+{
+	vector<int> new_path = TSP_path;
+	int city_1 = rand() % 53;
+	int temp_city = rand() % 53;
+	int city_2;
+	while(temp_city == city_1)	temp_city = rand() % 53;
+	if(temp_city > city_1)	city_2 = temp_city;
+	else
+	{
+		city_2 = city_1;
+		city_1 = temp_city;
+	}
+	
+	//swap
+	for(int i = 0; i <= (city_2 - city_1); i++)
+	{
+		new_path[city_1+i] = TSP_path[city_2-i];
+	}
+	//display(new_path);
+	//display(TSP_path);
+	return new vector<int>(new_path);
+}
+
+void SA(double init_T, int num_iter)
+{
+	double T = init_T;
+	int iter = 0;
+	
+	while(TSP_path.size() != 53)
+	{	
+		int city_generated = rand() % 53;
+		if((find(TSP_path.begin(), TSP_path.end(), city_generated) == TSP_path.end()) || (TSP_path.size() == 0))
+			TSP_path.push_back(city_generated);
+	}
+	
+	cout << "initial state generated. Tour Length =  " << calculate_distance_total_path(TSP_path) << endl;
+	
+	while(T > 0)
+	{
+		double TSP_length = calculate_distance_total_path(TSP_path);
+		vector<int> new_move = *random_move();
+		double new_length = calculate_distance_total_path(new_move);
+		double dE = new_length - TSP_length;
+		double P = exp(-dE/T);
+		
+		cout << "iter = " << iter << ", length = " << TSP_length << ", delta = " << dE << ", temp = " << T << ", P< " << P << endl;
+		
+		if(dE < 0)
+		{
+			TSP_path = new_move;
+			cout << "UPDATE!! new length = " << new_length << endl;
+			display_path(new_move);
+		}
+		else
+		{
+			if(P > ((double) rand() / (RAND_MAX)))
+			{
+				TSP_path = new_move;
+				cout << "UPDATE!! new length = " << new_length << endl;
+				display_path(new_move);
+			}
+		}
+		T -= init_T/num_iter;
+		iter++;
+	}
+	
+	cout << endl << "Finished!!!" << " Final length = " << calculate_distance_total_path(TSP_path) << endl << "Final Path: " << endl;
+	display_path(TSP_path);
+}
+
+int main(int argc, char *argv[])
+{
+	read_map("texas-cities.dat");
+	SA(atoi(argv[1]), atoi(argv[2]));
+	return 0;
+}

@@ -1,0 +1,18 @@
+﻿How to compile and run:
+
+Compile file : cd to the folder and run “make”. The make file is already included.
+
+Run: ./TSP init_temperature num_iteration
+
+
+Best result I get:
+
+Tour length = 3328.13
+
+Final Path: 
+PortArthur Lufkin Longview Tyler Greenville Paris Sherman Dallas FortWorth Waco Temple Killeen Austin CollegeStation Hooks Houston Galveston Palacios Victoria ChaseNAS Rockport CorpusChristi Alice Kingsville Harlingen Brownsville Mcallen Laredo Cotulla Hondo SanAntonio Kerrville Junction DelRio Sanderson Marfa ElPaso Guadalupe Wink Midland BigSky BigSpring SanAngelo Abilene Brownwood Stephenville MineralWells Wichita Childress Lubbock Plainview Amarillo Dalhart
+
+I use:
+init_temperature = 60 and num_iteration = 500000
+
+The output for this is in the folder, named “result”. If you want to see the result  in windows, you can add the file extention “.txt”.
