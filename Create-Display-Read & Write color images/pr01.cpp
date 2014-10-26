@@ -24,6 +24,7 @@
 #include <cassert>
 #include <sstream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -46,21 +47,58 @@ const char* CIRCLE = "circle";
 // This function stores the RGB values of each pixel to "pixmap."
 // Then, "glutDisplayFunc" below will use pixmap to display the pixel colors.
 // =============================================================================
+bool inside_circle(int x, int y)
+{
+	int function_value = pow((x - 320), 2) + pow((y - 240), 2);
+	return (function_value < 40000);	
+}
+
 void setPixels(int value)
 {
 	if(value == 0 || value == 1|| value == 2)
+	{
+		for(int y = 0; y < height ; y++) 
+		{
+			for(int x = 0; x < width; x++) 
+			{
+			   int i = (y * width + x) * 3; 
+			   pixmap[i++] = 255 * (value == 0);
+			   pixmap[i++] = 255 * (value == 1); //Do you know what "0xFF" represents? Google it!
+			   pixmap[i] = 255 * (value == 2); //Learn to use the "0x" notation to your advantage.
+			}
+		}
+		return;		
+	}
 	
-   for(int y = 0; y < height ; y++) {
-     for(int x = 0; x < width; x++) {
-       int i = (y * width + x) * 3; 
-       pixmap[i++] = 255;
-       pixmap[i++] = 128 ; //Do you know what "0xFF" represents? Google it!
-       pixmap[i] = 255; //Learn to use the "0x" notation to your advantage.
-     }
-   }
+	else if(value == 3)
+	{
+		for(int y = 0; y < height ; y++) 
+		{
+			for(int x = 0; x < width; x++) 
+			{
+				int i = (y * width + x) * 3; 
+				pixmap[i++] = 255 * ((y > 0.5 * height && x < 0.5 * width) || (y < 0.5 * height && x > 0.5 * width));
+				pixmap[i++] = 255 * (x > 0.5 * width);
+				pixmap[i] = 255 * (y <0.5 * height && x < 0.5*width);
+			}
+		}
+		return;
+	}	
+
+	else if(value == 4)
+	{
+		for(int y = 0; y < height ; y++) 
+		{
+			for(int x = 0; x < width; x++) 
+			{
+				int i = (y * width + x) * 3; 
+				pixmap[i++] = 255 * inside_circle(x, y);
+				pixmap[i++] = 255 * inside_circle(x, y);
+				pixmap[i] = 255 * (!inside_circle(x, y));
+			}
+		}
+	}
 }
-
-
 
 // =============================================================================
 // OpenGL Display and Mouse Processing Functions.
@@ -118,12 +156,12 @@ int main(int argc, char *argv[])
 {
 
   //initialize the global variables
-  width = 300;
-  height = 300;
+  width = 640;
+  height = 480;
   pixmap = new unsigned char[width * height * 3];  //Do you know why "3" is used?
 
   int imag = translate_input(argv[1]);
-  setPixels(2);
+  setPixels(imag);
 
 
   // OpenGL Commands:
