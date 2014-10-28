@@ -19,12 +19,14 @@
 #include <cstdlib>
 #include <iostream>
 #include <GL/glut.h>
+#include <vector>
 
 #include <fstream>
 #include <cassert>
 #include <sstream>
 #include <string>
 #include <cmath>
+#include <vector>
 
 using namespace std;
 
@@ -33,12 +35,6 @@ using namespace std;
 // =============================================================================
 int width, height;
 unsigned char *pixmap;
-const char* RED = "red";
-const char* GREEN = "green";
-const char* BLUE = "blue";
-const char* ALL = "all";
-const char* CIRCLE = "circle";
-
 
 
 // =============================================================================
@@ -47,59 +43,104 @@ const char* CIRCLE = "circle";
 // This function stores the RGB values of each pixel to "pixmap."
 // Then, "glutDisplayFunc" below will use pixmap to display the pixel colors.
 // =============================================================================
-bool inside_circle(int x, int y)
+void setPixels()
 {
-	int function_value = pow((x - 320), 2) + pow((y - 240), 2);
-	return (function_value < 40000);	
+   for(int y = 0; y < height ; y++) {
+     for(int x = 0; x < width; x++) {
+       int i = (y * width + x) * 3; 
+       if(pow(x-300,2)/15 + pow(y-200,2)/30 < 1000 || (pow(x-210,2) + pow(y-350,2) <5000) || (pow(x-450,2) + pow(y-250,2) <8000) ||  (pow(x-150,2) + pow(y-150,2) <3000))
+		{
+		    pixmap[i++] = 0xF1;
+			pixmap[i++] = 0xE7; //Do you know what "0xFF" represents? Google it!
+			pixmap[i] = 0x9F; //Learn to use the "0x" notation to your advantage.
+		}
+       else
+       {
+		    pixmap[i++] = 0xDD;
+			pixmap[i++] = 0x67; //Do you know what "0xFF" represents? Google it!
+			pixmap[i] = 0x73; //Learn to use the "0x" notation to your advantage.
+		}
+     }
+   }
 }
 
-void setPixels(int value)
+void draw_test()
 {
-	if(value == 0 || value == 1|| value == 2)
-	{
-		for(int y = 0; y < height ; y++) 
-		{
-			for(int x = 0; x < width; x++) 
-			{
-			   int i = (y * width + x) * 3; 
-			   pixmap[i++] = 255 * (value == 0);
-			   pixmap[i++] = 255 * (value == 1); //Do you know what "0xFF" represents? Google it!
-			   pixmap[i] = 255 * (value == 2); //Learn to use the "0x" notation to your advantage.
-			}
-		}
-		return;		
-	}
+	Vector2d normal[4]; 	//Normals
+	normal[0] = Vector2d(3,18);
+	normal[1] = Vector2d(-4,2);
+	normal[2] = Vector2d(-2,-5);
+	normal[3] = Vector2d(10,-3);
 	
-	else if(value == 3)
-	{
-		for(int y = 0; y < height ; y++) 
-		{
-			for(int x = 0; x < width; x++) 
-			{
-				int i = (y * width + x) * 3; 
-				pixmap[i++] = 255 * ((y > 0.5 * height && x < 0.5 * width) || (y < 0.5 * height && x > 0.5 * width));
-				pixmap[i++] = 255 * (x > 0.5 * width);
-				pixmap[i] = 255 * (y <0.5 * height && x < 0.5*width);
-			}
-		}
-		return;
-	}	
+	Vector2d point[4]; 	//points on the line
+	point[0] = Vector2d(500,350);
+	point[1] = Vector2d(200,320);
+	point[2] = Vector2d(120,150);
+	point[3] = Vector2d(350,80);
+	
 
-	else if(value == 4)
+	
+	int samples = 3; 	// number of samples
+	
+	Vector3d iColor(100,100,75); 	//inside color
+	Vector3d oColor(255,200,179); 	//outside color
+
+   for(int y = 0; y < height ; y++) 
 	{
-		for(int y = 0; y < height ; y++) 
+		for(int x = 0; x < width; x++) 
 		{
-			for(int x = 0; x < width; x++) 
+
+			Vector3d tColor(0,0,0); 	// reset color
+
+		 float randx = (1.0*rand())/RAND_MAX;
+		 float randy = (1.0*rand())/RAND_MAX;
+
+			for(int m=0; m < samples; m++)
 			{
-				int i = (y * width + x) * 3; 
-				pixmap[i++] = 255 * inside_circle(x, y);
-				pixmap[i++] = 255 * inside_circle(x, y);
-				pixmap[i] = 255 * (!inside_circle(x, y));
-			}
-		}
+				for(int n=0; n < samples; n++)
+				{
+				float newX = x + ((float)m/samples) + randx/samples;
+				float newY = y + ((float)n/samples) + randy/samples;
+
+				Vector2d p = Vector2d(newX,newY);
+       				// convex function
+			 	if(((normal[0]*(p-point[0]))<=0) && 
+					((normal[1]*(p-point[1]))<=0) && 
+					((normal[2]*(p-point[2]))<=0) && 
+					((normal[3]*(p-point[3]))<=0))
+					{
+						tColor.x += iColor.x;
+						tColor.y += iColor.y; 
+						tColor.z += iColor.z;
+					}
+				else 
+					{
+						tColor.x += oColor.x;
+						tColor.y += oColor.y; 
+						tColor.z += oColor.z;
+					}	
+    			}
+  		}
+
+		int i = (y * width + x) * 3;
+		pixmap[i++] = tColor.x/pow(samples, 2);
+		pixmap[i++] = tColor.y/pow(samples, 2); 
+		pixmap[i] = tColor.z/pow(samples, 2);	
 	}
 	
-	else cout << "invaild input" << endl;
+}}
+
+bool function(int x, int y)
+{
+	if(y < 2*x && y > 4*(x-320) && (y > (-0.7)*x+300) && (y < (-0.2)*x + 480))
+		return 1;
+	else return 0;
+	
+	if((((y > 0.9*x && y < 2*(x-50)) || ((y < 0.2*x + 280) && (y > -0.3*x + 320)) ) && (y < -3.5*x + 1400)) || ((y >= -3.5*x + 1400 )&& y > 0.9*x && (y < 0.2*x + 280)))
+		return 1;
+		
+	if((x <= 300 && y < (exp(0.018 * x) + 100)) || (x > 440 && y < 1/(tan(0.0000007*(x-400)) * 100)) || (x <= 440 && x > 300 && y < (0.1* x + 300)))
+		return 0;
 }
 
 // =============================================================================
@@ -139,31 +180,15 @@ static void init(void)
 // =============================================================================
 // main() Program Entry
 // =============================================================================
-
-int translate_input(char* input)
-{
-	stringstream ss;
-	string input_string;
-	ss << input;
-	ss >> input_string; 
-	if(input_string.compare(RED) == 0)		return 0;
-	else if(input_string.compare(GREEN) == 0)	return 1;
-	else if(input_string.compare(BLUE) == 0)	return 2;
-	else if(input_string.compare(ALL) == 0)	return 3;
-	else if(input_string.compare(CIRCLE) == 0)	return 4;
-	else return -1;
-}
-
 int main(int argc, char *argv[])
 {
 
   //initialize the global variables
   width = 640;
-  height = 480;
+  height =  480;
   pixmap = new unsigned char[width * height * 3];  //Do you know why "3" is used?
 
-  int imag = translate_input(argv[1]);
-  setPixels(imag);
+  setPixels();
 
 
   // OpenGL Commands:

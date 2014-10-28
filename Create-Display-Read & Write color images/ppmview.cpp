@@ -78,9 +78,9 @@ unsigned char *temp;
 // to take arguments like char or FILE pointers so you can pass in filenames
 // or open file streams.
 // =============================================================================
-void readPPM()
+void readPPM(string name)
 {
-	ifstream ppm_file ("cube.ppm", ios::binary);
+	ifstream ppm_file (name.c_str(), ios::binary);
 	int y, x;
 	string line;
 	getline(ppm_file, line);
@@ -101,27 +101,29 @@ void readPPM()
 		for(x = 0; x < width; x++) {
 			int i = (y * width + x) * 3;
 			ppm_file >> color_value;
-			temp[i++]  = color_value;
+			pixmap[i++]  = color_value;
 			ppm_file >> color_value;
-			temp[i++]  = color_value;
+			pixmap[i++] = color_value;
 			ppm_file >> color_value;
-			temp[i]  = color_value;
+			pixmap[i++]  = color_value;
 			count = count + 3;
 		}
 	}
-	
-	int index = 0;
-	for(y = 0;  y < height ; y++) {
-		for(x = 0; x < width; x++) {
-			pixmap[index++] = temp[(y+x*height)*3];
-			pixmap[index++] = temp[(y+x*height)*3 + 1];
-			pixmap[index++] = temp[(y+x*height)*3 + 2];
-		}
-		cout << count<< endl;
-  }
-}
+ }
 
-void writePPM() { }
+void writePPM(string name) 
+{ 
+	ifstream ppm_file ("cube.ppm", ios::binary);
+	ofstream out_file;
+	cout << name << endl;
+	out_file.open (name.c_str());
+	string line;
+	while(getline(ppm_file, line))
+	{
+		out_file << line;
+	}
+	out_file.close();	
+}
 
 // =============================================================================
 // OpenGL Display and Mouse Processing Functions.
@@ -164,8 +166,8 @@ int main(int argc, char *argv[])
 {
 
 	// Check command line arguments and read in the filename, then call readPPM().
-	readPPM();
-
+	readPPM(argv[1]);
+	writePPM(argv[2]);
 	// OpenGL commands
 	glutInit(&argc, argv);
 	glutInitWindowPosition(100, 100); // Where the window will display on-screen.
@@ -180,7 +182,6 @@ int main(int argc, char *argv[])
 
 	// Check command line arguments and read in the output filename if present.
 	// Then call writePPM() if necessary.
-	writePPM();
 
 	return 0;
 }
