@@ -1,0 +1,20 @@
+# vars 
+WA NSW TA V NT QL SA
+# domains
+WA red green blue
+NSW red green blue
+TA red green blue
+V red green blue
+NT red green blue
+QL red green blue
+SA red green blue
+# constraints
+neq WA NT
+neq WA SA
+neq NT SA
+neq NT QL
+neq SA QL
+neq SA NSW
+neq SA V
+neq QL NSW
+neq NSW V
