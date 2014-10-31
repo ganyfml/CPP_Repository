@@ -1,0 +1,54 @@
+
+
+Iteration: 1, Current Assignment: 
+Empty
+Adding unassignment var: WA
+Try WA with color: red
+OK for now, move on
+
+
+Iteration: 2, Current Assignment: 
+WA -- red | 
+Adding unassignment var: NT
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 3, Current Assignment: 
+WA -- red | NT -- green | 
+Adding unassignment var: SA
+Try SA with color: blue
+OK for now, move on
+
+
+Iteration: 4, Current Assignment: 
+WA -- red | NT -- green | SA -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+OK for now, move on
+
+
+Iteration: 5, Current Assignment: 
+WA -- red | NT -- green | QL -- red | SA -- blue | 
+Adding unassignment var: NSW
+Try NSW with color: green
+OK for now, move on
+
+
+Iteration: 6, Current Assignment: 
+WA -- red | NSW -- green | NT -- green | QL -- red | SA -- blue | 
+Adding unassignment var: V
+Try V with color: red
+OK for now, move on
+
+
+Iteration: 7, Current Assignment: 
+WA -- red | NSW -- green | V -- red | NT -- green | QL -- red | SA -- blue | 
+Adding unassignment var: TA
+Try TA with color: red
+OK for now, move on
+
+
+Finished!! Total iterations used: 8 , Result:
+
+WA -- red | NSW -- green | TA -- red | V -- red | NT -- green | QL -- red | SA -- blue | 

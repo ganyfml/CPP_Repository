@@ -161,6 +161,7 @@ void read_data(char* datafile_name)
 
 int select_unassignment_var_default(map<int, string>* assignment)
 {
+	cout << "Iteration: " << iteration++ << ", ";
 	for (unsigned int i = 0; i < vars.size(); i++)
 	{
 		if (assignment->count(i) == 0)
@@ -174,10 +175,6 @@ int select_unassignment_var_default(map<int, string>* assignment)
 
 void display_assignment(map<int, string>* assignment)
 {
-	if(assignment->size() == 0){
-		cout << "Empty" << endl;
-		return;
-	}
 	for (unsigned int i = 0; i < vars.size(); i++)
 	{
 		if (assignment->count(i) > 0)	cout << vars[i] << " -- " << assignment->at(i) << " | ";
@@ -187,6 +184,7 @@ void display_assignment(map<int, string>* assignment)
 
 int calcuate_unassignment_satisfied_var_and_return_min_remaining(map<int, string>* assignment)
 {
+	cout << "Iteration: " << iteration++ << ", ";
 	int min_index = 0;
 	int min_value = INT_MAX;
 	for (unsigned int i = 0; i < vars.size(); i++)
@@ -215,8 +213,6 @@ map<int, string>* backtrack(map<int, string>* assignment, int mode)
 {
 	if (assignment->size() == vars.size())
 		return assignment;
-	cout << endl << endl << "Iteration: " << iteration++ << ", "  << "Current Assignment: " << endl;
-	display_assignment(assignment);
 	int var_select = (mode == 1) ? calcuate_unassignment_satisfied_var_and_return_min_remaining(assignment) : select_unassignment_var_default(assignment);
 	for (int i = 0; i < ((mode == 1) ? domains[var_select]->satisfied_size() : domains[var_select]->size()); i++)
 	{
@@ -232,6 +228,8 @@ map<int, string>* backtrack(map<int, string>* assignment, int mode)
 			cout << "Not OK, try another color" << endl;
 			continue;
 		}
+		cout << endl << "Current Assignment: ";
+		display_assignment(assignment);
 		map<int, string> result = *backtrack(assignment, mode);
 		if (result.size() != 0)	return new map<int, string>(result);
 		else{
@@ -239,7 +237,7 @@ map<int, string>* backtrack(map<int, string>* assignment, int mode)
 			assignment->erase(var_select);
 		}
 	}
-	cout << "All colors for " << vars[var_select] << " have been tried, backtrack about to occur" << endl;
+	cout << "All colors for " <<<< " have been tried, backtrack about to occur" << endl;
 	return new map<int, string>();
 }
 

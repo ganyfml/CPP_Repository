@@ -1,0 +1,504 @@
+
+
+Iteration: 1, Current Assignment: 
+Empty
+Adding unassignment var: WA
+Try WA with color: red
+OK for now, move on
+
+
+Iteration: 2, Current Assignment: 
+WA -- red | 
+Adding unassignment var: NSW
+Try NSW with color: red
+OK for now, move on
+
+
+Iteration: 3, Current Assignment: 
+WA -- red | NSW -- red | 
+Adding unassignment var: TA
+Try TA with color: red
+OK for now, move on
+
+
+Iteration: 4, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | 
+Adding unassignment var: V
+Try V with color: red
+Not OK, try another color
+Try V with color: green
+OK for now, move on
+
+
+Iteration: 5, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- green | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 6, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- green | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 7, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- green | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 8, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- green | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 9, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- green | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: green not satisfied, try another one
+Try V with color: blue
+OK for now, move on
+
+
+Iteration: 10, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- blue | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 11, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- blue | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 12, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- blue | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 13, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- blue | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 14, Current Assignment: 
+WA -- red | NSW -- red | TA -- red | V -- blue | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: blue not satisfied, try another one
+All colors for V have been tried, backtrack about to occur
+Backtracking occur, TA color: red not satisfied, try another one
+Try TA with color: green
+OK for now, move on
+
+
+Iteration: 15, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | 
+Adding unassignment var: V
+Try V with color: red
+Not OK, try another color
+Try V with color: green
+OK for now, move on
+
+
+Iteration: 16, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- green | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 17, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- green | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 18, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- green | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 19, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- green | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 20, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- green | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: green not satisfied, try another one
+Try V with color: blue
+OK for now, move on
+
+
+Iteration: 21, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- blue | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 22, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- blue | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 23, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- blue | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 24, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- blue | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 25, Current Assignment: 
+WA -- red | NSW -- red | TA -- green | V -- blue | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: blue not satisfied, try another one
+All colors for V have been tried, backtrack about to occur
+Backtracking occur, TA color: green not satisfied, try another one
+Try TA with color: blue
+OK for now, move on
+
+
+Iteration: 26, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | 
+Adding unassignment var: V
+Try V with color: red
+Not OK, try another color
+Try V with color: green
+OK for now, move on
+
+
+Iteration: 27, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- green | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 28, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- green | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 29, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- green | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 30, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- green | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 31, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- green | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: green not satisfied, try another one
+Try V with color: blue
+OK for now, move on
+
+
+Iteration: 32, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- blue | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 33, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- blue | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+Not OK, try another color
+Try QL with color: blue
+OK for now, move on
+
+
+Iteration: 34, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- blue | NT -- green | QL -- blue | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: blue not satisfied, try another one
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: green not satisfied, try another one
+Try NT with color: blue
+OK for now, move on
+
+
+Iteration: 35, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- blue | NT -- blue | 
+Adding unassignment var: QL
+Try QL with color: red
+Not OK, try another color
+Try QL with color: green
+OK for now, move on
+
+
+Iteration: 36, Current Assignment: 
+WA -- red | NSW -- red | TA -- blue | V -- blue | NT -- blue | QL -- green | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+Not OK, try another color
+All colors for SA have been tried, backtrack about to occur
+Backtracking occur, QL color: green not satisfied, try another one
+Try QL with color: blue
+Not OK, try another color
+All colors for QL have been tried, backtrack about to occur
+Backtracking occur, NT color: blue not satisfied, try another one
+All colors for NT have been tried, backtrack about to occur
+Backtracking occur, V color: blue not satisfied, try another one
+All colors for V have been tried, backtrack about to occur
+Backtracking occur, TA color: blue not satisfied, try another one
+All colors for TA have been tried, backtrack about to occur
+Backtracking occur, NSW color: red not satisfied, try another one
+Try NSW with color: green
+OK for now, move on
+
+
+Iteration: 37, Current Assignment: 
+WA -- red | NSW -- green | 
+Adding unassignment var: TA
+Try TA with color: red
+OK for now, move on
+
+
+Iteration: 38, Current Assignment: 
+WA -- red | NSW -- green | TA -- red | 
+Adding unassignment var: V
+Try V with color: red
+OK for now, move on
+
+
+Iteration: 39, Current Assignment: 
+WA -- red | NSW -- green | TA -- red | V -- red | 
+Adding unassignment var: NT
+Try NT with color: red
+Not OK, try another color
+Try NT with color: green
+OK for now, move on
+
+
+Iteration: 40, Current Assignment: 
+WA -- red | NSW -- green | TA -- red | V -- red | NT -- green | 
+Adding unassignment var: QL
+Try QL with color: red
+OK for now, move on
+
+
+Iteration: 41, Current Assignment: 
+WA -- red | NSW -- green | TA -- red | V -- red | NT -- green | QL -- red | 
+Adding unassignment var: SA
+Try SA with color: red
+Not OK, try another color
+Try SA with color: green
+Not OK, try another color
+Try SA with color: blue
+OK for now, move on
+
+
+Finished!! Total iterations used: 42 , Result:
+
+WA -- red | NSW -- green | TA -- red | V -- red | NT -- green | QL -- red | SA -- blue | 
