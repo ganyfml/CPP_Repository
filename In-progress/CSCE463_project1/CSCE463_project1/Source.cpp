@@ -282,27 +282,38 @@ int parse_page(const char *host, char *recvHTML)
 	if (nLinks < 0)
 		nLinks = 0;
 	DWORD time2 = timeGetTime();
-	printf("done in %d ms with %d links:\n", time1 - time2, nLinks);
+	printf("done in %d ms with %d links\n", time2 - time1, nLinks);
 	delete(parser);
 	return nLinks;
 }
 
 char *wirte_file_to_memory(char *path)
 {
-	ifstream file(path, ios::in | ios::binary);
+	FILE *file = fopen(path, "rb");
 	char * URL_file_content;
-	if (file.is_open())
+	if (file != NULL)
 	{
-		file.seekg(0, file.end);
-		long size_file = file.tellg();
-		URL_file_content = new char[size_file];
-		memset(URL_file_content, 0, size_file);
-		file.seekg(0, file.beg);
-		file.read(URL_file_content, size_file);
-		file.close();
-		return URL_file_content;
+		if (fseek(file, 0L, SEEK_END) == 0)
+		{
+			long file_size = ftell(file);
+			if (file_size > 0)
+			{
+				URL_file_content = (char *)malloc(sizeof(char) * (file_size + 1));
+				memset(URL_file_content, '\0', file_size + 1);
+				if (fseek(file, 0L, SEEK_SET) == 0)
+				{
+					if (fread(URL_file_content, sizeof(char), file_size, file) > 0)
+					{
+						fclose(file);
+						return URL_file_content;
+					}
+				}
+				free(URL_file_content);
+			}
+		}
+		fclose(file);
 	}
-	else cout << "Unable to open file";
+	cout << "Unable to open file\n";
 	return NULL;
 }
 
@@ -324,7 +335,7 @@ bool deal_with_robot(SOCKET connection_socket, char *host, sockaddr_in *server)
 	open_socket(&connection_socket);
 	char HTTP_request[512];
 	generate_robot_request(HTTP_request, host);
-	connect_page(&connection_socket, server, HTTP_request, true);
+	if(!connect_page(&connection_socket, server, HTTP_request, true))	return false;
 	char *recvHTML = load_page(connection_socket, true);
 	if (recvHTML == NULL)	return false;
 	printf("	Verifying header... ");
@@ -341,13 +352,13 @@ bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockadd
 	open_socket(&connection_socket);
 	char HTTP_request[2048];
 	generate_HTTP_request(HTTP_request, host, request);
-	connect_page(&connection_socket, server, HTTP_request, false);
+	if(!connect_page(&connection_socket, server, HTTP_request, false))	return false;
 	char *recvHTML = load_page(connection_socket, false);
 	if (recvHTML == NULL)	return false;
 	printf("	Verifying header... ");
 	char page_status[4] = { recvHTML[9], recvHTML[10], recvHTML[11], '\0' };
 	printf("Status code %s\n", page_status);
-	if (page_status[0] != 2)	return false;
+	if (page_status[0] != '2')	return false;
 	parse_page(host, recvHTML);
 	free(recvHTML);
 	closesocket(connection_socket);
@@ -356,7 +367,7 @@ bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockadd
 void main()
 {
 	unordered_set <string> host_set;
-	char *path = "C:\\Users\\GanYue\\Desktop\\URL-input-100.txt";
+	char *path = "URL.txt";
 	char *URL_file_content = wirte_file_to_memory(path);
 	if (URL_file_content == NULL)	return;
 	char *address = strtok(URL_file_content, "\n");
@@ -395,7 +406,5 @@ void main()
 		if (!deal_with_robot(connection_socket, host, &server))	continue;
 		if (!deal_with_page(connection_socket, host, request, &server))	continue;
 	}
-
-	getchar();
 	return;
 }
