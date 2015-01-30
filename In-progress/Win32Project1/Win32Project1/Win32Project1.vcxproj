@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="C:\Users\Yue\Desktop\ramp.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FA7DF891-BF54-4B86-A72E-6D0206AA18D1}</ProjectGuid>
