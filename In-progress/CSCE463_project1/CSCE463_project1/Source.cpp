@@ -188,7 +188,7 @@ char* load_page(SOCKET sock, bool robot_page)
 	DWORD time2;
 	int buffer_size = 1024;
 	char recvbuf[512];
-	memset(recvbuf, 0, 512);
+	memset(recvbuf, '\0', 512);
 	char *recvHTML = (char*)malloc(buffer_size * sizeof(char));
 
 	recv(sock, recvbuf, 512, 0);
@@ -200,24 +200,64 @@ char* load_page(SOCKET sock, bool robot_page)
 		return NULL;
 	}
 
+	fd_set timeout;
+	struct timeval time_threshold;
+	time_threshold.tv_sec = 10;
+	time_threshold.tv_usec = 0;
+	FD_ZERO(&timeout);
+
 	while (1)
 	{
-		memset(recvbuf, 0, 512);
-		int length = recv(sock, recvbuf, 500, 0);
-		if (length == 0)	break;
-		if (buffer_size - strlen(recvHTML) <= 512)
+		time2 = timeGetTime();
+		if (time2 - time1 > 10000)
 		{
-			buffer_size *= 2;
-			recvHTML = (char*)realloc(recvHTML, buffer_size * sizeof(char));
-		}
-		strcat(recvHTML, recvbuf);
-		int max = (robot_page) ? 16385 : 2097152;
-		if (strlen(recvHTML) > max)
-		{
-			printf("Max reached\n");
+			printf("failed with slow download -- loading page time larger then 10 seconds\n");
 			free(recvHTML);
 			return NULL;
 		}
+		FD_SET(sock, &timeout);
+		memset(recvbuf, '\0', 512);
+		int select_status = select(sock + 1, &timeout, NULL, NULL, &time_threshold);
+		if (select_status > 0)
+		{
+			int length = recv(sock, recvbuf, 500, 0);
+			if (length == -1)
+			{
+				printf("failed with %d\n", WSAGetLastError());
+				free(recvHTML);
+				return NULL;
+			}
+			else if (length == 0)	break;
+			else
+			{
+				if (buffer_size - strlen(recvHTML) <= 512)
+				{
+					buffer_size *= 2;
+					recvHTML = (char*)realloc(recvHTML, buffer_size * sizeof(char));
+				}
+				strcat(recvHTML, recvbuf);
+				int max = (robot_page) ? 16385 : 2097152;
+				if (strlen(recvHTML) > max)
+				{
+					printf("Max reached\n");
+					free(recvHTML);
+					return NULL;
+				}
+			}
+		}
+		else if (select_status == 0)
+		{
+			printf("Failed with slow download -- recv interval larger then 10 second\n");
+			free(recvHTML);
+			return NULL;
+		}
+		else
+		{
+			printf("failed with %d\n", WSAGetLastError());
+			free(recvHTML);
+			return NULL;
+		}
+		FD_ZERO(&timeout);
 	}
 	time2 = timeGetTime();
 	if (strlen(recvHTML) == 0)
@@ -286,8 +326,8 @@ bool deal_with_robot(SOCKET connection_socket, char *host, sockaddr_in *server)
 	generate_robot_request(HTTP_request, host);
 	connect_page(&connection_socket, server, HTTP_request, true);
 	char *recvHTML = load_page(connection_socket, true);
-	printf("	Verifying header... ");
 	if (recvHTML == NULL)	return false;
+	printf("	Verifying header... ");
 	char robot_status[4] = { recvHTML[9], recvHTML[10], recvHTML[11], '\0' };
 	printf("Status code %s\n", robot_status);
 	if (robot_status[0] != '4')	return false;
@@ -316,7 +356,7 @@ bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockadd
 void main()
 {
 	unordered_set <string> host_set;
-	char *path = "C:\\Users\\Yue\\Desktop\\URL-input-100.txt";
+	char *path = "C:\\Users\\GanYue\\Desktop\\URL-input-100.txt";
 	char *URL_file_content = wirte_file_to_memory(path);
 	if (URL_file_content == NULL)	return;
 	char *address = strtok(URL_file_content, "\n");
