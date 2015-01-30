@@ -1,0 +1,24 @@
+﻿Build started 1/27/2015 12:05:05 AM.
+     1>Project "G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\CSCE463_project1\CSCE463_project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Programming\Visual Studio\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt Source.cpp
+         Source.cpp
+       Link:
+         E:\Programming\Visual Studio\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\x64\Release\CSCE463_project1.exe" /NOLOGO WINMM.LIB /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\x64\Release\CSCE463_project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\x64\Release\CSCE463_project1.lib" /MACHINE:X64 x64\Release\Source.obj
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_closesocket referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_connect referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_htons referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_inet_addr referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_recv referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_send referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_socket referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_gethostbyname referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_WSAStartup referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_WSACleanup referenced in function main
+     1>Source.obj : error LNK2019: unresolved external symbol __imp_WSAGetLastError referenced in function main
+     1>G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\x64\Release\CSCE463_project1.exe : fatal error LNK1120: 11 unresolved externals
+     1>Done Building Project "G:\Database_backup\Programs_Repository\In-progress\CSCE463_project1\CSCE463_project1\CSCE463_project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.46

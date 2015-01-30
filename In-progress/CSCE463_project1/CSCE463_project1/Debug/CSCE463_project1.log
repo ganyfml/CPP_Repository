@@ -1,0 +1,81 @@
+﻿Build started 1/29/2015 3:59:05 PM.
+     1>Project "C:\Users\Yue\Desktop\CSCE463_project1\CSCE463_project1\CSCE463_project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Programming\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(15): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(195) : see declaration of 'strncpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(29): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(195) : see declaration of 'strncpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(39): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(195) : see declaration of 'strncpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(40): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(195) : see declaration of 'strncpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(41): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(195) : see declaration of 'strncpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(47): warning C4305: 'return' : truncation from 'int' to 'bool'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(48): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(49): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(61): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(62): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(62): warning C4154: deletion of an array expression; conversion to pointer supplied
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(70): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(71): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(72): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(73): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(74): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(79): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(80): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(81): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(82): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(132): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850) : see declaration of 'inet_addr'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(136): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(2238) : see declaration of 'gethostbyname'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(144): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(144): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+                 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868) : see declaration of 'inet_ntoa'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(150): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(195): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(213): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(215): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(240): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(257): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'long', possible loss of data
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(322): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(332): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\yue\desktop\csce463_project1\csce463_project1\source.cpp(314): warning C4715: 'deal_with_page' : not all control paths return a value
+       Link:
+         D:\Programming\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yue\Desktop\CSCE463_project1\Debug\CSCE463_project1.exe" /INCREMENTAL /NOLOGO Ws2_32.lib WINMM.LIB /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Yue\Desktop\CSCE463_project1\Debug\CSCE463_project1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yue\Desktop\CSCE463_project1\Debug\CSCE463_project1.lib" /MACHINE:X86 Debug\Source.obj
+         CSCE463_project1.vcxproj -> C:\Users\Yue\Desktop\CSCE463_project1\Debug\CSCE463_project1.exe
+     1>Done Building Project "C:\Users\Yue\Desktop\CSCE463_project1\CSCE463_project1\CSCE463_project1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.77
