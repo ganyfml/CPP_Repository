@@ -76,7 +76,7 @@ void generate_HTTP_request(char *HTTP_request, char *host, char *request)
 
 void generate_robot_request(char *HTTP_request, char *host)
 {
-	strcpy(HTTP_request, "HEAD /Robots.txt");
+	strcpy(HTTP_request, "HEAD /robots.txt");
 	strcat(HTTP_request, " HTTP/1.0\r\nUser-agent: crawler_CSCE612/1.1\r\nHost: ");
 	strcat(HTTP_request, host);
 	strcat(HTTP_request, "\r\nConnection: close\r\n\r\n");
@@ -399,7 +399,6 @@ void main()
 		open_socket(&connection_socket);
 		if(!DNS_lookup(host, port, &remote, &server, IP_address))	continue;
 		cout << "	Checking IP uniqueness...";
-
 		if (!check_uniqueness(&host_set, IP_address))	continue;
 		closesocket(connection_socket);
 
