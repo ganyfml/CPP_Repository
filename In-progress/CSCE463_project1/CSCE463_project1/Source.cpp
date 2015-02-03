@@ -45,7 +45,11 @@ bool parser_URL(char *address, char *host, char *request, int *port)
 	if (strchr(host, ':') != NULL)
 	{
 		int port_position = strchr(host, ':') - host;
-		if (port_position == (strlen(host) - 1))	return -2;
+		if (port_position == (strlen(host) - 1))
+		{
+			printf("failed, invaild port\n");
+			return false;
+		}
 		host = strtok(host, ":");
 		*port = atoi(strtok(NULL, ":"));
 		if (*port == 0)
@@ -60,10 +64,9 @@ bool parser_URL(char *address, char *host, char *request, int *port)
 	{
 		char new_request[50] = "/";
 		strcpy(request, strcat(new_request, request));
-		delete(new_request);
 	}
 	if (request[strlen(request) - 1] == '\r') request[strlen(request) - 1] = NULL;
-	printf("host %s, port %d\n", host, port);
+	printf("host %s, port %d\n", host, *port);
 	return true;
 }
 
@@ -97,6 +100,7 @@ void display_HTTP_header(char *HTTP_request)
 			index++;
 		}
 	}
+	printf("\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -162,7 +166,7 @@ bool connect_page(SOCKET *sock, sockaddr_in *server, char *HTTP_request, bool ro
 {
 	DWORD time1 = timeGetTime();
 	DWORD time2;
-	if(!robot)	printf("	Connecting on page...");
+	if (!robot)	printf("	Connecting on page...");
 	else printf("	Connectiong to robot...");
 	if (connect(*sock, (struct sockaddr*) server, sizeof(struct sockaddr_in)) == SOCKET_ERROR)
 	{
@@ -188,13 +192,11 @@ char* load_page(SOCKET sock, bool robot_page)
 	printf("	Loading...");
 	DWORD time1 = timeGetTime();
 	DWORD time2;
-	int buffer_size = 1024;
-	char recvbuf[512];
-	memset(recvbuf, '\0', 512);
+	int buffer_size = 512;
 	char *recvHTML = (char*)malloc(buffer_size * sizeof(char));
 
-	recv(sock, recvbuf, 512, 0);
-	strcpy(recvHTML, recvbuf);
+	int length = recv(sock, recvHTML, 20, 0);
+	int curPos = length;
 	if (!(recvHTML[0] == 'H' && recvHTML[1] == 'T' && recvHTML[2] == 'T' && recvHTML[3] == 'P' && recvHTML[4] == '/'))
 	{
 		printf("failed with non-HTTP header\n");
@@ -218,12 +220,11 @@ char* load_page(SOCKET sock, bool robot_page)
 			return NULL;
 		}
 		FD_SET(sock, &timeout);
-		memset(recvbuf, '\0', 512);
 		int select_status = select(sock + 1, &timeout, NULL, NULL, &time_threshold);
 		if (select_status > 0)
 		{
-			int length = recv(sock, recvbuf, 500, 0);
-			if (length == -1)
+			length = recv(sock, recvHTML + curPos, (buffer_size - curPos - 1), 0);
+			if (length < 0)
 			{
 				printf("failed with %d\n", WSAGetLastError());
 				free(recvHTML);
@@ -232,12 +233,12 @@ char* load_page(SOCKET sock, bool robot_page)
 			else if (length == 0)	break;
 			else
 			{
-				if (buffer_size - strlen(recvHTML) <= 512)
+				curPos += length;
+				if (buffer_size - curPos <= 512)
 				{
 					buffer_size *= 2;
 					recvHTML = (char*)realloc(recvHTML, buffer_size * sizeof(char));
 				}
-				strcat(recvHTML, recvbuf);
 				int max = (robot_page) ? 16385 : 2097152;
 				if (strlen(recvHTML) > max)
 				{
@@ -307,6 +308,7 @@ char *wirte_file_to_memory(char *path)
 					if (fread(URL_file_content, sizeof(char), file_size, file) > 0)
 					{
 						fclose(file);
+						cout << "read file with size " << file_size << endl;
 						return URL_file_content;
 					}
 				}
@@ -337,7 +339,7 @@ bool deal_with_robot(SOCKET connection_socket, char *host, sockaddr_in *server)
 	open_socket(&connection_socket);
 	char HTTP_request[512];
 	generate_robot_request(HTTP_request, host);
-	if(!connect_page(&connection_socket, server, HTTP_request, true))	return false;
+	if (!connect_page(&connection_socket, server, HTTP_request, true))	return false;
 	char *recvHTML = load_page(connection_socket, true);
 	if (recvHTML == NULL)	return false;
 	printf("	Verifying header... ");
@@ -349,12 +351,12 @@ bool deal_with_robot(SOCKET connection_socket, char *host, sockaddr_in *server)
 	return true;
 }
 
-bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockaddr_in *server)
+bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockaddr_in *server, bool display_header)
 {
 	open_socket(&connection_socket);
 	char HTTP_request[2048];
 	generate_HTTP_request(HTTP_request, host, request);
-	if(!connect_page(&connection_socket, server, HTTP_request, false))	return false;
+	if (!connect_page(&connection_socket, server, HTTP_request, false))	return false;
 	char *recvHTML = load_page(connection_socket, false);
 	if (recvHTML == NULL)	return false;
 	printf("	Verifying header... ");
@@ -362,50 +364,108 @@ bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockadd
 	printf("Status code %s\n", page_status);
 	if (page_status[0] != '2')	return false;
 	parse_page(host, recvHTML);
+	if (display_header)
+	{
+		cout << "===========================================" << endl;
+		display_HTTP_header(recvHTML);
+	}
 	free(recvHTML);
 	closesocket(connection_socket);
 }
 
 void main(int argc, const char* argv[])
 {
+	bool read_address_from_file = false;
+	int thread_num;
+	if (argc == 2)	read_address_from_file = false;
+	else if (argc == 3)
+	{
+		thread_num = atoi(argv[1]);
+		if (thread_num > 1)
+		{
+			cout << "Multithread not support yet" << endl;
+			return;
+		}
+		else if (thread_num < 1)
+		{
+			cout << "Thread num not vaild" << endl;
+			return;
+		}
+		read_address_from_file = true;
+	}
+	else
+	{
+		cout << "invaild argument" << endl;
+		cout << "vaild argument: scheme://host[:port][/path][?query][#fragment]" << endl;
+		cout << "vaild argument: #thread file_path_contain_URLs" << endl;
+		cout << "program exit" << endl;
+		return;
+	}
+
 	unordered_set <string> host_set;
-	char *path = "URL.txt";
-	char *URL_file_content = wirte_file_to_memory(path);
-	if (URL_file_content == NULL)	return;
-	char *address = strtok(URL_file_content, "\n");
+	char *path, *URL_file_content, *address;
+
+	if (read_address_from_file)
+	{
+		cout << "Main thread: ";
+		path = "URL.txt";
+		URL_file_content = wirte_file_to_memory(path);
+		if (URL_file_content == NULL)	return;
+		address = strtok(URL_file_content, "\n");
+	}
+	else
+	{
+		address = new char[strlen(argv[1]) + 1];
+		strcpy(address, argv[1]);
+	}
 
 	SOCKET connection_socket;
 	init_winsock();
 	open_socket(&connection_socket);
 	bool first_come_to_loop = true;
-
-	while (1)
+	if (read_address_from_file)
 	{
-		if (!first_come_to_loop)
-			address = strtok(NULL, "\n");
-		else first_come_to_loop = false;
+		while (1)
+		{
+			if (!first_come_to_loop)
+				address = strtok(NULL, "\n");
+			else first_come_to_loop = false;
 
+			char host[128] = "";
+			char request[2048] = "";
+			char IP_address[32];
+			int port;
+
+			if (address == NULL)	break;
+			cout << "URL: " << address << endl;
+			if (!parser_URL(address, host, request, &port)) continue;//invaild format
+			cout << "	Checking host uniqueness...";
+			if (!check_uniqueness(&host_set, host))	continue;
+			hostent remote;
+			sockaddr_in server;
+			open_socket(&connection_socket);
+			if (!DNS_lookup(host, port, &remote, &server, IP_address))	continue;
+			cout << "	Checking IP uniqueness...";
+			if (!check_uniqueness(&host_set, IP_address))	continue;
+			closesocket(connection_socket);
+			if (!deal_with_robot(connection_socket, host, &server))	continue;
+			if (!deal_with_page(connection_socket, host, request, &server, false))	continue;
+		}
+	}
+	else
+	{
 		char host[128] = "";
 		char request[2048] = "";
 		char IP_address[32];
 		int port;
-
-		if (address == NULL)	break;
 		cout << "URL: " << address << endl;
-		if (!parser_URL(address, host, request, &port)) continue;//invaild format
-		cout << "	Checking host uniqueness...";
-		if (!check_uniqueness(&host_set, host))	continue;
-			
+		if (!parser_URL(address, host, request, &port)) return;//invaild format
 		hostent remote;
 		sockaddr_in server;
 		open_socket(&connection_socket);
-		if(!DNS_lookup(host, port, &remote, &server, IP_address))	continue;
-		cout << "	Checking IP uniqueness...";
-		if (!check_uniqueness(&host_set, IP_address))	continue;
+		if (!DNS_lookup(host, port, &remote, &server, IP_address))	return;
 		closesocket(connection_socket);
-
-		if (!deal_with_robot(connection_socket, host, &server))	continue;
-		if (!deal_with_page(connection_socket, host, request, &server))	continue;
+		if (!deal_with_page(connection_socket, host, request, &server, true))	return;
 	}
 	return;
 }

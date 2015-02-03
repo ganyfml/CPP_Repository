@@ -1,0 +1,674 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html id="html1" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="bs" lang="bs"> <head id="ctl00_Head1"><title>
+	Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a
+</title><script type="text/javascript">
+	//<![CDATA[
+                      var publicSiteVersion = '_6.25.0.43422.5';
+                      var publicSiteId = 408;
+                      var isLibNetSite = false;
+                      //]]>
+</script><script type="text/javascript">
+
+</script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8" /><meta http-equiv="Content-Script-Type" content="text/javascript; charset=utf-8" /><meta http-equiv="build" content="6.25.0.43422.5 (Dec-15 2014 15:56:07) WWWVOA4" /><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/TemplatePage.cssx" /><link id="ctl00_DynamicLink3" type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/search2.cssx" /> <!--[if IE 6]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/TemplatePage_ie6.cssx" /><![endif]--> <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/TemplatePage_ie7.cssx" /><![endif]--> <!--[if IE 8]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/TemplatePage_ie8.cssx" /><![endif]--> <!--[if IE 9]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/TemplatePage_ie9.cssx" /><![endif]--> <script type="text/javascript" src="../../js_6.25.0.43422.5/jquery/jquery-1.10.2.x.js">
+
+</script><script type="text/javascript" src="../../jsloc_6.25.0.43422.5/Common.Title.x.js?c=0">
+
+</script><script type="text/javascript" src="../../js_6.25.0.43422.5/TemplatePage.x.js"></script><script type="text/javascript" src="../../js_6.25.0.43422.5/jquery/jquery.url.packed.x.js">
+
+</script> <link rel="stylesheet" type="text/css" media="screen" href="../../css_6.25.0.43422.5/MediaPage.cssx" /> <link rel="stylesheet" type="text/css" href="../../css_6.25.0.43422.5/MediaPage_ltr.cssx" /> <link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/VOA/VOA1.cssx" /> <!--[if IE 6]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/VOA/VOA_ie6.cssx" /><![endif]--> <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/VOA/VOA_ie7.cssx" /><![endif]--> <link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/VOA/VOA2.cssx" /><link rel="stylesheet" type="text/css" href="../../App_Themes_6.25.0.43422.5/VOA_bs-Latn-BA/Stylesheet1.csxx" /><script id="ctl00_DynamicScript3" type="text/javascript" src="../../js_6.25.0.43422.5/jquery/jquery.fancybox.x.js">
+
+</script><script type="text/javascript" src="../../js_6.25.0.43422.5/init.x.js">
+
+</script><link id="ctl00_linkRSS" type="application/rss+xml" rel="alternate" href="/api/" title="VOA - Top Stories [RSS]" /><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['net._setAccount', 'UA-15260035-1']);
+/*DomainSpecification2*/
+_gaq.push(['net._setAllowLinker', true]);
+/*CustomVariables2*/
+_gaq.push(['net._trackPageview']);
+_gaq.push(['_setAccount', 'UA-20659538-1']);
+/*DomainSpecification*/
+_gaq.push(['_setAllowLinker', true]);
+/*CustomVariables*/
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script><link rel="author" href="/humans.txt" /><link href="http://ba.voanews.com/sitemap.xml" rel="sitemap" type="application/rss+xml" /><link href="http://gdb.voanews.com/f9d4c5cb-63aa-4e31-85d6-692691da15f9_tv_w308_h173.jpg" rel="image_src" type="image/jpeg" /><meta name="title" content="Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" /><meta property="og:title" content="Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" /><meta property="og:url" content="http://ba.voanews.com/media/video/2563280.html" /><meta property="og:type" content="article" /><meta property="og:image" content="http://gdb.voanews.com/f9d4c5cb-63aa-4e31-85d6-692691da15f9_tv_mw1024_mh1024_s.jpg" /><meta property="og:image:width" content="1024" /><meta property="og:site_name" content="Radio Slobodna Evropa" /><meta property="article:publisher" content="https://www.facebook.com/studiowashington" /><meta name="twitter:card" content="player" /><meta name="twitter:site" content="@VOABosnian" /><meta name="twitter:player" content="https://fb.voanews.eu/408/flashembed.aspx?t=vid&amp;id=2563280&amp;w=435&amp;h=314&amp;skin=embeded" /><meta name="twitter:player:width" content="435" /><meta name="twitter:player:height" content="314" /><meta name="twitter:player:stream" content="http://av.voanews.com/Videoroot/Pangeavideo/2014/12/f/f9/f9d4c5cb-63aa-4e31-85d6-692691da15f9_mobile.mp4" /><meta name="twitter:player:stream:content_type" content="video/mp4; codecs=&quot;h264&quot;" /><link href="http://ba.voanews.com/media/video/2563280.html" rel="canonical" /><meta name="abstract" content="Glas Amerike je jedan od najpouzdanijih svjetskih medija. Emituje programe putem radija, televizije i interneta na 45 svjetskih jezika.&lt;/br> The Voice of America is an international news and information organisation providing content for radio, television and the internet in 45 languages." /><meta http-equiv="Content-Language" content="bs" /><meta name="google-site-verification" content="xhlpWO2mj7cS-CLSz4sliKEzNLqoRguHlaJnb1PFuBs" /><link rel="icon" type="image/x-icon" href="/img/voa/favicon.ico" /><link href="http://ba.voanews.com/sitemap.xml" rel="sitemap" type="application/rss+xml" /><!--[if lte IE 7]><link type="text/css" rel="stylesheet" href="../../css_6.25.0.43422.5/ie6nomore_ltr.cssx" /><![endif]--><meta name="description" content="Glas Amerike emituje programe na 45, svjetskih jezika.&lt;/br> The Voice of America is an international news and information organisation providing content for radio, television and the internet in 45 languages." /><meta name="keywords" content="Afghanistan, Africa, America, Asia, audio, Barack, Central America, central asia, Clinton, culture, economy, english, entertainment, Eurasia, Europe, foreign, foreign policy, Global, hillary, information, international, iran, Iraq, latest, Latin America, learning, Michelle, Middle East, Near East, news, obama, Pacific, podcast, Policy, politics, radio, shortwave, South Asia, special, television, Trade, United States, US, USA, video, VOA, Voice of America, world, vijesti, dnevno, politika, doga?aji, VOA, news, Bosnian" /></head> <body id="bd1" class="body_media"> <script type="text/javascript" src="http://www.google.com/jsapi"></script> <script type="text/javascript">
+        var virtualKeyboardLanguage = 'en';
+    </script> <script type="text/javascript">
+        
+        var MODAL_LINKS_REGEXP = 'userupload.html|login.html|signup.html|logout.html|passwordrecovery.html|\/login.aspx';
+    </script>  <script type="text/javascript" src="../../js_6.25.0.43422.5/jquery/jquery.ui.menu.x.js">
+
+</script>  <script type="text/javascript">
+        if (top.location == self.location) { //if not inside of an IFrame
+            
+            var renderTealium = 'true';
+            if (renderTealium == 'true') {
+                var tealiumTagString = '<!-- Tealium Tag --><script type="text/javascript">var utag_data={entity:"VOA",language:"Bosnian",language_service:"VOA Bosnian",short_language_service:"BOS",property_id:"121",platform:"Desktop",platform_short:"D",runs_js:"Yes",page_title:"Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",page_type:"2563280",page_name:"Video - Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",short_headline:"Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",long_headline:"Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",headline:"Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",content_type:"Video",pub_year:"2014",pub_month:"12",pub_day:"17",pub_hour:"21",pub_minute:"48",pub_weekday:"Wednesday",categories:"aktuelno-usa",section:"Amerika",english_section:"aktuelno-usa",article_uid:"2563280"};<\/script><!-- End of Tealium Tag -->';
+                var tealiumScriptString = '<!-- Tealium Script --><script type="text/javascript">(function(a,b,c,d){    a="//tags.tiqcdn.com/utag/bbg/voa-pangea/prod/utag.js";    b=document;c="script";d=b.createElement(c);d.src=a;d.type="text/java"+c;d.async=true;    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);    })();<\/script><!-- End of Tealium Script -->';
+                document.writeln(tealiumTagString);
+                document.writeln(tealiumScriptString);
+            }
+        }
+    </script> <form method="post" action="2563280.html?id=2563280&amp;type=video" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">function openPopup(url) {window.open(url, "pinterest_popup", "scrollbars=no, resizable,width=650,height=600");}</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys$Application$_applicationBaseUrl = '/';var Sys$Application$isPostBack = false;//]]>
+</script>
+
+<script src="/js_6.25.0.43422.5/jquery/jquery.cookie.x.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"bs-Latn-BA","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"KM","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"Infinity","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"¡ë","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"d. MMMM yyyy H:mm:ss","LongDatePattern":"d. MMMM yyyy","LongTimePattern":"H:mm:ss","MonthDayPattern":"d. MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"d.M.yyyy","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["ned","pon","uto","sri","?et","pet","sub"],"ShortestDayNames":["ne","po","ut","sr","?e","pe","su"],"DayNames":["nedjelja","ponedjeljak","utorak","srijeda","?etvrtak","petak","subota"],"AbbreviatedMonthNames":["jan","feb","mar","apr","maj","jun","jul","avg","sep","okt","nov","dec",""],"MonthNames":["januar","februar","mart","april","maj","juni","juli","avgust","septembar","oktobar","novembar","decembar",""],"IsReadOnly":false,"NativeCalendarName":"gregorijanski kalendar","AbbreviatedMonthGenitiveNames":["jan","feb","mar","apr","maj","jun","jul","avg","sep","okt","nov","dec",""],"MonthGenitiveNames":["januar","februar","mart","april","maj","juni","juli","avgust","septembar","oktobar","novembar","decembar",""]},"eras":[1,"A.D.",null,0]};//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1Lf0l5dRuytzjwtQxt2FKtlWecQmIyrSB_0BHm932u6VZmPidNudYBIXnqajpGlAMZAS0FkYbQ40JvDEcWCEzcaXXpzUB0&amp;t=ffffffffa5177bee" type="text/javascript"></script>
+<script src="../../js/RFERL.WebControls/6.25.0.43422/RFERL.UI.Web.Controls.Utilities.x.js" type="text/javascript"></script>
+<script src="../../js_6.25.0.43422.5/custom/playlist-helper.x.js" type="text/javascript"></script>
+<script src="../../js_6.25.0.43422.5/authentication.x.js" type="text/javascript"></script>
+<script src="/js_6.25.0.43422.5/jquery/carousel.x.js" type="text/javascript"></script>
+<script src="../../js_6.25.0.43422.5/custom/Html5Player.x.js" type="text/javascript"></script>
+<script src="../../js_6.25.0.43422.5/custom/AudioHighlightServiceHelper.x.js" type="text/javascript"></script>
+<script src="../../js/RFERL.Site/6.25.0.43422/swfobject.x.js" type="text/javascript"></script>
+<script src="../../Services/CaptchaService.asmx/js" type="text/javascript"></script>
+<script src="../../Services/MembershipService.asmx/js" type="text/javascript"></script>
+<script src="../../Services/PlaylistService.asmx/js" type="text/javascript"></script>
+<script src="../../Services/AudioHighlightService.asmx/js" type="text/javascript"></script>
+<script src="/Services/PhotogalleryService.asmx/js" type="text/javascript"></script>
+<script src="/js_6.25.0.43422.5/versionhelper.x.js" type="text/javascript"></script> 
+    
+    <input id="hfUseAutoComplete" type="hidden" value="True" />
+
+    <!--[if lte IE 7]><div id="ctl00_ctl21" class="ie6nomore" style="display:none;">
+	<button type="button" title="Zatvorite" onclick="(function (){$(document.getElementById(&#39;ctl00_ctl21&#39;)).hide(1000);
+var cookieExpiration = new Date();
+cookieExpiration.setTime(cookieExpiration.getTime() + 1000 * 1814400);
+$.cookie(&#39;IE6NoMore_Closed&#39;,true,{path:&#39;/&#39;,expires: cookieExpiration});(function(){$(&#39;#ctl00_ctl21&#39;).prev(&#39;.ie6nomore-bg&#39;).remove();
+$(&#39;object, embed&#39;).filter(function(){try{return $(this).attr(&#39;IE6NoMoreHidden&#39;) == &#39;true&#39;;}catch(ex){return false;}}).css(&#39;visibility&#39;, function(){return $(this).attr(&#39;IE6NoMoreVisibility&#39;);});})();})()"><img class="ie6nomoreClose" src="../../img/spacer.gif" alt="Zatvorite" /></button><h2>
+		Da li znate da koristite zastarjelu verziju Internet Explorera?
+	</h2><p>Da bi ste na?u stranicu koristili na najbolji na?in, preporu?ujemo da unaprijedite na noviju verziju va?eg internet pretra?iva?a ili koristite drugi pretara?iva?. Listu najpopularnijih pretra?iva?a mo?ete na?i ovdje  </p><div>
+		<p>Kliknite na ikonice da biste sa?uvali stranicu</p><a href="http://getfirefox.com/"><img alt="Firefox 14+" title="Firefox 14+" class="ie6nomoreFF" src="../../img/spacer.gif" /><span>Firefox 14+</span></a><a href="http://www.opera.com/browser/"><img alt="Opera 12+" title="Opera 12+" class="ie6nomoreOP" src="../../img/spacer.gif" /><span>Opera 12+</span></a><a href="http://www.google.com/chrome/"><img alt="Chrome 21+" title="Chrome 21+" class="ie6nomoreCH" src="../../img/spacer.gif" /><span>Chrome 21+</span></a><a href="http://www.apple.com/safari/"><img alt="Safari 5.1+" title="Safari 5.1+" class="ie6nomoreSF" src="../../img/spacer.gif" /><span>Safari 5.1+</span></a><a href="http://www.microsoft.com/windows/internet-explorer/"><img alt="IE 9+" title="IE 9+" class="ie6nomoreIE" src="../../img/spacer.gif" /><span>IE 9+</span></a>
+	</div>
+</div><script type="text/javascript">
+	//<![CDATA[
+((function (){Sys.Application.add_init(function(){
+var cookie = $.cookie('IE6NoMore_Closed');
+if(!cookie){(function(){var me = $('#ctl00_ctl21');me.offset({left:Math.round($(window).width()/2 - me.width()/2),top:Math.round($(window).height()/2 - me.height()/2)});})();$(document.getElementById('ctl00_ctl21')).show(1000,function(){var me = $('#ctl00_ctl21'); var before = $('<div class=\'ie6nomore-bg\'></div>');me.before(before);before.height($(document).height()); me.css('top', ($(window).scrollTop() + Math.round($(window).height()/2 - me.height()/2)) + 'px');
+$('object, embed').attr('IE6NoMoreHidden', 'true').attr('IE6NoMoreVisibility', function(){return $(this).css('visibility');}).css('visibility', 'hidden');});}});}))();//]]>
+</script><![endif]-->
+        <div id="superheader">
+            
+            <div id="top_bar" class=''>
+                <div class="content_centered">
+                    <div class='sites_by_language'><strong class='label'>RSE</strong><a href='#' class='trigger'><span>Stranice po jezicima</span></a></div> <div class="top_stories" > <strong class="label"> Teme dana:</strong> <ul>  <li class="first"> <a class='' href='/archive/aktuelno-usa/latest/1961/1972.html'>IZ AMERIKE</a> </li>  <li class=""> <a class='' href='/archive/aktuelno-bih/latest/1961/1964.html'>Iz BIH</a> </li>  <li class=""> <a class='' href='/archive/aktuelno-world/latest/1961/1962.html'>IZ SVIJETA</a> </li>  </ul> </div>
+                    
+                    <div class="site_specific"></div>
+                    
+                    
+                    <div class="cleaner">
+                    </div>
+                    <hr class="hidden" />
+                </div>
+                <!-- .content_centered -->
+            </div>
+            <!-- #top_bar -->
+            
+            
+            <div id='top_bar_expanded'><div class='content_centered'><div class='sites'><div class='boxwidget'>
+<ul><li><h5>English Worldwide</h5><h5 class='siteinfochild'><a href="http://www.voanews.com"><span class='siteinfochild1'>English</span><span class='siteinfochild2'>voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://learningenglish.voanews.com"><span class='siteinfochild1'>Learning English</span><span class='siteinfochild2'>learningenglish.voanews.com</span></a></h5></li><li><h5>Eastern & Central Europe</h5><h5 class='siteinfochild'><a href="http://www.zeriamerikes.com"><span class='siteinfochild1'>Shqip</span><span class='siteinfochild2'>Zeriamerikes.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.vijestiglasaamerike.com"><span class='siteinfochild1'>Bosanski</span><span class='siteinfochild2'>vijestiglasaamerike.com</span></a></h5><h5 class='siteinfochild'><a href="http://gr.voanews.com"><span class='siteinfochild1'>¦¥¦Ë¦Ë¦Ç¦Í¦É¦Ê?</span><span class='siteinfochild2'>gr.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://mk.voanews.com"><span class='siteinfochild1'>§®§Ñ§Ü§Ö§Õ§à§ß§ã§Ü§Ú</span><span class='siteinfochild2'>mk.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.glasamerike.net"><span class='siteinfochild1'>Srpski</span><span class='siteinfochild2'>glasamerike.net</span></a></h5><h5 class='siteinfochild'><a href="http://www.chastime.com"><span class='siteinfochild1'>§µ§Ü§â§Ñ?§ß§ã§î§Ü§Ñ</span><span class='siteinfochild2'>chastime.com</span></a></h5></li><li><h5>Eurasia</h5><h5 class='siteinfochild'><a href="http://www.amerikayidzayn.com"><span class='siteinfochild1'>???????</span><span class='siteinfochild2'>amerikayidzayn.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.amerikaninsesi.org"><span class='siteinfochild1'>Azerbaijani</span><span class='siteinfochild2'>amerikaninsesi.org</span></a></h5><h5 class='siteinfochild'><a href="http://www.voanews.com/georgian"><span class='siteinfochild1'>???????</span><span class='siteinfochild2'>amerikiskhma.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.golos-ameriki.ru"><span class='siteinfochild1'>§²§å§ã§ã§Ü§Ú§Û</span><span class='siteinfochild2'>golos-ameriki.ru</span></a></h5></li><li><h5>Central Asia</h5><h5 class='siteinfochild'><a href="http://www.amerikaovozi.com"><span class='siteinfochild1'>O¡®zbek</span><span class='siteinfochild2'>amerikaovozi.com</span></a></h5></li></ul><ul><li><h5>East & Southeast Asia</h5><h5 class='siteinfochild'><a href="http://www.burmese.voanews.com"><span class='siteinfochild1'>Burmese</span><span class='siteinfochild2'>burmese.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voacantonese.com"><span class='siteinfochild1'>»›ÕZ</span><span class='siteinfochild2'>voacantonese.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voachinese.com"><span class='siteinfochild1'>ÖÐÎÄ</span><span class='siteinfochild2'>voachinese.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voaindonesia.com"><span class='siteinfochild1'>Bahasa Indonesia</span><span class='siteinfochild2'>voaindonesia.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.khmer.voanews.com"><span class='siteinfochild1'>?????</span><span class='siteinfochild2'>khmer.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voacambodia.com"><span class='siteinfochild1'>Khmer</span><span class='siteinfochild2'>voacambodia.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voakorea.com"><span class='siteinfochild1'>???</span><span class='siteinfochild2'>voakorea.com</span></a></h5><h5 class='siteinfochild'><a href="http://lao.voanews.com"><span class='siteinfochild1'>???</span><span class='siteinfochild2'>lao.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voathai.com"><span class='siteinfochild1'>???</span><span class='siteinfochild2'>voathai.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voatibetan.com"><span class='siteinfochild1'>???????</span><span class='siteinfochild2'>voatibetan.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voatibetanenglish.com"><span class='siteinfochild1'>Tibetan</span><span class='siteinfochild2'>voatibetanenglish.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voatiengviet.com"><span class='siteinfochild1'>Ti?ng Vi?t</span><span class='siteinfochild2'>voatiengviet.com</span></a></h5></li><li><h5>South Asia</h5><h5 class='siteinfochild'><a href="http://www.voabangla.com"><span class='siteinfochild1'>?????</span><span class='siteinfochild2'>voabangla.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.darivoa.com"><span class='siteinfochild1'>???</span><span class='siteinfochild2'>darivoa.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.pashtovoa.com"><span class='siteinfochild1'>????</span><span class='siteinfochild2'>pashtovoa.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voadeewaradio.com"><span class='siteinfochild1'>?? ?? ?? ???? ?????</span><span class='siteinfochild2'>voadeewaradio.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.urduvoa.com"><span class='siteinfochild1'>????</span><span class='siteinfochild2'>urduvoa.com</span></a></h5></li></ul><ul><li><h5>Africa</h5><h5 class='siteinfochild'><a href="http://www.voaafaanoromoo.com"><span class='siteinfochild1'>Afaan Oromoo</span><span class='siteinfochild2'>voaafaanoromoo.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.amharic.voanews.com"><span class='siteinfochild1'>????</span><span class='siteinfochild2'>amharic.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.lavoixdelamerique.com"><span class='siteinfochild1'>Fran?ais</span><span class='siteinfochild2'>lavoixdelamerique.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voahausa.com"><span class='siteinfochild1'>Hausa</span><span class='siteinfochild2'>voahausa.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.radiyoyacuvoa.com"><span class='siteinfochild1'>Kinyarwanda</span><span class='siteinfochild2'>radiyoyacuvoa.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.radiyoyacuvoa.com"><span class='siteinfochild1'>Kirundi</span><span class='siteinfochild2'>radiyoyacuvoa.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voandebele.com"><span class='siteinfochild1'>Ndebele</span><span class='siteinfochild2'>voandebele.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voaportugues.com"><span class='siteinfochild1'>Portugu¨ºs</span><span class='siteinfochild2'>voaportugues.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voashona.com"><span class='siteinfochild1'>Shona</span><span class='siteinfochild2'>voashona.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voasomali.com"><span class='siteinfochild1'>Soomaaliga</span><span class='siteinfochild2'>voasomali.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voaswahili.com"><span class='siteinfochild1'>Kiswahili</span><span class='siteinfochild2'>voaswahili.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.tigrigna.voanews.com"><span class='siteinfochild1'>????</span><span class='siteinfochild2'>tigrigna.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voazimbabwe.com"><span class='siteinfochild1'>Zimbabwe</span><span class='siteinfochild2'>voazimbabwe.com</span></a></h5></li><li><h5>Middle East / North Africa</h5><h5 class='siteinfochild'><a href="http://ir.voanews.com"><span class='siteinfochild1'>?????</span><span class='siteinfochild2'>ir.voanews.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.dengiamerika.com"><span class='siteinfochild1'>?????</span><span class='siteinfochild2'>dengiamerika.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.dengeamerika.com"><span class='siteinfochild1'>Kurdi</span><span class='siteinfochild2'>dengeamerika.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.amerikaninsesi.com"><span class='siteinfochild1'>T¨¹rk?e</span><span class='siteinfochild2'>amerikaninsesi.com</span></a></h5></li><li><h5>Latin America</h5><h5 class='siteinfochild'><a href="http://www.voanouvel.com"><span class='siteinfochild1'>Creole</span><span class='siteinfochild2'>voanouvel.com</span></a></h5><h5 class='siteinfochild'><a href="http://www.voanoticias.com"><span class='siteinfochild1'>Espa?ol</span><span class='siteinfochild2'>voanoticias.com</span></a></h5></li></ul><div class='cleaner'></div></div></div><div class='info'><div class='boxwidget'></div></div><div class='cleaner'></div><hr class='hidden' /></div></div><script id="ctl00_DynamicScript6" type="text/javascript" src="../../js_6.25.0.43422.5/controller.x.js">
+
+</script>
+            
+            <div id="header" class='' dir="ltr">
+                <div class="content_centered">
+                    <h2 id="header_logo"><a href="/">
+                        <span>
+                            Radio Slobodna Evropa
+                        </span>
+                    </a></h2>
+
+                    <div id="header_services">
+                        
+                            <div class="login_bar">
+                                <ul id="ulMembershipBar">
+                                    
+                                        <li><a id='login-trigger' href="/login.html" class="last">
+                                            Logirajte se
+                                        </a></li>
+                                        <li><a id='signup-trigger' href="/signup.html">
+                                            Registrujte se
+                                        </a></li>
+                                        <li style="display: none" id="liMembershipUserName">
+                                            <span></span>
+                                            <a id='logout-trigger' href="/logout.html">
+                                                Izlogirajte se
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        
+                        <div class="search_bar">
+                            <div class="search_cower">
+                                <input id="search_loupe_btn"  onclick="FireTealiumEvent({on_page_event: 'search', search_keyword: $('#keywords_header').val()}); SearchButton('keywords_header', 'order_', isLibNetSite ? publicSiteId : '', $('#hfUseAutoComplete').val(), 'date    ');" type="button" value="" title="Pretra?iva?" class="round_corners_button_orange" />
+                                <input id="keywords_header"  onkeypress="if (event.keyCode == 13) { FireTealiumEvent({on_page_event: 'search', search_keyword: $('#keywords_header').val()}); SearchButton('keywords_header','order_', isLibNetSite ? publicSiteId  : '', $('#hfUseAutoComplete').val(), 'date'); return false;}" type="text" value="" class="top_search" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .header_services -->
+                    <ul class="header_navigation">
+                        <li class="header_navigation_item menuitem_css_handle first"><a class="nav_link"  href="/">Naslovna</a></li>
+<li class="header_navigation_item menuitem_css_handle has_child "><a class="nav_link"  href="javascript:void(0);"><span class="selected_arrow"></span>Aktuelno</a><ul class="selected_nav nav_start1 nav_columns3"><li class="selected_nav"><div class="content_wrap"><div class='content_big_nav'><div class='boxwidget'><div class='boxwidgetInner'><h5><a href="/section/aktuelno-amerika/2552.html" class="section_link" >Amerika</a></h5><h5><a href="/section/aktuelno-bih/2547.html" class="section_link" >BiH</a></h5></div></div></div><div class='content_big_nav'><div class='boxwidget'><div class='boxwidgetInner'><h5><a href="/section/aktuelno-evropa/2549.html" class="section_link" >Evropa</a></h5><h5><a href="/section/aktuelno-svijet/2545.html" class="section_link" >Svijet</a></h5></div></div></div><div class='content_big_nav'><div class='boxwidget'><div class='boxwidgetInner'><h5><a href="/section/aktuelno-ekonomija/2548.html" class="section_link" >Ekonomija</a></h5><h5><a href="/section/aktuelno-zdravlje/2550.html" class="section_link" >Zdravlje </a></h5></div></div></div><div class='cleaner'></div></div></li></ul></li>
+<li class="header_navigation_item menuitem_css_handle "><a class="nav_link"  href="/section/aktuelno-magazin/2546.html">Magazin</a></li>
+<li class="header_navigation_item menuitem_css_handle has_child "><a class="nav_link"  href="javascript:void(0);"><span class="selected_arrow"></span>Programi</a><ul class="selected_nav nav_start1 nav_columns2"><li class="selected_nav"><div class="content_wrap"><div class='content_big_nav'><div class='boxwidget'><div class='boxwidgetInner'><h5><a href="/archive/programs-studio-washington/latest/1973/1974.html" class="section_link" >Studio Washington</a></h5></div></div></div><div class='content_big_nav'><div class='boxwidget'><div class='boxwidgetInner'><h5><a href="/archive/programs-60-sekundi-iz-amerike/latest/1973/2152.html" class="section_link" >60 Sekundi Iz Amerike</a></h5></div></div></div><div class='cleaner'></div></div></li></ul></li>
+<li class="header_navigation_item menuitem_css_handle "><a class="nav_link"  href="/media/all/latest.html">Multimedia</a></li>
+<li class="header_navigation_item menuitem_css_handle last"><a class="nav_link"  href="/info/about_us/1543.html">O nama</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- #header -->
+            
+            </div>
+
+            
+            
+
+            <div class="main-content media-content">
+                <div class='main-content-inner'>
+                <div class="content_centered">
+                    
+                    <div class="content" dir="ltr">
+                        <div id="content_top_bar">
+                            
+                            <div id="datetime_bar">
+                                utorak, 03. februar 2015
+                            </div>
+                            <div class="multimedia_control mm_control_audio " style='display:none;'>
+                                <span><a id="audio_menu_trigger" class="" href="#"><strong>
+                                    Radio</strong></a></span>
+                            </div>
+                            <div class="multimedia_control mm_control_itv" >
+                                <span><a id="itv_menu_trigger" class="" href="#"><strong>Web TV</strong></a></span>
+                            </div>
+                            <div class="cleaner">
+                            </div>
+                        </div>
+                        
+                         <div id="audio_menu" class='multimedia_menu '> <div class="wrapper"> <div id="content_services_menuaudio1" class="column first_column">  </div> <div id="content_services_liveaudio1" class="column first_column" style="display: none;"> </div> <div id="content_services_menuaudio2" class="column second_column">  </div> <div id="content_services_liveaudio2" class="column second_column" style="display: none;"> </div> <div class="column third_column">  </div> <div class="delimiter"> <hr class="delimiter"/> </div> </div> </div>  <div id="itv_menu" class="multimedia_menu"> <div class="wrapper"> <div id="content_services_menuitv1" class="column first_column"> <div class='boxwidget'><div class='programlist_row'><a href='/media/video/2625168.html'><img src='http://gdb.voanews.com/ac7c7559-7973-41a1-8273-718fbd2f26d8_tv_w113_h64.jpg' class='small_img' alt='Studio Washington' /></a><span class='latest_news'><a class=' assignedIcon asIcoVideo' href='/media/video/2625168.html'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Studio Washington</span></a></span></div></div> </div> <div id="content_services_liveitv1" class="column first_column" style="display: none;"> </div> <div id="content_services_menuitv2" class="column second_column">  </div> <div id="content_services_liveitv2" class="column second_column" style="display: none;"> </div> <div id="content_services_menuitv3" class="column third_column"> <div class='boxwidget'><div class='programlist_row'><a href='/media/video/2624979.html'><img src='http://gdb.voanews.com/3e109297-eaad-4af0-a7bc-f09e7cc0debd_tv_w113_h64.jpg' class='small_img' alt='Civilna bolnica u Donjetsku preplavljena ukrajinskim ranjenicima' /></a><span class='latest_news'><a class=' assignedIcon asIcoVideo' href='/media/video/2624979.html'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Civilna bolnica u Donjetsku preplavljena ukrajinskim ranjenicima</span></a></span></div></div> </div> <div class="delimiter"> <hr class="delimiter"/> </div> </div> </div> <script type="text/javascript">
+    //<![CDATA[
+    var audio_menu_num_of_opens = 0;
+    var audio_menu_num_of_titleupdates = 0;
+    var audio_menu_is_live = false;
+    var audio_menu_liveid = '0';
+    var itv_menu_num_of_opens = 0;
+    var itv_menu_num_of_titleupdates = 0;
+    var itv_menu_is_live = false;
+    var itv_menu_liveid = '0';
+
+    /*menu type is audio or itv*/
+    function menu_open(openmenutype) {
+        var audioAlwaysOpen = false ;
+        var closemenutype = openmenutype == 'audio' ? 'itv' : 'audio'; 
+        if ($('#'+openmenutype+'_menu').is(':visible')==false)
+        {
+            if ($('#'+closemenutype+'_menu').is(':visible'))
+            {
+                if(closemenutype!='audio' || !audioAlwaysOpen)
+                {
+                    $('#' + closemenutype + '_menu').slideToggle('fast');
+                    $('#' + closemenutype + '_menu_trigger').toggleClass('opened');
+                }
+            }
+            if(openmenutype!='audio' || !audioAlwaysOpen)
+            {
+                $('#' + openmenutype + '_menu').slideToggle('fast');
+                $('#' + openmenutype + '_menu_trigger').toggleClass('opened');
+            }
+        }
+    }
+    function audio_menu_update_title(islive) {
+        $('#audio_menu_trigger').html('<strong>'+
+            (islive ?'Program u?ivo'
+                :'Radio') +'</strong>');
+        return false;
+    }
+    Sys.Application.add_load(function()
+    {
+        var showAudio = false;
+        var showItv = true;
+        var internetTvOpenHasPriority = true;
+        var autoOpenEnabled = false;
+        var autoRefreshInterval = 300;
+        if((showAudio || showItv) ) //not in cms preview
+        {
+            www.rferl.org.Services.AudioHighlightServiceHelper.register("UpdateAudioHighlightMenu", autoRefreshInterval*1000, null, 
+                function successCallbackAudio_AudioHighlightMenu(result){
+                    
+                    //filling proper columns with data from service
+                    if(result!=null)
+                    {
+                  //      if(result.HtmlAudioLive!='')
+                    //        $("#content_services_liveaudio1").html(result.HtmlAudioLive);
+                      //  if(result.HtmlAudioUpcomming!='')
+                        //    $("#content_services_liveaudio2").html(result.HtmlAudioUpcomming);
+                        
+                        if(result.HtmlAudioLive!='') //if live audio exist
+                        {
+                            $("#content_services_liveaudio1").html(result.HtmlAudioLive);
+                            $("#content_services_menuaudio1").hide();
+                            $("#content_services_liveaudio1").show();
+                            if(result.HtmlAudioUpcomming!='') {
+                                $("#content_services_liveaudio2").html(result.HtmlAudioUpcomming);    
+                                $("#content_services_menuaudio2").hide();
+                                $("#content_services_liveaudio2").show();
+                            }
+                            else {
+                                $("#content_services_liveaudio2").hide();
+                                $("#content_services_menuaudio2").show();
+                            }
+                        }
+                        else //if live audio doesnt exist (second column display menu)
+                        {
+                            $("#content_services_liveaudio2").hide();
+                            $("#content_services_menuaudio2").show();
+                            
+                            if(result.HtmlAudioUpcomming!='') { //if upcommming exist first column is upcomming and second column display menu
+                                $("#content_services_liveaudio1").html(result.HtmlAudioUpcomming);
+                                $("#content_services_menuaudio1").hide();
+                                $("#content_services_liveaudio1").show();
+                            }
+                            else {  // if no audio exist first column display menu too
+                                $("#content_services_liveaudio1").hide();
+                                $("#content_services_menuaudio1").show();
+                            }
+                        }
+                        
+                        
+                        if(result.HtmlItvLive!='') //if live itv exist
+                        {
+                            $("#content_services_liveitv1").html(result.HtmlItvLive);
+                            $("#content_services_menuitv1").hide();
+                            $("#content_services_liveitv1").show();
+                            if(result.HtmlItvUpcomming!='') {
+                                $("#content_services_liveitv2").html(result.HtmlItvUpcomming);    
+                                $("#content_services_menuitv2").hide();
+                                $("#content_services_liveitv2").show();
+                            }
+                            else {
+                                $("#content_services_liveitv2").hide();
+                                $("#content_services_menuitv2").show();
+                            }
+                        }
+                        else //if live itv doesnt exist (second column display menu)
+                        {
+                            $("#content_services_liveitv2").hide();
+                            $("#content_services_menuitv2").show();
+                            
+                            if(result.HtmlItvUpcomming!='') { //if upcommming exist first column is upcomming and second column display menu
+                                $("#content_services_liveitv1").html(result.HtmlItvUpcomming);
+                                $("#content_services_menuitv1").hide();
+                                $("#content_services_liveitv1").show();
+                            }
+                            else {  // if no itv exist first column display menu too
+                                $("#content_services_liveitv1").hide();
+                                $("#content_services_menuitv1").show();
+                            }
+                        }
+                        audio_menu_liveid = result.AudioLiveId;    
+                        itv_menu_liveid = result.ItvLiveId;    
+                    }
+                    
+                    var oldvalue_audioislive = audio_menu_is_live;
+                    audio_menu_is_live = audio_menu_liveid!='0';
+                    itv_menu_is_live = itv_menu_liveid!='0';
+                    
+                    //check which audio was closed by user .. check in cookies
+                    var lastclosed_audioid = $.cookie("audio_menu_liveid");
+                    if(lastclosed_audioid==null)
+                        lastclosed_audioid='0';
+
+                    var lastclosed_itvid = $.cookie("itv_menu_liveid");
+                    if(lastclosed_itvid==null)
+                        lastclosed_itvid='0';
+
+                    //logic which tab to automatically open
+                    var openAudio = audio_menu_liveid != lastclosed_audioid && audio_menu_num_of_opens == 0 && audio_menu_is_live;
+                    var openItv = itv_menu_liveid != lastclosed_itvid && itv_menu_num_of_opens == 0 && itv_menu_is_live;
+                    if(autoOpenEnabled && (openAudio || openItv))
+                    {
+                        if(openItv && openAudio) {
+                            openAudio = !internetTvOpenHasPriority;
+                            openItv = internetTvOpenHasPriority;
+                        }
+                        if(openAudio) {
+                            menu_open('audio');
+                            audio_menu_num_of_opens = 1;
+                        }
+                        if(openItv) {
+                            menu_open('itv');
+                            itv_menu_num_of_opens = 1;
+                        }
+                        setOpenedMultimediaControl();
+                    }
+                    
+                    if(audio_menu_num_of_titleupdates==0 || oldvalue_audioislive!=audio_menu_is_live)
+                    {
+                        audio_menu_update_title(audio_menu_is_live);
+                        audio_menu_num_of_titleupdates=1;
+                    }
+                },
+                function failCallbackAudio_AudioHighlightMenu(error){
+                    // Hide the audio highlight on any error.
+                    $("#content_services_liveaudio1").hide();
+                    $("#content_services_liveaudio2").hide();
+                    $("#content_services_menuaudio1").show();
+                    $("#content_services_menuaudio2").show();
+                    $("#content_services_liveaudio1").html("");
+                    $("#content_services_liveaudio2").html("");
+                    $("#content_services_liveitv1").hide();
+                    $("#content_services_liveitv2").hide();
+                    $("#content_services_menuitv1").show();
+                    $("#content_services_menuitv2").show();
+                    $("#content_services_liveitv1").html("");
+                    $("#content_services_liveitv2").html("");
+                }
+            );
+        }
+    });
+    //]]>
+</script>
+         
+                        <div class="columns">
+                             
+    
+    
+    <script type="text/javascript" language="javascript">
+        var currentProgramZone = 1972;
+        var currentProgramPage = 1;
+        var currentMediaZone = 1972;
+        var currentMediaPage = 1;
+        var currentZoneName = 'aktuelno-usa';
+        var middleClick = false;
+        
+        function OpenCloseToggleTab(toggleid) {
+            if(toggleid==1) {
+                $('#tc2').hide();
+                $('#tab-featured a').removeClass('opened');
+                $('#tc1').slideToggle();
+                $('#tab-related a').toggleClass('opened');
+            }
+            else {
+                $('#tc1').hide();
+                $('#tab-related a').removeClass('opened');
+                $('#tc2').slideToggle();
+                $('#tab-featured a').toggleClass('opened');
+            }
+        }
+        
+        function LoadProgramZoneItems() {
+            www.rferl.org.Services.PhotogalleryService.ZoneMultimediaHtml(currentProgramZone, currentProgramPage, true,ProgramZoneHtmlSuccessCallback, ProgramZoneHtmlErrorCallback);
+            if (currentProgramPage <= 1)
+                $("#programZones .mediaZonesPrev").hide();
+            else 
+                $("#programZones .mediaZonesPrev").show();
+        }
+        function ProgramZoneHtmlSuccessCallback(result) {
+            if (result[1] == 'true')
+                $("#programZones .mediaZonesNext").show();
+            else
+                $("#programZones .mediaZonesNext").hide();
+            $('#programZonesItems').html(result[0]);
+            $("#programZones").show();
+        }
+        function ProgramZoneHtmlErrorCallback(result) {
+            $("#programZones .mediaZonesNext").hide();
+            $("#programZones .mediaZonesPrev").hide();
+            $("#programZones").hide();
+        } 
+        
+        function LoadMediaZoneItems() {
+            www.rferl.org.Services.PhotogalleryService.ZoneMultimediaHtml(currentMediaZone, currentMediaPage,false, MediaZoneHtmlSuccessCallback, MediaZoneHtmlErrorCallback);
+            if (currentMediaPage <= 1)
+                $("#mediaZones .mediaZonesPrev").hide();
+            else 
+                $("#mediaZones .mediaZonesPrev").show();
+            $(".mediaZoneDiv .zoneSelected").removeClass("zoneSelected");
+            $(".mediaZoneDiv #zone"+currentMediaZone).addClass("zoneSelected");
+        }
+        function MediaZoneHtmlSuccessCallback(result) {
+            if (result[1] == 'true')
+                $("#mediaZones .mediaZonesNext").show();
+            else
+                $("#mediaZones .mediaZonesNext").hide();
+            $('#mediaZonesItems').html(result[0]);
+            $("#mediaZones").show();
+        }
+        function MediaZoneHtmlErrorCallback(result) {
+            $("#mediaZones .mediaZonesNext").hide();
+            $("#mediaZones .mediaZonesPrev").hide();
+            $("#mediaZones").hide();
+        }
+        function MediaArchiveRedirectForum(articleurl,sortPageExpr)
+        {
+            MediaArchiveRedirect(articleurl + sortPageExpr + '#relatedInfoContainer',false);
+        }
+
+        function MediaArchiveRedirect(mediaurl,isProgram) {
+            if(currentZoneName!='') {
+                var substrings = mediaurl.split('/');
+                if(substrings.length==4)
+                    mediaurl =  substrings[0]+'/' + substrings[1] + '/' + substrings[2] + '/' + currentZoneName + '/' + substrings[3];
+                else if(false && substrings.length==5)
+                    mediaurl =  '/' + substrings[1] + '/' + substrings[2] + '/' + currentZoneName + '/' + substrings[3]+'/' + substrings[4];
+            }
+            var addedToUrl = 'z=' + (isProgram ? currentProgramZone : currentMediaZone) + '&zp=' + (isProgram ? currentProgramPage : currentMediaPage);
+            if (mediaurl.indexOf("?") != -1) {
+                //it contains some parameter
+                mediaurl = mediaurl.toString().replace('?', '?' + addedToUrl + '&');
+            } else {
+                //if there is no params
+                if (mediaurl.indexOf("#") != -1) {
+                    mediaurl = mediaurl.toString().replace('#', '?' + addedToUrl + '#');
+                }
+                else {
+                    mediaurl += '?' + addedToUrl;    
+                }
+            }
+            if(middleClick)
+            {
+                window.open(mediaurl, '', '');
+                middleClick = false;
+            }
+            else
+            {
+                window.location = mediaurl;
+            }
+        }
+
+        function RegisterLinkClick()
+        {
+            $("#mediaZones").find("a").mousedown(function(e){
+                  if(e.which == 2) middleClick = true;
+                  return true;
+            });
+        }
+       
+        function UpdateItvLive() {
+            if(0>0)    
+                www.rferl.org.Services.PlaylistService.UpdateItvLive(0, SuccessCallbackItv, ErrorCallbackItv);        
+        }
+
+        function SuccessCallbackItv(result) {
+            //collection of loaded rates stored in cookies, in case there is somethin to read - try to get em
+            if (result != null && result.length==3) {
+                $('.media_title').text(result[0]);
+                $('.descText').html(result[1]);
+                $('.topdate').html(result[2]);
+                document.title = result[0];
+            }
+            var autorefreshmilisec = 300 * 1000;
+                if(autorefreshmilisec>0)
+                    setTimeout(function() { UpdateItvLive(); }, autorefreshmilisec);
+        }
+
+        function ErrorCallbackItv(error) {
+            //dont do anything on service error
+        }
+        Sys.Application.add_init(function () {
+            UpdateItvLive();
+        });
+            
+        
+    </script> <div class="media_item"> <h3 class='titleInside'>Amerika</h3> <div class="content_media">  <div id="ctl00_cpAB_upVideo">
+	<div id="ctl00_cpAB_upVideo_swfFlash">
+		
+
+  <div class="html5Player html5MediaPlayer html5MediaPlayerVideo" ID="ctl00_cpAB_upVideo_h5t"> <div class="html5PlayerPrimary"> <video id="ctl00_cpAB_upVideo_h5t_h5pHtml5" data-autoplay="autoplay" poster="http://gdb.voanews.com/f9d4c5cb-63aa-4e31-85d6-692691da15f9_tv_w640_h360.jpg" width="640px" height="360" data-sources="[{&quot;Src&quot;:&quot;http://av.voanews.com/Videoroot/Pangeavideo/2014/12/f/f9/f9d4c5cb-63aa-4e31-85d6-692691da15f9_mobile.mp4&quot;,&quot;Type&quot;:&quot;video/mp4&quot;,&quot;CssClass&quot;:&quot;264p&quot;},{&quot;Src&quot;:&quot;http://av.voanews.com/Videoroot/Pangeavideo/2014/12/f/f9/f9d4c5cb-63aa-4e31-85d6-692691da15f9_hq.mp4&quot;,&quot;Type&quot;:&quot;video/mp4&quot;,&quot;CssClass&quot;:&quot;480p&quot;}]" preload="none">
+			<source src="http://av.voanews.com/Videoroot/Pangeavideo/2014/12/f/f9/f9d4c5cb-63aa-4e31-85d6-692691da15f9.mp4" type="video/mp4" class="352p primary">
+
+			</source>
+		</video> <div class="html5PlayerRelated"> <div class="html5PlayerRelatedInner">  <a href="http://ba.voanews.com/media/video/2625168.html"> <img src="" data-src="http://gdb.voanews.com/ac7c7559-7973-41a1-8273-718fbd2f26d8_tv_w150.jpg" alt="Studio Washington" title="Studio Washington" /> </a>  <a href="http://ba.voanews.com/media/video/2625079.html"> <img src="" data-src="http://gdb.voanews.com/4a3fc1ef-4536-4bbc-b3e4-446c9f6ba63e_tv_w150.jpg" alt="BiH: Papa Franjo po?etkom juna u Sarajevu" title="BiH: Papa Franjo po?etkom juna u Sarajevu" /> </a>  <a href="http://ba.voanews.com/media/video/2624979.html"> <img src="" data-src="http://gdb.voanews.com/3e109297-eaad-4af0-a7bc-f09e7cc0debd_tv_w150.jpg" alt="Civilna bolnica u Donjetsku preplavljena ukrajinskim ranjenicima" title="Civilna bolnica u Donjetsku preplavljena ukrajinskim ranjenicima" /> </a>  <a href="http://ba.voanews.com/media/video/2624936.html"> <img src="" data-src="http://gdb.voanews.com/8560524c-28e7-499f-b11d-f449c095ff36_tv_w150.jpg" alt="ICTY: Jesu li Hrvatska i Srbija krive za genocid?" title="ICTY: Jesu li Hrvatska i Srbija krive za genocid?" /> </a>  <a href="http://ba.voanews.com/media/video/2622164.html"> <img src="" data-src="http://gdb.voanews.com/eec6601b-479a-446a-be7a-e248039002e1_tv_w150.jpg" alt="Studio Washington" title="Studio Washington" /> </a>  <a href="http://ba.voanews.com/media/video/2622093.html"> <img src="" data-src="http://gdb.voanews.com/c99e312d-29b8-4a05-a2c0-bc975f7664c6_tv_w150.jpg" alt="Napadi u Parizu upu?uju na crno tr?i?te vojnim oru?jem" title="Napadi u Parizu upu?uju na crno tr?i?te vojnim oru?jem" /> </a>  <a href="http://ba.voanews.com/media/video/2621293.html"> <img src="" data-src="http://gdb.voanews.com/bf1591a9-ff02-4253-b31e-081a0dd6cfe2_tv_w150.jpg" alt="SAD: Keystone XL... i zakon i veto?!" title="SAD: Keystone XL... i zakon i veto?!" /> </a>  <a href="http://ba.voanews.com/media/video/2621115.html"> <img src="" data-src="http://gdb.voanews.com/f296023e-d0ab-439f-9ead-e5dc1349135b_tv_w150.jpg" alt="Moralnost ratovanja dronovima" title="Moralnost ratovanja dronovima" /> </a>  <a href="http://ba.voanews.com/media/video/2621103.html"> <img src="" data-src="http://gdb.voanews.com/0ccaa2f0-d5ea-40ed-acd4-7f42f467fca2_tv_w150.jpg" alt="Od &quot;izgubljenog dje?aka&quot; do ?ahovskog majstora" title="Od &quot;izgubljenog dje?aka&quot; do ?ahovskog majstora" /> </a>  <a href="http://ba.voanews.com/media/video/2621100.html"> <img src="" data-src="http://gdb.voanews.com/9dc4ece6-abc3-4eb1-ba6a-0a4501b566eb_tv_w150.jpg" alt="SAD: Biv?i dr?avni sekretari o sigurnosnim prioritetima" title="SAD: Biv?i dr?avni sekretari o sigurnosnim prioritetima" /> </a>  <a href="http://ba.voanews.com/media/video/2619797.html"> <img src="" data-src="http://gdb.voanews.com/ef2c199c-6f1d-4e76-8f6e-a9aac75caf29_tv_w150.jpg" alt="Studio Washington" title="Studio Washington" /> </a>  <a href="http://ba.voanews.com/media/video/2619681.html"> <img src="" data-src="http://gdb.voanews.com/e8c44117-ff90-4c4e-a02f-122a7ef6f892_tv_w150.jpg" alt="SAD ¨C Rusija: Me?usobna saradnja i mogu?a i po?eljna" title="SAD ¨C Rusija: Me?usobna saradnja i mogu?a i po?eljna" /> </a>  </div> </div> <div class="html5PlayerBranding">   <span id="ctl00_cpAB_upVideo_h5t_spaMediaTitle" class="html5PlayerTitle">Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a</span><a class="html5PlayerI" href="javascript:void(0)" title="More info"><span>i</span></a>  </div> <div class="html5PlayerControlPanel"> <div class="bar progressbar"> <div class="indicator"> <div class="loaded"></div> <div class="filled played"></div> </div> <button type="button"><span>?</span></button> </div> <div class="html5PlayerControlsLeft"> <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerPlay" title="Play">?</a> <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerPause" title="Pause">||</a> <span class="curTime">0:00:00</span><span class="duration"></span> </div> <div class="html5PlayerControlsRight"> <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerMore">...</a> <a id="ctl00_cpAB_upVideo_h5t_hylFullscreen" class="html5PlayerBtn html5PlayerFullscreenBtn" title="Full screen" href="/flashembed.aspx?t=vid&amp;id=2563280&amp;w=100%&amp;h=600&amp;skin=embededfullscreen" href="/flashembed.aspx?t=vid&amp;id=2563280&amp;w=100%&amp;h=600&amp;skin=embededfullscreen" target="_blank">?</a> <a id="ctl00_cpAB_upVideo_h5t_hylShare" class="html5PlayerBtn htmlPhgShare" title="Share" onclick="return openSharePopup(&#39;http://ba.voanews.com/emailtofriend/video/2563280.html?isflashembed=true&#39;)" href="http://ba.voanews.com/emailtofriend/video/2563280.html?isflashembed=true" target="_blank" href="http://ba.voanews.com/emailtofriend/video/2563280.html?isflashembed=true" target="_blank"></a>   <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerSourceSwitch" title="Change quality">&nbsp;</a> <div class="mediaSwitchPanel"> </div> <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerVolume" title="Volume control">??</a> <div class="bar volumebar"> <div class="indicator"> <div class="filled volLevel"></div> </div> <button type="button"><span>?</span></button> </div> </div> </div> <div class="playBig" title="Play"> <div class="playBigBg"></div> <div class="playBigFg"> <div class="altIco">?</div> </div> </div> <div class="html5PlayerInfopanel"> <div class="html5PlayerInfopanelInner"> <a href="javascript:void(0)" class="html5PlayerBtn html5PlayerInfopanelClose" title="Hide info">X</a> <div class="infopanelSmall infopanelAuthors">  </div> <div class="infopanelSmall infopanelPubDate"> 17.12.2014 </div> <div class="infoIntro">  </div> </div> </div> </div> <div class="html5PlayerFallback j_errorContainer"></div> </div> <script type="text/javascript">
+    Html5Player({
+        width: "640px" ,
+        height: "363px",
+        containerSelector : ".html5MediaPlayer",
+        showAlternateContentOnError : true,
+        showAlternateContentOnNoSource : true,
+        GA_Campaign : "",
+        mediaId : "2563280",
+        mediaTitle : "Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a",
+        livetrackImageUrl : "http://livetracker.voanews.eu/counter.lt?PageType=4&RecordId=2563280&SiteId=408&r=1912292735&it=0&pd=20141217214800&url="
+        });
+</script> 
+	</div><script type="text/javascript">
+		//<![CDATA[
+		Sys.Application.add_load(function() { swfobject.embedSWF('/flash_6.25.0.43422.5/MediaPlayer.swfx?cache=', 'ctl00_cpAB_upVideo_swfFlash', '640px', '363px', '10.0.0', '/flash/expressInstall.swf', {'defvolume': getVolume(),'brand': 'VOA','configFilePath': '%2fGetFlashXml.aspx%3fparam%3d2563280%7cauto%7cvideo%26skin%3dblack'}, {'wmode': 'transparent','allowFullScreen': 'true'}, {}); });//]]>
+
+	</script>
+</div>   </div> <div class="content_text"> <h1 class="media_title"> Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a</h1>   <p class="topdate"> Objavljeno 17.12.2014</p> <p id="ctl00_cpAB_pIntroduction" class="descText">  </p>  <div class="footerlinks"> <ul> <li title="Komentirajte" ><a class="commentico" href="#relatedInfoContainer">Komentirajte</a></li>  </ul> </div> </div> </div>  
+                            <div class="cleaner content-cleaner">
+                            </div>
+                            <div class="ads cleaner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            <!-- .main-content -->
+             <div class="main-content tab-content"> <div class="content_centered"> <div class="content" dir="ltr"> <div class="columns">  <div class="content_tabs"> <div class="tab_list"> <ul id="tablist"> <li id="tab-program" style="display: none;" class="tab"><a href="#sc1" class="tablink" onclick="expandcontent('sc1', this);" style="display: none;"> Program Episodes </a></li> <li id="tab-about" style="display: none;" class="tab"><a href="#sc2" class="tablink" onclick="expandcontent('sc2', this);" style="display: none;"> About The Show </a></li> <li id="tab-related" style="display: none;" class="tab tab-toggle"><a href="#tc1" class="tablink" onclick="OpenCloseToggleTab(1);" style="display: none;"> Vezano<span class="arrow">&nbsp;</span> </a></li> <li id="tab-featured" style="display: none" class="tab tab-toggle"><a href="#tc2" class="tablink" onclick="OpenCloseToggleTab(2);" style="display: none"> Multimedijska sekcija<span class="arrow">&nbsp;</span> </a></li> <li id="tab-archive" style="display: block;" class="tab"><a href="#sc5" class="tablink" onclick="expandcontent('sc5', this);" style="display: block;"> Multimedijska arhiva </a></li> <li id='tab-upload' class='tab'><a href='/userupload.html' class='tablink'>Stranica za upload</a></li> </ul> </div> <div id="tabcontentcontainer" class="boxwidget" style='display:none;'> <div id="tc1" class="tabcontent"> <div class="tabcontentInner">  </div> </div> <div id="tc2" class="tabcontent">  </div> </div> </div> </div> </div> </div> </div> <div class="main-content"> <div class="content_centered"> <div class="content" dir="ltr"> <div class="columns"> <div class="content_tabs"> <div id="tabcontentcontainer2" class="boxwidget" > <div id="sc1" class="tabcontent">  <div id="programZones"> <div class="paging top_paging paging_simple mediaZonePaging"> <div class="pages"> <span class="prev"><a class="linksmall mediaZonesPrev" href="javascript:currentProgramPage=currentProgramPage-1;LoadProgramZoneItems();" style='display: none;'> Prethodna stranica</a></span> <span class="next"> </span> </div> <div class="cleaner"> </div> </div> <div class="boxwidget" id="programZonesItems">  </div> <div class="paging bottom_paging paging_simple mediaZonePaging"> <div class="pages"> <span class="prev"><a class="linksmall mediaZonesPrev" href="javascript:currentProgramPage=currentProgramPage-1;LoadProgramZoneItems();" style='display: none;'> Prethodna stranica</a></span> <span class="next"> </span> </div> <div class="cleaner"> </div> </div> </div> </div> <div id="sc2" class="tabcontent"> <div class="content_column2_1">  </div> <div class="content_column2_2">   </div> </div> <div id="sc5" class="tabcontent">  <div class="mediaZonesList"><div class='boxwidget_part topintend_low'><div class='zoneNameList'><div class='zoneNameListContent'><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone0' class='' href="javascript:currentMediaZone=0;currentZoneName='';currentMediaPage=1;LoadMediaZoneItems();">Sve</a></div><div class='mediaZoneDiv'><a id='zone1972' class='zoneSelected' href="javascript:currentMediaZone=1972;currentZoneName='aktuelno-usa';currentMediaPage=1;LoadMediaZoneItems();">Amerika</a></div><div class='mediaZoneDiv'><a id='zone1964' class='' href="javascript:currentMediaZone=1964;currentZoneName='aktuelno-bih';currentMediaPage=1;LoadMediaZoneItems();">BiH</a></div></div><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone1967' class='' href="javascript:currentMediaZone=1967;currentZoneName='aktuelno-europe';currentMediaPage=1;LoadMediaZoneItems();">Europa</a></div><div class='mediaZoneDiv'><a id='zone1962' class='' href="javascript:currentMediaZone=1962;currentZoneName='aktuelno-world';currentMediaPage=1;LoadMediaZoneItems();">Svijet</a></div><div class='mediaZoneDiv'><a id='zone1963' class='' href="javascript:currentMediaZone=1963;currentZoneName='aktuelno-magazin';currentMediaPage=1;LoadMediaZoneItems();">Magazin</a></div></div><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone1965' class='' href="javascript:currentMediaZone=1965;currentZoneName='aktuelno-ekonomija';currentMediaPage=1;LoadMediaZoneItems();">Ekonomija</a></div><div class='mediaZoneDiv'><a id='zone1968' class='' href="javascript:currentMediaZone=1968;currentZoneName='aktuelno-health';currentMediaPage=1;LoadMediaZoneItems();">Zdravlje</a></div><div class='mediaZoneDiv'><a id='zone1969' class='' href="javascript:currentMediaZone=1969;currentZoneName='aktuelno-interview';currentMediaPage=1;LoadMediaZoneItems();">Intervju</a></div></div><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone1970' class='' href="javascript:currentMediaZone=1970;currentZoneName='photos';currentMediaPage=1;LoadMediaZoneItems();">Fotografije</a></div><div class='mediaZoneDiv'><a id='zone3517' class='' href="javascript:currentMediaZone=3517;currentZoneName='photos-of-the-day';currentMediaPage=1;LoadMediaZoneItems();">Fotografije dana</a></div></div><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone1971' class='' href="javascript:currentMediaZone=1971;currentZoneName='soundslides';currentMediaPage=1;LoadMediaZoneItems();">Slideshows</a></div><div class='mediaZoneDiv'><a id='zone1974' class='' href="javascript:currentMediaZone=1974;currentZoneName='programs-studio-washington';currentMediaPage=1;LoadMediaZoneItems();">Studio Washington</a></div></div><div class='boxwidget_part'><div class='mediaZoneDiv'><a id='zone2152' class='' href="javascript:currentMediaZone=2152;currentZoneName='programs-60-sekundi-iz-amerike';currentMediaPage=1;LoadMediaZoneItems();">60 Sekundi iz Amerike</a></div><div class='mediaZoneDiv'><a id='zone3385' class='' href="javascript:currentMediaZone=3385;currentZoneName='elections2012';currentMediaPage=1;LoadMediaZoneItems();">Izbori 2012</a></div></div><div class='cleaner'></div></div> </div><div class='zoneNameCleaner'></div></div></div> <div id="mediaZones"> <div class="paging top_paging paging_simple mediaZonePaging"> <div class="pages"> <span class="prev"><a class="linksmall mediaZonesPrev" href="javascript:currentMediaPage=currentMediaPage-1;LoadMediaZoneItems();" style='display: none;'> Prethodna stranica</a></span> <span class="next"> <a class='linksmall mediaZonesNext' style='display:block;' href='javascript:currentMediaPage=currentMediaPage+1;LoadMediaZoneItems();'>Naredna stranica</a></span> </div> <div class="cleaner"> </div> </div> <div class="boxwidget" id="mediaZonesItems"> <div class='boxwidgetInner'><div class='widget_row'><div class='content_column_feature  content_column_feature_firstrow boxwidget'><a href='/media/video/2621293.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621293.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/bf1591a9-ff02-4253-b31e-081a0dd6cfe2_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2621293.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621293.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>SAD: Keystone XL... i zakon i veto?!</span></a></h4><div class='date black'>30.01.2015</div></div><div class='content_column_feature  content_column_feature_firstrow boxwidget'><a href='/media/video/2621115.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621115.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/f296023e-d0ab-439f-9ead-e5dc1349135b_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2621115.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621115.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Moralnost ratovanja dronovima</span></a></h4><div class='date black'>30.01.2015</div></div><div class='content_column_feature  content_column_feature_firstrow boxwidget'><a href='/media/video/2621103.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621103.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/0ccaa2f0-d5ea-40ed-acd4-7f42f467fca2_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2621103.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621103.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Od &quot;izgubljenog dje?aka&quot; do ?ahovskog majstora</span></a></h4><div class='date black'>30.01.2015</div></div><div class='content_column_feature  content_column_feature_firstrow boxwidget'><a href='/media/video/2621100.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621100.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/9dc4ece6-abc3-4eb1-ba6a-0a4501b566eb_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2621100.html' onclick='MediaArchiveRedirect(&#39;/media/video/2621100.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>SAD: Biv?i dr?avni sekretari o sigurnosnim prioritetima</span></a></h4><div class='date black'>30.01.2015</div></div><div class='content_column_feature lastItem content_column_feature_firstrow boxwidget'><a href='/media/video/2617403.html' onclick='MediaArchiveRedirect(&#39;/media/video/2617403.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/a38b1564-a964-4237-a47e-598d96b3c0bd_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2617403.html' onclick='MediaArchiveRedirect(&#39;/media/video/2617403.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>O?i letjelica NASA-e uperene prema Zemlji</span></a></h4><div class='date black'>28.01.2015</div></div></div><div class='widget_row'><div class='content_column_feature   boxwidget'><a href='/media/video/2617340.html' onclick='MediaArchiveRedirect(&#39;/media/video/2617340.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/54f33afd-2662-4803-adf2-d995bcf96e63_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2617340.html' onclick='MediaArchiveRedirect(&#39;/media/video/2617340.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>SAD: Teksas osje?a pad cijena sirove nafte</span></a></h4><div class='date black'>28.01.2015</div></div><div class='content_column_feature   boxwidget'><a href='/media/video/2615608.html' onclick='MediaArchiveRedirect(&#39;/media/video/2615608.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/1aa11506-9df5-496a-b85d-17c87b5313ee_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2615608.html' onclick='MediaArchiveRedirect(&#39;/media/video/2615608.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Izlo?ba slika o Djevici Mariji govori i o toleranciji</span></a></h4><div class='date black'>27.01.2015</div></div><div class='content_column_feature   boxwidget'><a href='/media/video/2611212.html' onclick='MediaArchiveRedirect(&#39;/media/video/2611212.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/3df56a22-8e7e-4ee4-8e9a-9895d61224bd_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2611212.html' onclick='MediaArchiveRedirect(&#39;/media/video/2611212.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Umjetni?ka djela u podzemnoj ?eljeznici odu?evljavaju Njujor?ane i turiste</span></a></h4><div class='date black'>23.01.2015</div></div><div class='content_column_feature   boxwidget'><a href='/media/video/2609524.html' onclick='MediaArchiveRedirect(&#39;/media/video/2609524.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/3795fdb1-53d0-4203-a732-13c299926a3c_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2609524.html' onclick='MediaArchiveRedirect(&#39;/media/video/2609524.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>SAD: Korigirati rat protiv terorizma?</span></a></h4><div class='date black'>22.01.2015</div></div><div class='content_column_feature lastItem  boxwidget'><a href='/media/video/2609492.html' onclick='MediaArchiveRedirect(&#39;/media/video/2609492.html&#39;,false);return false;'><img alt='' src='http://gdb.voanews.com/2357f632-8b5c-44f3-b667-dc774d8150c8_tv_w183_h103.jpg'  /><img src="/img/spacer.gif" alt="" class='overlay overlayFeature' onmouseover="this.src='/img/videoOverlayMed.png'" onmouseout="this.src='/img/spacer.gif'"/></a><h4 class='black'><a class='linkmed assignedIcon asIcoVideo' href='/media/video/2609492.html' onclick='MediaArchiveRedirect(&#39;/media/video/2609492.html&#39;,false);return false;'><span title="Video" class=' assignedIcon asIcoVideo'><img border="0" align="top" src="/img/assignedIcons/icon-blank.gif" alt="Video" />&nbsp;</span><span class='underlineLink'>Dobrotvorna organizacija iz New Yorka donira preko 100.000 zimskih kaputa</span></a></h4><div class='date black'>22.01.2015</div></div></div></div> </div> <div class="paging bottom_paging paging_simple mediaZonePaging"> <div class="pages"> <span class="prev"><a class="linksmall mediaZonesPrev" href="javascript:currentMediaPage=currentMediaPage-1;LoadMediaZoneItems();" style='display: none;'> Prethodna stranica</a></span> <span class="next"> <a class='linksmall mediaZonesNext' style='display:block;' href='javascript:currentMediaPage=currentMediaPage+1;LoadMediaZoneItems();'>Naredna stranica</a></span> </div> <div class="cleaner"> </div> </div> </div>  </div> </div> </div> <script type="text/javascript"> var initialtab =  [5,'sc5'];</script>  </div> </div> </div> </div> <div id="lastContent" class="main-content"> <div class="content_centered"> <div class="content" dir="ltr"> <div class="columns"> <div class="delimiter"><hr class="delimiter"></div>  <div class="content_column2"> <div class='content_column2_1'>  <div id="ctl00_cpMain2_ForumHolder" class="content_forum"> <div id="relatedInfoContainer"> <a name="relatedInfoContainer"></a> </div>  <script type="text/javascript">
+    var isOnlyForRegistered = false; 
+    function WriteComment(articleid,replyid) {
+        var isLoggedIn=false;
+        if(typeof(_isLoggedIn)!='undefined')
+            isLoggedIn=_isLoggedIn;
+        if(isOnlyForRegistered && !isLoggedIn)
+            LoginLogoutSignupClick('login', 0);
+        else {
+            var userName = $("#liMembershipUserName").find('span').text();
+            $("#replycomment" + replyid).html('<iframe class="commentIframe" id="commentiframe' + replyid 
+                 + '" frameborder="0" onload="SetIfrHeight(this)" width="580" height="450" marginwidth="0" marginheight="0"' +
+                 'scrolling="no" src="../../comment.aspx?articleid=2563280&threadid=' + replyid + '&username=' + escape(userName) +'" />');
+        }
+    }
+//  this was in source:  http://ba.voanews.com
+
+    function SetIfrHeight(elm) {
+        var oIfr = $(elm);
+        oIfr.css("height", $("body", oIfr.contents()).outerHeight(true) + 15 + "px");
+    }
+
+    function CloseComment(replyid) {
+        $("#replycomment" + replyid).html('');
+    }
+    
+    function ClosedForum(replyid) {
+        $("#replycomment" + replyid).html('<div class="boxwidget_part instruction">Ovaj forum je zaklju?en</div>');
+    }
+    
+    function LoginLogoutSignupClick(pageToGo, replyid) {
+        $('div[id^=replycomment]').html('');
+        openIframeModal(pageToGo);
+        //window.location ='http://ba.voanews.com'+pageToGo;
+    }
+</script> <div id="ctl00_cpMain2_ctl00_divForum"> <div class='boxwidget_part instruction'>Ovaj forum je zaklju?en</div> <div class="forumControl">   <div class="cleaner"> </div> <div id="replycomment0"></div> </div> <div class="boxwidget"> <div id="ctl00_cpMain2_ctl00_upperInfo" class="black_m paging top_paging"> <h5 id="ctl00_cpMain2_ctl00_upperTitle" class="pagingTitle">Komentari</h5> <div class="pages multimedia_bar_pages"> <span class="prev">&nbsp;&nbsp;</span> <span class="next">&nbsp;&nbsp;</span> </div> <div class="cleaner"></div> </div> <div class="forumMessages"> <div class="noMessages"><span class='forum_empty'>Nema komentara u ovom forumu. Budite prvi i dodajte komentar.</span></div>  </div>  </div> <div class="forumControlBottom"> <div class="cleaner"> </div> </div> </div></div> </div> <div class="content_column2_2">  </div> </div>  </div> </div> </div> </div> <script id="ctl00_cpMain2_DynamicScript1" type="text/javascript" src="/js_6.25.0.43422.5/tabs.x.js">
+
+</script>  
+            
+            
+            <div id="footer" dir="ltr">
+                <div id="footerServices">
+                    <div class="content_centered">
+                        <div class="inner">
+                            <div class="services">
+                                <div class='content_services'><h2>Produkti i usluge</h2><a class=' podcastico' href="/Podcast/0.html" title="Podkast">Podkast</a><a class=' rssico' href="/rsspage.aspx" title="RSS">RSS</a><a class=' subscribeico' href="/subscribe.aspx" title="Prijava za mail">Prijava za mail</a><a class=' mobileico' href="http://m.ba.voanews.com/" title="Mobilni telefon">Mobilni telefon </a></div>
+                            </div>
+                            <!-- .services -->
+                            <div class="search_bar">
+                                <div class="search_cower">
+                                    <input id="search_loupe_btn_footer" onclick="FireTealiumEvent({on_page_event: 'search', search_keyword: $('#keywords_footer').val()}); SearchButton('keywords_footer','order_', isLibNetSite ? publicSiteId  : '', $('#hfUseAutoComplete').val(), 'date    ');" type="button" value="" title="Pretra?iva?" class="round_corners_button_orange" />
+                                    <!--<input type="submit" class="search_btn" name="" value="Search"/>-->
+                                    <input id="keywords_footer"  onkeypress="if (event.keyCode == 13) { FireTealiumEvent({on_page_event: 'search', search_keyword: $('#keywords_footer').val()}); SearchButton('keywords_footer','order_', isLibNetSite ? publicSiteId  : '', $('#hfUseAutoComplete').val(), 'date'); return false;}" type="text" value="" class="top_search" />
+                                </div>
+                            </div>
+                            <!-- .search_bar -->
+                            <div class="cleaner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footerLinks" data-vr-zone="Footer links">
+                    <div class="content_centered">
+                        <div class="inner">
+                            <div class='menuColumn menuColumnFirst'><h4>Glas Amerike</h4>
+<ul><li class=""><a href="/section/aktuelno-svijet/2545.html" >Svijet</a></li>
+<li class=""><a href="/section/aktuelno-bih/2547.html" >BiH</a></li>
+<li class=""><a href="/section/aktuelno-ekonomija/2548.html" >Ekonomija</a></li>
+<li class=""><a href="/section/aktuelno-evropa/2549.html" >Evropa</a></li>
+</ul></div><div class='menuColumn'><ul><li class=""><a href="" ></a></li>
+<li class=""><a href="/section/aktuelno-zdravlje/2550.html" >Zdravlje</a></li>
+<li class=""><a href="/section/aktuelno-amerika/2552.html" >Amerika</a></li>
+<li class=""><a href="/section/aktuelno-magazin/2546.html" >Magazin</a></li>
+<li class=""><a href="/section/aktuelno-intervju/2551.html" >Intervju</a></li>
+</ul></div><div class='menuColumn'><h4>Programi</h4>
+<ul><li class=""><a href="/archive/programs-studio-washington/latest/1973/1974.html" >Studio Washington</a></li>
+<li class=""><a href="/archive/programs-60-sekundi-iz-amerike/latest/1973/2152.html" >60 Sekundi iz Amerike</a></li>
+</ul><h4><a href="/info/about_us/1543.html" >O nama</a></h4>
+<ul><li class=""><a href="" >Kontaktirajte nas</a></li>
+<li class=""><a href="/info/terms-of-use/2574.html" >Upotrebe i privatnost</a></li>
+</ul></div><div class='menuColumn menuColumnLast'><h4>Dru?tvene mre?e</h4><ul class='menuSocialNetwork'><li><a href="https://twitter.com/intent/tweet?url=http%3a%2f%2fba.voanews.com%2fmedia%2fvideo%2f2563280.html&amp;text=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" target='_blank' onclick='FireTealiumEvent({on_page_event: "share_on_twitter"});'><span class='social-ico social-ico-js_twitter ' title='Twitter'></span>Twitter</a></li><li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fba.voanews.com%2fmedia%2fvideo%2f2563280.html" target='_blank' onclick='FireTealiumEvent({on_page_event: "share_on_facebook"});'><span class='social-ico social-ico-facebook ' title='Facebook'></span>Facebook</a></li><li><a href="http://digg.com/submit?url=http%3a%2f%2fba.voanews.com%2fmedia%2fvideo%2f2563280.html&amp;title=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a&amp;bodytext=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" target='_blank' onclick='FireTealiumEvent({on_page_event: "share_on_digg"});'><span class='social-ico social-ico-digg ' title='Digg'></span>Digg</a></li><li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2fba.voanews.com%2fmedia%2fvideo%2f2563280.html&amp;title=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" target='_blank' onclick='FireTealiumEvent({on_page_event: "share_on_stumbleupon"});'><span class='social-ico social-ico-stumbleupon ' title='StumbleUpon'></span>StumbleUpon</a></li><li><a href="http://del.icio.us/post?url=http%3a%2f%2fba.voanews.com%2fmedia%2fvideo%2f2563280.html&amp;title=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a&amp;notes=Veteranka bluesa Trudy Lynn o?ivljava blues prve polovine 20. stolje?a" target='_blank' onclick='FireTealiumEvent({on_page_event: "share_on_del.icio.us"});'><span class='social-ico social-ico-delicious ' title='Del.icio.us'></span>Del.icio.us</a></li></ul></div>
+                            <p class="copyright">
+                                Sva prava zadr?ana. Glas Amerike ? 2015 Glas Amerike: <a href="mailto:bosnian-service@voanews.com">bosnian-service@voanews.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #footer -->
+            
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+if(Sys && Sys.WebForms && Sys.WebForms.PageRequestManager)
+                        Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function (sender, args) {
+                            showMembershipBar();
+                        });RegisterLinkClick();//]]>
+</script>
+</form>    
+    
+                   
+    
+    </body> </html>
