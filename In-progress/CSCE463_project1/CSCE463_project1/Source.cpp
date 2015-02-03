@@ -11,6 +11,7 @@ using namespace std;
 
 bool parser_URL(char *address, char *host, char *request, int *port)
 {
+	printf("        Parsing URL... ");
 	char scheme_part_check[8] = "";
 	strncpy(scheme_part_check, address, 7);
 	if (strcmp(scheme_part_check, "http://") != 0)
@@ -62,6 +63,7 @@ bool parser_URL(char *address, char *host, char *request, int *port)
 		delete(new_request);
 	}
 	if (request[strlen(request) - 1] == '\r') request[strlen(request) - 1] = NULL;
+	printf("host %s, port %d\n", host, port);
 	return true;
 }
 
@@ -364,7 +366,7 @@ bool deal_with_page(SOCKET connection_socket, char *host, char *request, sockadd
 	closesocket(connection_socket);
 }
 
-void main()
+void main(int argc, const char* argv[])
 {
 	unordered_set <string> host_set;
 	char *path = "URL.txt";
