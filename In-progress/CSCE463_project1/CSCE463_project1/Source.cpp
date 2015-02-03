@@ -408,7 +408,8 @@ void main(int argc, const char* argv[])
 	if (read_address_from_file)
 	{
 		cout << "Main thread: ";
-		path = "URL.txt";
+		path = new char[strlen(argv[2]) + 1];
+		strcpy(path, argv[2]);
 		URL_file_content = wirte_file_to_memory(path);
 		if (URL_file_content == NULL)	return;
 		address = strtok(URL_file_content, "\n");

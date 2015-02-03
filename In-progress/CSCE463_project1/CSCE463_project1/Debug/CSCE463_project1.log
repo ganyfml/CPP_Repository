@@ -1,4 +1,4 @@
-﻿Build started 2/3/2015 1:06:11 AM.
+﻿Build started 2/3/2015 1:13:20 AM.
      1>Project "G:\Database_backup\Programs_Repository\C++_Repository\In-progress\CSCE463_project1\CSCE463_project1\CSCE463_project1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Programming\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
@@ -60,11 +60,13 @@
                  e:\programming\visual studio\vc\include\string.h(118) : see declaration of 'strcat'
      1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(295): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\programming\visual studio\vc\include\stdio.h(211) : see declaration of 'fopen'
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(414): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 e:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(419): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(412): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(431): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(415): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(420): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\programming\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(432): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  e:\programming\visual studio\vc\include\string.h(204) : see declaration of 'strtok'
      1>g:\database_backup\programs_repository\c++_repository\in-progress\csce463_project1\csce463_project1\source.cpp(374): warning C4715: 'deal_with_page' : not all control paths return a value
        Link:
@@ -74,4 +76,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.77
+Time Elapsed 00:00:00.76
