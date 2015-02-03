@@ -421,8 +421,8 @@ void main(int argc, const char* argv[])
 	}
 
 	SOCKET connection_socket;
-	init_winsock();
-	open_socket(&connection_socket);
+	if(!init_winsock())	return;
+	if(!open_socket(&connection_socket))	return;
 	bool first_come_to_loop = true;
 	if (read_address_from_file)
 	{
@@ -444,7 +444,7 @@ void main(int argc, const char* argv[])
 			if (!check_uniqueness(&host_set, host))	continue;
 			hostent remote;
 			sockaddr_in server;
-			open_socket(&connection_socket);
+			if(!open_socket(&connection_socket))	return;
 			if (!DNS_lookup(host, port, &remote, &server, IP_address))	continue;
 			cout << "	Checking IP uniqueness...";
 			if (!check_uniqueness(&host_set, IP_address))	continue;
@@ -463,7 +463,7 @@ void main(int argc, const char* argv[])
 		if (!parser_URL(address, host, request, &port)) return;//invaild format
 		hostent remote;
 		sockaddr_in server;
-		open_socket(&connection_socket);
+		if(!open_socket(&connection_socket))	return;
 		if (!DNS_lookup(host, port, &remote, &server, IP_address))	return;
 		closesocket(connection_socket);
 		if (!deal_with_page(connection_socket, host, request, &server, true))	return;
