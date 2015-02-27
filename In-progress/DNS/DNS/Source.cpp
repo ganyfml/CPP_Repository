@@ -3,6 +3,27 @@
 
 using namespace std;
 
+class DNS_header
+{
+public:
+	char* generate_header(char type, unsigned int num_question)
+	{
+		generate_TXID();
+	}
+
+private:
+	char TXID[2];
+	char flag[2];
+	char nQuestion[2];
+	char nAnswers[2];
+	char nAuthority[2];
+	char nAdditional[2];
+	void generate_TXID()
+	{
+		TXID[0] = rand() % 256;
+		TXID[1] = rand() % 256;
+	}
+};
 
 bool init_winsock()
 {
@@ -43,6 +64,7 @@ bool send_UDP_package(SOCKET *socket_UDP, char *IP_send_to, char *message_send, 
 
 int main()
 {
+	/*
 	char buff[512];
 	//char *DNS_address = "128.194.135.94";
 	char *DNS_address = "8.8.8.8";
@@ -64,5 +86,12 @@ int main()
 	int fromlen = sizeof(addr);
 	bool status1 = open_UDP_socket(&socket_UDP);
 	bool status2 = send_UDP_package(&socket_UDP, DNS_address, message, sizeof(message));
-	int byte_count = recvfrom(socket_UDP, buff, sizeof(buff), 0, &addr, &fromlen);
+	int byte_count = recvfrom(socket_UDP, buff, sizeof(buff), 0, &addr, &fromlen);*/
+
+	unsigned int a = 5;
+	char b[2];
+	b[0] = (char)(a & 0x0001);
+	b[1] = (char)(a & 0x0010) >> 4;
+
 }
+
