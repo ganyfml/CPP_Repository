@@ -1,31 +1,83 @@
 #include <iostream>
 #include <winsock.h>
+#include <cstdint>
+
+#define NDS_INET 1
+#define DNS_A 1
+#define DNS_QUERY (0 << 15)		/* 0 = query; 1 = response */ 
+#define DNS_RESPONSE (1 << 15)
+#define DNS_STDQUERY (0 << 11)	/* opcode - 4 bits */
+#define DNS_AA (1 << 10)		/* authoritative answer*/
+#define DNS_TC (1 << 9)			/* truncated */
+#define DNS_RD (1 << 8)			/* recursion desired */
+#define DNS_RA (1 << 7)			/* recursion available */ 
 
 using namespace std;
 
-class DNS_header
-{
+#pragma pack(push, 1)
+class queryHeader{
 public:
-	char* generate_header(char type, unsigned int num_question)
-	{
-		generate_TXID();
-	}
-
-private:
-	char TXID[2];
-	char flag[2];
-	char nQuestion[2];
-	char nAnswers[2];
-	char nAuthority[2];
-	char nAdditional[2];
-	void generate_TXID()
-	{
-		TXID[0] = rand() % 256;
-		TXID[1] = rand() % 256;
-	}
+	USHORT qType;
+	USHORT qClass;
 };
 
-bool init_winsock()
+class fixedDNSheader{
+public:
+	USHORT ID;
+	USHORT flags;
+	USHORT questions;
+	USHORT answers;
+	USHORT authority;
+	USHORT addition;
+};
+#pragma pack(pop)
+
+void generate_DNS_question(char *request, char *host)
+{
+	int num_copyed = 0;
+	for (int i = 0; i < 2; i++)
+	{
+		char *dot_position = strchr(host, '.');
+		int length = dot_position - host;
+		request[num_copyed] = length;
+		memcpy(request + num_copyed + 1, host, length);
+		num_copyed += length+1;
+		host = dot_position + 1;
+	}
+	request[num_copyed] = strlen(host);
+	memcpy(request + num_copyed + 1, host, strlen(host));
+	return;
+}
+
+void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
+{
+	fixedDNSheader *dns_header = (fixedDNSheader *)DNS_request;
+	queryHeader *query_header = (queryHeader*)(DNS_request + pkt_size - sizeof(queryHeader));
+	dns_header->ID = rand() % 65535;
+	dns_header->flags = DNS_QUERY || DNS_RD || DNS_STDQUERY;
+	dns_header->questions = htons(1);
+	dns_header->answers = 0;
+	dns_header->authority = 0;
+	dns_header->addition = 0;
+	query_header->qType = htons(DNS_A);
+	query_header->qClass = htons(NDS_INET);
+	generate_DNS_question(DNS_request + sizeof(fixedDNSheader), host);
+}
+
+class UDP_connection
+{
+public:
+	bool UDP_init();
+	bool UDP_send(char *IP_send_to, char *message_send, int message_length);
+	int	 UDP_recv(char **buff);
+
+private:
+	SOCKET socket_UDP;
+	struct sockaddr_in local, remote;
+	bool   init_winsock();
+};
+
+bool UDP_connection::init_winsock()
 {
 	WSADATA wsaData;
 	WORD wVersionRequested = MAKEWORD(2, 2);
@@ -37,35 +89,49 @@ bool init_winsock()
 	else return true;
 }
 
-bool open_UDP_socket(SOCKET *socket_UDP)
+bool UDP_connection::UDP_send(char *IP_send_to, char *message_send, int message_length)
 {
-	*socket_UDP = socket(AF_INET, SOCK_DGRAM, 0);
-	struct sockaddr_in local;
-	memset(&local, 0, sizeof(local));
-	local.sin_family = AF_INET;
-	local.sin_addr.s_addr = INADDR_ANY;
-	local.sin_port = htons(0);
-	if (bind(*socket_UDP, (struct sockaddr*)&local, sizeof(local)) == SOCKET_ERROR)
-		return false;
-	else return true;
-}
-
-bool send_UDP_package(SOCKET *socket_UDP, char *IP_send_to, char *message_send, int message_length)
-{
-	struct sockaddr_in remote;
 	memset(&remote, 0, sizeof(remote));
 	remote.sin_family = AF_INET;
 	remote.sin_addr.s_addr = inet_addr(IP_send_to);
 	remote.sin_port = htons(53);
-	if (sendto(*socket_UDP, message_send, message_length, 0, (struct sockaddr*)&remote, sizeof(remote)) == SOCKET_ERROR)
+	if (sendto(socket_UDP, message_send, message_length, 0, (struct sockaddr*)&remote, sizeof(remote)) == SOCKET_ERROR)
 		return false;
 	return true;
 }
 
+bool UDP_connection::UDP_init()
+{
+	if (!init_winsock())
+	{
+		cout << "WinSock init faild";
+		return false;
+	}
+	socket_UDP = socket(AF_INET, SOCK_DGRAM, 0);
+	memset(&local, 0, sizeof(local));
+	local.sin_family = AF_INET;
+	local.sin_addr.s_addr = INADDR_ANY;
+	local.sin_port = htons(0);
+	if (bind(socket_UDP, (struct sockaddr*)&local, sizeof(local)) == SOCKET_ERROR)
+	{
+		cout << "Blind Socket Faild";
+		return false;
+	}
+	else return true;
+}
+
+int UDP_connection::UDP_recv(char **buff)
+{
+	*buff = new char[512];
+	struct sockaddr addr;
+	int fromlen = sizeof(addr);
+	int byte_count = recvfrom(socket_UDP, *buff, 512, 0, &addr, &fromlen);
+	return byte_count;
+}
+
 int main()
 {
-	/*
-	char buff[512];
+	char *buff;
 	//char *DNS_address = "128.194.135.94";
 	char *DNS_address = "8.8.8.8";
 	string URL = "www.cnn.com";
@@ -75,23 +141,29 @@ int main()
 	char content1[3] = { 'w', 'w', 'w' };
 	char content2[3] = { 'c', 'n', 'n' };
 	char content3[3] = { 'c', 'o', 'm' };
-	char header[12] = { 12, 12, '\1', '\0', '\0', '\1', '\0', '\0', '\0', '\0', '\0', '\0'};
+	char header[12] = { 12, 12, '\1', '\0', '\0', '\1', '\0', '\0', '\0', '\0', '\0', '\0' };
 	char query[] = { '\3', 'w', 'w', 'w', '\3', 'c', 'n', 'n', '\3', 'c', 'o', 'm', '\0', '\0', '\1', '\0', '\1' };
 	char message[] = { 12, 12, '\1', '\0', '\0', '\1', '\0', '\0', '\0', '\0', '\0', '\0', '\3', 'w', 'w', 'w', '\3', 'c', 'n', 'n', '\3', 'c', 'o', 'm', '\0', '\0', '\1', '\0', '\1' };
-	cout << sizeof(message);
+	//cout << sizeof(message);
 
-	init_winsock();
-	SOCKET socket_UDP;
-	struct sockaddr addr;
-	int fromlen = sizeof(addr);
-	bool status1 = open_UDP_socket(&socket_UDP);
-	bool status2 = send_UDP_package(&socket_UDP, DNS_address, message, sizeof(message));
-	int byte_count = recvfrom(socket_UDP, buff, sizeof(buff), 0, &addr, &fromlen);*/
 
-	unsigned int a = 5;
-	char b[2];
-	b[0] = (char)(a & 0x0001);
-	b[1] = (char)(a & 0x0010) >> 4;
+	UDP_connection UDP_connect;
+	UDP_connect.UDP_init();
 
+	char *host = "www.cnn.com";
+	int pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
+	char *request = new char[pktsize];
+	memset(request, 0, pktsize*sizeof(char));
+	generate_DNS_request(host, request, pktsize);
+
+	UDP_connect.UDP_send(DNS_address, request, 29);
+	cout << "start" << endl;
+	for (int i = 0; i < pktsize; i++)
+	{
+		printf("%d   %d \n", (unsigned char)request[i], (unsigned char)message[i]);
+	}
+	cout << "end" << endl;
+	int byte_count = UDP_connect.UDP_recv(&buff);
+	getchar();
 }
 
