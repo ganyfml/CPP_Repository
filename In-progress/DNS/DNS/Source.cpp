@@ -10,18 +10,21 @@
 #define DNS_AA (1 << 10)		/* authoritative answer*/
 #define DNS_TC (1 << 9)			/* truncated */
 #define DNS_RD (1 << 8)			/* recursion desired */
-#define DNS_RA (1 << 7)			/* recursion available */ 
+#define DNS_RA (1 << 7)			/* recursion available */
+#define MAX_DNS_LEN 512
 
 using namespace std;
 
 #pragma pack(push, 1)
-class queryHeader{
+class queryHeader
+{
 public:
 	USHORT qType;
 	USHORT qClass;
 };
 
-class fixedDNSheader{
+class fixedDNSheader
+{
 public:
 	USHORT ID;
 	USHORT flags;
@@ -30,14 +33,25 @@ public:
 	USHORT authority;
 	USHORT addition;
 };
+
+class fixedRR
+{
+public:
+	USHORT name;
+	USHORT type;
+	USHORT class_content;
+	int TTL;
+	USHORT length_data;
+};
 #pragma pack(pop)
 
 void generate_DNS_question(char *request, char *host)
 {
 	int num_copyed = 0;
-	for (int i = 0; i < 2; i++)
+	while (true)
 	{
 		char *dot_position = strchr(host, '.');
+		if (dot_position == NULL)	break;
 		int length = dot_position - host;
 		request[num_copyed] = length;
 		memcpy(request + num_copyed + 1, host, length);
@@ -46,11 +60,11 @@ void generate_DNS_question(char *request, char *host)
 	}
 	request[num_copyed] = strlen(host);
 	memcpy(request + num_copyed + 1, host, strlen(host));
-	return;
 }
 
 void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
 {
+	memset(DNS_request, 0, pkt_size*sizeof(char));
 	fixedDNSheader *dns_header = (fixedDNSheader *)DNS_request;
 	queryHeader *query_header = (queryHeader*)(DNS_request + pkt_size - sizeof(queryHeader));
 	dns_header->ID = rand() % 65535;
@@ -122,20 +136,18 @@ bool UDP_connection::UDP_init()
 
 int UDP_connection::UDP_recv(char **buff)
 {
-	*buff = new char[512];
+	*buff = new char[MAX_DNS_LEN];
 	struct sockaddr addr;
 	int fromlen = sizeof(addr);
 	int byte_count = recvfrom(socket_UDP, *buff, 512, 0, &addr, &fromlen);
 	return byte_count;
 }
 
-int main()
+void test()
 {
-	char *buff;
 	//char *DNS_address = "128.194.135.94";
 	char *DNS_address = "8.8.8.8";
 	string URL = "www.cnn.com";
-	unsigned short a = 1;
 	char query1[4] = { '0', '1', '0', '1' };
 	unsigned char size = 3;
 	char content1[3] = { 'w', 'w', 'w' };
@@ -144,26 +156,76 @@ int main()
 	char header[12] = { 12, 12, '\1', '\0', '\0', '\1', '\0', '\0', '\0', '\0', '\0', '\0' };
 	char query[] = { '\3', 'w', 'w', 'w', '\3', 'c', 'n', 'n', '\3', 'c', 'o', 'm', '\0', '\0', '\1', '\0', '\1' };
 	char message[] = { 12, 12, '\1', '\0', '\0', '\1', '\0', '\0', '\0', '\0', '\0', '\0', '\3', 'w', 'w', 'w', '\3', 'c', 'n', 'n', '\3', 'c', 'o', 'm', '\0', '\0', '\1', '\0', '\1' };
-	//cout << sizeof(message);
+}
 
+void display_address(char *target, int index_init)
+{
+	int index = index_init;
+	while (true)
+	{
+		int number = (unsigned char)target[index++];
+		if (number == 0)	break;
+		if (number != 192)//C0
+		{
+			for (int i = 0; i < number; i++)	printf("%c", target[index++]);
+			printf(".");
+		}
+		else  index = (unsigned char)target[index];
+	}
+}
 
+void display_IP(char *target, int index)
+{
+	printf("%d.%d.%d.%d\n", (unsigned char)target[index], (unsigned char)target[index+1], (unsigned char)target[index+2], (unsigned char)target[index+3]);
+}
+
+void display_data(char *data, int length, int init_index)
+{
+	int index = init_index;
+	while (index < length)
+	{
+		fixedRR *first = (fixedRR *)(data + index);
+		//printf("%d", (unsigned char)(*((char*)(first)+1)));
+		printf("%d\n", (USHORT)htons(first->name));
+		display_address(data, data[index + 1]);
+		printf("%d\n", (USHORT)htons(first->type));
+		if ((USHORT)htons(first->type) == 5)
+			display_address(data, index + 12);
+		else display_IP(data, index + 12);
+		printf("%d\n", (USHORT)htons(first->class_content));
+		printf("%d\n", htonl(first->TTL));
+		printf("%d\n", (USHORT)htons(first->length_data));
+		printf("%d\n", (unsigned)data[index + 1]);
+		cout << endl;
+		index += (unsigned)htons(first->length_data) + 12;
+		cout << "index:";
+		cout << index << endl;
+		cout << endl;
+		cout << endl;
+	}
+
+}
+
+int main()
+{
+	char *buff;
+	char *DNS_address = "8.8.8.8";
 	UDP_connection UDP_connect;
 	UDP_connect.UDP_init();
-
-	char *host = "www.cnn.com";
+	char *host = "www.randomA.irl";
 	int pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
 	char *request = new char[pktsize];
-	memset(request, 0, pktsize*sizeof(char));
 	generate_DNS_request(host, request, pktsize);
-
-	UDP_connect.UDP_send(DNS_address, request, 29);
-	cout << "start" << endl;
-	for (int i = 0; i < pktsize; i++)
-	{
-		printf("%d   %d \n", (unsigned char)request[i], (unsigned char)message[i]);
-	}
-	cout << "end" << endl;
+	UDP_connect.UDP_send(DNS_address, request, pktsize);
 	int byte_count = UDP_connect.UDP_recv(&buff);
+
+	display_data(buff, byte_count, pktsize);
+	for (int i = pktsize; i < byte_count; i++)
+	{
+		printf("%d   %d\n", i, (unsigned	char) buff[i]);
+	}
+
+	//display_address(buff, 77);
 	getchar();
 }
 
