@@ -1,4 +1,4 @@
-﻿Build started 3/3/2015 12:50:43 AM.
+﻿Build started 3/3/2015 1:33:52 AM.
      1>Project "G:\Database_backup\Programs_Repository\C++_Repository\In-progress\DNS\DNS\DNS.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Programming\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
@@ -10,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:00.86

@@ -66,6 +66,7 @@ void generate_DNS_question(char *request, char *host)
 	}
 	request[num_copyed] = strlen(host);
 	memcpy(request + num_copyed + 1, host, strlen(host));
+	//strcat(request, "/0");
 }
 
 void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
@@ -263,13 +264,13 @@ public:
 		cout << "Question:" << endl;
 		for (int i = 0; i < question.num_content; i++)
 		{
-			cout << question.address.at(i) << " Type: " << question.DNS_type.at(i) << " Class: " << question.DNS_class.at(i) << endl;
+			cout << question.address.at(i) << " Type: " << question.DNS_type.at(i) << " Class: " << dec << question.DNS_class.at(i) << endl;
 		}
 		cout << endl;
 		cout << "Answer:" << endl;
 		for (int i = 0; i < answer.num_content; i++)
 		{
-			cout << answer.name.at(i) << " " << answer.DNS_type.at(i) << " " << answer.address.at(i) << " TTL: " << answer.TTL.at(i) << endl;
+			cout << answer.name.at(i) << " " << answer.DNS_type.at(i) << " " << answer.address.at(i) << " TTL: " << (int)answer.TTL.at(i) << endl;
 		}
 
 		get_authority();
@@ -290,7 +291,7 @@ private:
 	void fit_DNSheader()
 	{
 		fixedDNSheader *read_result = (fixedDNSheader*)(response);
-		flag = read_result->flags;
+		flag = ntohs(read_result->flags);
 		ID = ntohs(read_result->ID);
 		question.num_content = ntohs(read_result->questions);
 		answer.num_content = ntohs(read_result->answers);
@@ -411,9 +412,10 @@ private:
 int main()
 {
 	char *buff;
+	//char *DNS_address = "128.194.135.94";
+	//char *DNS_address = "128.194.135.94";
 	char *DNS_address = "8.8.8.8";
-	//char *DNS_address = "128.194.135.85";
-	char *host = "www.google.com";
+	char *host = "yahoo.com";
 	//char *host = "www.360.cn";
 	//char *host = "www.dhs.gov";
 	UDP_connection UDP_connect;
