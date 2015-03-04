@@ -4,6 +4,7 @@
 #include <unordered_set>
 #include <string>
 #include <cstring>
+#include <time.h>
 
 #define MAX_ATTEMPTS 3
 #define NDS_INET 1
@@ -50,7 +51,6 @@ public:
 };
 #pragma pack(pop)
 
-
 void generate_DNS_question(char *request, char *host)
 {
 	int num_copyed = 0;
@@ -61,20 +61,20 @@ void generate_DNS_question(char *request, char *host)
 		int length = dot_position - host;
 		request[num_copyed] = length;
 		memcpy(request + num_copyed + 1, host, length);
-		num_copyed += length+1;
+		num_copyed += length + 1;
 		host = dot_position + 1;
 	}
 	request[num_copyed] = strlen(host);
 	memcpy(request + num_copyed + 1, host, strlen(host));
-	//strcat(request, "/0");
 }
 
-void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
+void generate_DNS_request(char *host, char *DNS_request, int pkt_size, USHORT TXID)
 {
+	cout << "Lookup   : " << host << endl;
 	memset(DNS_request, 0, pkt_size*sizeof(char));
 	fixedDNSheader *dns_header = (fixedDNSheader *)DNS_request;
 	queryHeader *query_header = (queryHeader*)(DNS_request + pkt_size - sizeof(queryHeader));
-	dns_header->ID = rand()%100;
+	dns_header->ID = htons(TXID);
 	dns_header->flags = DNS_QUERY || DNS_RD || DNS_STDQUERY;
 	dns_header->questions = htons(1);
 	dns_header->answers = 0;
@@ -84,6 +84,7 @@ void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
 	if (inet_addr(host) == -1)
 	{
 		query_header->qType = htons(DNS_A);
+		cout << "Query    : " << host << " , type " << DNS_A << " , TXID 0x" << std::hex << TXID << endl;
 		generate_DNS_question(DNS_request + sizeof(fixedDNSheader), host);
 	}
 	else
@@ -106,6 +107,7 @@ void generate_DNS_request(char *host, char *DNS_request, int pkt_size)
 		new_host.append(".in-addr.arpa");
 		new_host.c_str();
 		query_header->qType = htons(DNS_PTR);
+		cout << "Query    : " << new_host << " , type " << DNS_PTR << " , TXID " << std::hex << TXID << endl;
 		generate_DNS_question(DNS_request + sizeof(fixedDNSheader), (char *)new_host.c_str());
 	}
 }
@@ -190,33 +192,33 @@ void test()
 /*
 bool display_data(char *data, int length, int init_index)
 {
-	int index = init_index;
-	while (index < length)
-	{
-		fixedRR *first = (fixedRR *)(data + index);
-		//printf("%d\n", (USHORT)htons(first->name));
-		cout << "Name:";
-		if (!read_address(data, data[index + 1], length))
-			return false;
-		printf("Data Type: %d\n", (USHORT)htons(first->type));
-		if ((USHORT)htons(first->type) == 5)
-		{
-			if (!read_address(data, index + 12, length))
-				return false;
-		}
-		else
-		{
-			cout << "IP:";
-			display_IP(data, index + 12);
-		}
-		printf("Class: %d\n", (USHORT)htons(first->class_content));
-		printf("TTL: %d\n", htonl(first->TTL));
-		printf("Data length: %d\n", (USHORT)htons(first->length_data));
-		cout << endl;
-		index += (unsigned)htons(first->length_data) + 12;
-		cout << endl;
-	}
-	return true;
+int index = init_index;
+while (index < length)
+{
+fixedRR *first = (fixedRR *)(data + index);
+//printf("%d\n", (USHORT)htons(first->name));
+cout << "Name:";
+if (!read_address(data, data[index + 1], length))
+return false;
+printf("Data Type: %d\n", (USHORT)htons(first->type));
+if ((USHORT)htons(first->type) == 5)
+{
+if (!read_address(data, index + 12, length))
+return false;
+}
+else
+{
+cout << "IP:";
+display_IP(data, index + 12);
+}
+printf("Class: %d\n", (USHORT)htons(first->class_content));
+printf("TTL: %d\n", htonl(first->TTL));
+printf("Data length: %d\n", (USHORT)htons(first->length_data));
+cout << endl;
+index += (unsigned)htons(first->length_data) + 12;
+cout << endl;
+}
+return true;
 }*/
 
 class DNS_reponse
@@ -246,40 +248,72 @@ public:
 		else return true;
 	}
 
-	void parse_data()
+	bool check_R_code()
+	{
+		unsigned char R = flag & 0xF;
+		if (R == 0)
+		{
+			cout << "Succeeded with Rcode = 0" << endl;
+			return true;
+		}
+		else
+		{
+			cout << "Failed with Rcode = " << (int)R << endl;
+			return false;
+		}
+	}
+
+	bool parse_data()
 	{
 		get_question();
-		get_answer();
-		display_stat();
+		if(!get_answer_authrity_addition())	return false;
+		else return true;
 	}
 
 	void display_stat()
 	{
-		cout << "TXID: 0x" << std::hex << ID << " Flag: 0x" << std::hex << flag << endl;
-		cout << "Number of questions: " << question.num_content << endl;
-		cout << "Number of answers: " << answer.num_content << endl;
-		cout << "Number of authority: " << addition.num_content << endl;
-		cout << "Number of addition: " << authority.num_content << endl;
-		cout << endl;
-		cout << "Question:" << endl;
-		for (int i = 0; i < question.num_content; i++)
+		cout << "TXID: 0x" << std::hex << ID << " Flag: 0x " << std::hex << flag;
+		cout << " questions: " << question.num_content;
+		cout << " answers: " << answer.num_content;
+		cout << " authority: " << addition.num_content;
+		cout << " addition: " << authority.num_content << endl;
+		if (question.num_content > 0)
 		{
-			cout << question.address.at(i) << " Type: " << question.DNS_type.at(i) << " Class: " << dec << question.DNS_class.at(i) << endl;
+			cout << "-----------------[Question]-----------------" << endl;
+			for (int i = 0; i < question.num_content; i++)
+			{
+				cout << question.address.at(i) << " Type: " << question.DNS_type.at(i) << " Class: " << dec << question.DNS_class.at(i) << endl;
+			}
 		}
-		cout << endl;
-		cout << "Answer:" << endl;
-		for (int i = 0; i < answer.num_content; i++)
+		if (answer.num_content > 0)
 		{
-			cout << answer.name.at(i) << " " << answer.DNS_type.at(i) << " " << answer.address.at(i) << " TTL: " << (int)answer.TTL.at(i) << endl;
+			cout << "-----------------[Answer]-----------------" << endl;
+			for (int i = 0; i < answer.num_content; i++)
+			{
+				cout << answer.name.at(i) << " " << get_type_name(answer.DNS_type.at(i)) << " " << answer.address.at(i) << " TTL: " << (int)answer.TTL.at(i) << endl;
+			}
 		}
-
-		get_authority();
+		if (authority.num_content > 0)
+		{
+			cout << "-----------------[Authority]-----------------" << endl;
+			for (int i = 0; i < authority.num_content; i++)
+			{
+				cout << authority.name.at(i) << " " << get_type_name(authority.DNS_type.at(i)) << " " << authority.address.at(i) << " TTL: " << (int)authority.TTL.at(i) << endl;
+			}
+		}
+		if (addition.num_content > 0)
+		{
+			cout << "-----------------[Addition]-----------------" << endl;
+			for (int i = 0; i < addition.num_content; i++)
+			{
+				cout << addition.name.at(i) << " " << get_type_name(addition.DNS_type.at(i)) << " " << addition.address.at(i) << " TTL: " << (int)addition.TTL.at(i) << endl;
+			}
+		}
 	}
 
 private:
 	int question_length;
 	int response_length;
-	int answer_length;
 	char *response;
 	USHORT flag;
 	USHORT ID;
@@ -299,17 +333,25 @@ private:
 		authority.num_content = ntohs(read_result->authority);
 	}
 
+	string get_type_name(unsigned int a)
+	{
+		if (a == 1)	return "A";
+		else if (a == 2) return "NS";
+		else if (a == 5) return "CNAME";
+		else if (a == 12) return "PTR";
+		else return "Other Type";
+	}
+
 	void get_question()
 	{
 		int index = sizeof(fixedDNSheader);
 		for (int i = 0; i < question.num_content; i++)
 		{
-			int num_read;
-			string temp_address = read_address(response, index, response_length, &num_read);
+			string temp_address = read_address(response, index, response_length);
 			if (temp_address.length() != 0)
 				question.address.push_back(temp_address);
 			else question.address.push_back("Invaild address");
-			queryHeader *query_header_temp = (queryHeader*)(response + index + num_read);
+			queryHeader *query_header_temp = (queryHeader*)(response + index + temp_address.size() + 2);
 			question.DNS_class.push_back(ntohs(query_header_temp->qClass));
 			question.DNS_type.push_back(ntohs(query_header_temp->qType));
 			index += temp_address.size() + 2 + sizeof(queryHeader);
@@ -317,46 +359,45 @@ private:
 		question_length = index - sizeof(fixedDNSheader);
 	}
 
-	void get_answer()
+	bool parse_RR_format(int *index, char *response, int response_length, struct DNS_response_element *element)
+	{
+		fixedRR *first = (fixedRR *)(response + *index);
+		string temp_name = read_address(response, *index, response_length);
+		element->name.push_back(temp_name);
+		string temp_address;
+		if (htons(first->type) == 5)
+		{
+			temp_address = read_address(response, *index + sizeof(fixedRR), response_length);
+			if(!check_data_vaild(temp_address))	return false;
+		}
+		else
+		{
+			temp_address = read_IP(response, *index + sizeof(fixedRR));
+		}
+		element->address.push_back(temp_address);
+		element->TTL.push_back(htonl(first->TTL));
+		element->DNS_class.push_back(htons(first->class_content));
+		element->DNS_type.push_back(htons(first->type));
+		*index += htons(first->length_data) + sizeof(fixedRR);
+		return true;
+	}
+
+	bool get_answer_authrity_addition()
 	{
 		int index = sizeof(fixedDNSheader) + question_length;
 		for (int i = 0; i < answer.num_content; i++)
 		{
-			fixedRR *first = (fixedRR *)(response + index);
-			int num_read;
-			string temp_name = read_address(response, index, response_length, &num_read);
-			answer.name.push_back(temp_name);
-			string temp_address;
-			if (htons(first->type) == 5)
-			{
-				temp_address = read_address(response, index + sizeof(fixedRR), response_length, &num_read);
-			}
-			else
-			{
-				temp_address = read_IP(response, index + sizeof(fixedRR));
-			}
-			if (temp_address.length() == 0)
-				answer.address.push_back("Not Vaild Answer");
-			else answer.address.push_back(temp_address);
-			answer.TTL.push_back(htonl(first->TTL));
-			answer.DNS_class.push_back(htons(first->class_content));
-			answer.DNS_type.push_back(htons(first->type));
-			index += htons(first->length_data) + sizeof(fixedRR);
+			if (!parse_RR_format(&index, response, response_length, &answer)) return false;
 		}
-		answer_length = index - sizeof(fixedDNSheader) - question_length;
-		cout << endl << "answer length:" << answer_length << endl;
-	}
-
-	void get_authority()
-	{
-		int index = sizeof(fixedDNSheader) + question_length + answer_length;
 		for (int i = 0; i < authority.num_content; i++)
 		{
-			int num_read;
-			string temp_name = read_address(response, index, response_length, &num_read);
-			cout << "authority: " << temp_name << "with size: " << num_read;
+			if (!parse_RR_format(&index, response, response_length, &authority)) return false;
 		}
-
+		for (int i = 0; i < addition.num_content; i++)
+		{
+			if(!parse_RR_format(&index, response, response_length, &addition))	return false;
+		}
+		return true;
 	}
 
 	string read_IP(char *target, int index)
@@ -367,12 +408,52 @@ private:
 			IP.append(to_string((unsigned char)target[index + i]));
 			IP.append(".");
 		}
-		IP.resize(IP.length()-1);
+		IP.resize(IP.length() - 1);
 		return IP;
 	}
 
+	bool check_data_vaild(string test)
+	{
+		if (test == "-1")
+		{
+			cout << "invaild record: jump beyond packet boundary";
+			return false;
+		}
+		if (test == "-2")
+		{
+			cout << "invaild record: truncated name";
+			return false;
+		}
+		if (test == "-3")
+		{
+			cout << "invaild record: truncated fixed RR header";
+			return false;
+		}
+		if (test == "-4")
+		{
+			cout << "invaild record: truncated jump offset";
+			return false;
+		}
+		if (test == "-5")
+		{
+			cout << "invaild record: jump into fixed header";
+			return false;
+		}
+		if (test == "-6")
+		{
+			cout << "invaild record: jump loop";
+			return false;
+		}
+		if (test == "-7")
+		{
+			cout << "invaild record: value length beyond packet";
+			return false;
+		}
+		else return true;
+	}
 
-	string read_address(char *target, int index_init, int total_data_length, int *num_read)
+
+	string read_address(char *target, int index_init, int total_data_length)
 	{
 		int index = index_init;
 		string address;
@@ -383,49 +464,65 @@ private:
 			int number = (unsigned char)target[index++];
 			if (number == 0)
 			{
-				*num_read = index - index_init;
 				break;
 			}
 			if (number != 192)
 			{
-				address.append(target + index, number);
+				for (int i = 0; i < number; i++)
+				{
+					if (index + i>total_data_length)	return "-7";//value length beyond packet;
+					if (target[index + i] == 0)
+						return "-2";//truncated name
+					address.append(target + index + i, 1);
+				}
 				address.append(".");
 				index += number;
 			}
 			else
 			{
-				*num_read = index - index_init + 1;
 				index = (unsigned char)target[index];
+				if (index == 0)
+					return "-4";//truncated jump offset;
 			}
 			//Check self-loop and out of bound
-			if (index >= total_data_length)	return "";
+			if (index >= total_data_length)	return "-1";//jumpy beyond packet poundary
+			if (index < sizeof(fixedDNSheader))
+			{
+				return "-5";
+			}//jump into fixed header
 			int old_length = index_history.size();
 			index_history.insert(index);
 			int new_length = index_history.size();
-			if (new_length == old_length)	return "";
+			if (new_length == old_length)	return "-6";//jump loop
 		}
 		address.resize(address.length() - 1);
 		return address;
 	}
 };
 
-int main()
+int main(int argc, char **argv)
 {
+	if (argc != 3)
+	{
+		cout << "Invild argument" << endl;
+		cout << "argument format: [lookup string] [server]" << endl;
+		return 1;
+	}
 	char *buff;
-	//char *DNS_address = "128.194.135.94";
-	//char *DNS_address = "128.194.135.94";
-	char *DNS_address = "8.8.8.8";
-	char *host = "yahoo.com";
-	//char *host = "www.360.cn";
-	//char *host = "www.dhs.gov";
 	UDP_connection UDP_connect;
 	UDP_connect.UDP_init();
 	int pktsize;
-	if (inet_addr(host) == -1)
-		pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
-	else pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader) + 12;
+	if (inet_addr(argv[1]) == -1)
+		pktsize = strlen(argv[1]) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
+	else pktsize = strlen(argv[1]) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader) + 12;
 	char *request = new char[pktsize];
-	generate_DNS_request(host, request, pktsize);
+
+	srand(time(NULL));
+	rand();
+	USHORT TXID = rand() % 65535;
+	generate_DNS_request(argv[1], request, pktsize, TXID);
+	cout << "Server   : " << argv[2] << endl;
+	cout << "*******************************************" << endl;
 
 	int try_count = 0;
 	int byte_count = 0;
@@ -433,7 +530,7 @@ int main()
 	{
 		DWORD time1 = timeGetTime();
 		cout << "Attempting " << try_count << " with " << pktsize << " bytes...";
-		UDP_connect.UDP_send(DNS_address, request, pktsize);
+		UDP_connect.UDP_send(argv[2], request, pktsize);
 		fd_set fd;
 
 		struct timeval time_threshold;
@@ -448,9 +545,21 @@ int main()
 		{
 			DWORD time2 = timeGetTime();
 			byte_count = UDP_connect.UDP_recv(&buff);
-			cout << "response in " << time2 - time1 << " ms with " << byte_count << " bytes" << endl;
+			cout << "response in " << dec << time2 - time1 << " ms with " << byte_count << " bytes" << endl;
+			if (byte_count < sizeof(fixedDNSheader))
+			{
+				cout << "Smaller then fixed header!";
+				return 1;
+			}
 			DNS_reponse reponse(buff, byte_count);
-			reponse.parse_data();
+			if (!reponse.check_TX_ID(TXID))
+			{
+				cout << "TXID not match!! Program exit" << endl;
+				return 1;
+			}
+			if (!reponse.check_R_code())	return 1;
+			if (!reponse.parse_data())	return 1;
+			reponse.display_stat();
 			return 0;
 		}
 		else
