@@ -376,6 +376,11 @@ private:
 
 	bool parse_RR_format(int *index, char *response, int response_length, struct DNS_response_element *element)
 	{
+		if ((response_length - *index) < sizeof(fixedRR))
+		{
+			cout << "invaild record: truncated fixed RR header" << endl;
+			return false;
+		}
 		fixedRR *first = (fixedRR *)(response + *index);
 		string temp_name = read_address(response, *index, response_length);
 		if (!check_data_vaild(temp_name))	return false;
@@ -409,14 +414,30 @@ private:
 		for (int i = 0; i < answer.num_content; i++)
 		{
 			if (!parse_RR_format(&index, response, response_length, &answer)) return false;
+			if (index > response_length)
+			{
+				cout << "invaild record: not enough record" << endl;
+				return false;
+			}
 		}
 		for (int i = 0; i < authority.num_content; i++)
 		{
 			if (!parse_RR_format(&index, response, response_length, &authority)) return false;
+			if (index > response_length)
+			{
+				cout << "invaild record: not enough record" << endl;
+				return false;
+			}
+
 		}
 		for (int i = 0; i < addition.num_content; i++)
 		{
 			if(!parse_RR_format(&index, response, response_length, &addition))	return false;
+			if (index > response_length)
+			{
+				cout << "invaild record: not enough record" << endl;
+				return false;
+			}
 		}
 		return true;
 	}
@@ -437,42 +458,42 @@ private:
 	{
 		if (test == "-1")
 		{
-			cout << "invaild record: jump beyond packet boundary";
+			cout << "invaild record: jump beyond packet boundary" << endl;
 			return false;
 		}
 		if (test == "-2")
 		{
-			cout << "invaild record: truncated name";
+			cout << "invaild record: truncated name" << endl;
 			return false;
 		}
 		if (test == "-3")
 		{
-			cout << "invaild record: truncated fixed RR header";
+			cout << "invaild record: truncated fixed RR header" << endl;
 			return false;
 		}
 		if (test == "-4")
 		{
-			cout << "invaild record: truncated jump offset";
+			cout << "invaild record: truncated jump offset" << endl;
 			return false;
 		}
 		if (test == "-5")
 		{
-			cout << "invaild record: jump into fixed header";
+			cout << "invaild record: jump into fixed header" << endl;
 			return false;
 		}
 		if (test == "-6")
 		{
-			cout << "invaild record: jump loop";
+			cout << "invaild record: jump loop" << endl;
 			return false;
 		}
 		if (test == "-7")
 		{
-			cout << "invaild record: value length beyond packet";
+			cout << "invaild record: value length beyond packet" << endl;
 			return false;
 		}
 		if (test == "-8")
 		{
-			cout << "invaild record: not enough record";
+			cout << "invaild record: not enough record" << endl;
 			return false;
 		}
 		else return true;
@@ -506,25 +527,25 @@ private:
 			}
 			else
 			{
-				index = (unsigned char)target[index];
-				if (index == 0)
+				if (index > total_data_length)
 					return "-4";//truncated jump offset;
-			}
-			//Check self-loop and out of bound
-			if (index >= total_data_length)	
-			{
-				return "-1";//jumpy beyond packet poundary
-			}
-			if (index < sizeof(fixedDNSheader))
-			{
-				return "-5";
-			}//jump into fixed header
-			int old_length = index_history.size();
-			index_history.insert(index);
-			int new_length = index_history.size();
-			if (new_length == old_length)
-			{
-				return "-6";//jump loop
+				index = (unsigned char)target[index];
+				//Check self-loop and out of bound
+				if (index > total_data_length)
+				{
+					return "-1";//jumpy beyond packet poundary
+				}
+				if (index < sizeof(fixedDNSheader))
+				{
+					return "-5";
+				}//jump into fixed header
+				int old_length = index_history.size();
+				index_history.insert(index);
+				int new_length = index_history.size();
+				if (new_length == old_length)
+				{
+					return "-6";//jump loop
+				}
 			}
 		}
 		address.resize(address.length() - 1);
@@ -532,32 +553,28 @@ private:
 	}
 };
 
-int main()
+int main(int argc, char ** argv)
 {
-	/*
 	if (argc != 3)
 	{
 		cout << "Invild argument" << endl;
 		cout << "argument format: [lookup string] [server]" << endl;
 		return 1;
 	}
-	*/
-	char *host = "yahoo.com";
-	char *server = "8.8.8.8";
 	char *buff;
 	UDP_connection UDP_connect;
 	UDP_connect.UDP_init();
 	int pktsize;
-	if (inet_addr(host) == -1)
-		pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
-	else pktsize = strlen(host) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader) + 12;
+	if (inet_addr(argv[1]) == -1)
+		pktsize = strlen(argv[1]) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader);
+	else pktsize = strlen(argv[1]) + 2 + sizeof(fixedDNSheader) + sizeof(queryHeader) + 12;
 	char *request = new char[pktsize];
 
 	srand(time(NULL));
 	rand();
 	USHORT TXID = rand() % 65535;
-	generate_DNS_request(host, request, pktsize, TXID);
-	cout << "Server   : " << server << endl;
+	generate_DNS_request(argv[1], request, pktsize, TXID);
+	cout << "Server   : " << argv[2] << endl;
 	cout << "*******************************************" << endl;
 
 	int try_count = 0;
@@ -566,7 +583,7 @@ int main()
 	{
 		DWORD time1 = timeGetTime();
 		cout << "Attempting " << try_count << " with " << pktsize << " bytes...";
-		UDP_connect.UDP_send(server, request, pktsize);
+		UDP_connect.UDP_send(argv[2], request, pktsize);
 		fd_set fd;
 
 		struct timeval time_threshold;
