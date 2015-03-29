@@ -6,15 +6,15 @@
 #include <string>
 #include "PacketHeader.h"
 
-#define STATUS_OK 0 // no error
-#define ALREADY_CONNECTED 1 // second call to ss.Open() without closing connection
-#define NOT_CONNECTED 2 // call to ss.Send()/Close() without ss.Open()
-#define INVALID_NAME 3 // ss.Open() with targetHost that has no DNS entry
-#define FAILED_SEND 4 // sendto() failed in kernel
-#define TIMEOUT 5 // timeout
-#define FAILED_RECV 6 // recvfrom() failed in kernel
-#define MAGIC_PORT		22345		//The port number that receiver listened
-#define MAX_PKT_SIZE	(1500-28)	//Maximum UDP packet size accepted by receiver
+#define STATUS_OK			0 // no error
+#define ALREADY_CONNECTED	1 // second call to ss.Open() without closing connection
+#define NOT_CONNECTED		2 // call to ss.Send()/Close() without ss.Open()
+#define INVALID_NAME		3 // ss.Open() with targetHost that has no DNS entry
+#define FAILED_SEND			4 // sendto() failed in kernel
+#define TIMEOUT				5 // timeout
+#define FAILED_RECV			6 // recvfrom() failed in kernel
+#define MAGIC_PORT			22345		//The port number that receiver listened
+#define MAX_PKT_SIZE		(1500-28)	//Maximum UDP packet size accepted by receiver
 
 class SenderSocket{
 public:
@@ -22,6 +22,8 @@ public:
 	int Send(char *data, int data_length);
 	int Close(DWORD time);
 private:
+	DWORD sequence_number = 0;
+	LinkProperties link_property;
 	long RTO = 1e6;
 	int port;
 	char *host;
@@ -33,6 +35,7 @@ private:
 	int UDP_recv(char **buff);
 	char *generate_SYN(LinkProperties *p);
 	char *generate_FIN();
+	char *generate_Data_message(char *data, int data_length);
 };
 
 #endif

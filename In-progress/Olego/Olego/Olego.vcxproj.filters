@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bntseq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwaseqio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtgap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawaln.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\khash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kseq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\ksort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kvec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicescore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicesitemap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\stdaln.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\bwt_gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\QSufSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\BedFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dystring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\errabort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\linefile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\localmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\memalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\obscure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\pipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\portable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\portimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\sqlNum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\verbose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bamlite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwaseqio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_lite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtgap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtmisc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_aux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_chain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cs2nt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\is.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsaw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawaln.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawindex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\simple_dp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicescore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicesitemap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\stdaln.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\bwt_gen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\QSufSort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\BedFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dystring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\errabort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\linefile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\localmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\memalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\obscure.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\osunix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\pipeline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\sqlNum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\verbose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\wildcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\zlibFace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bamlite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bntseq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\ChangeLog" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\common.mk" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\COPYING" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\INSTALL" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\Makefile" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\mergePEsam.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\qualfa2fq.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\README" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\sam2bed.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\xa2multi.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bed2junc.pl" />
+  </ItemGroup>
+</Project>

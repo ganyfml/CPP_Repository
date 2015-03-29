@@ -1,9 +1,9 @@
 #ifndef PACKETHEADER_H
 #define PACKETHEADER_H
 
-#define MAGIC_PROTOCOL 0x8311AA
-#define FORWARD_PATH 0
-#define RETURN_PATH 1 
+#define MAGIC_PROTOCOL	0x8311AA
+#define FORWARD_PATH	0
+#define RETURN_PATH		1 
 
 #pragma pack(push, 1)
 class Flags {
@@ -44,7 +44,6 @@ public:
 	DWORD recvWnd; // receiver window for flow control (in pkts)
 	DWORD ackSeq; // ack value = next expected sequence
 };
-
 #pragma pack(pop)
 
 #endif

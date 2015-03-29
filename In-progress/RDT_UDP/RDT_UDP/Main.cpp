@@ -2,24 +2,45 @@
 #include <iostream>
 #include "SenderSocket.h"
 
+const bool debug_mode = true;
+
 int main(int argc, char ** argv)
 {
-	if (argc != 8)
+	LinkProperties p;
+	char *target_host;
+	int sender_window;
+	int power;
+	
+	if (!debug_mode)
 	{
-		std::cout << "RDT_UDP.exe [destination host] [buffer size] [sender window] [RTT] [loss_rate_forward] [loss_rate_return_path] [speed]" << std::endl;
-		return -1;
+		if (argc != 8)
+		{
+			std::cout << "RDT_UDP.exe [destination host] [buffer size] [sender window] [RTT] [loss_rate_forward] [loss_rate_return_path] [speed]" << std::endl;
+			return -1;
+		}
+		target_host = argv[1];
+		power = atof(argv[2]);
+		sender_window = atof(argv[3]);
+		p.bufferSize = 1;
+		p.RTT = atof(argv[4]);
+		p.pLoss[FORWARD_PATH] = atof(argv[5]);
+		p.pLoss[RETURN_PATH] = atof(argv[6]);
+		p.speed = 1e6 * atof(argv[7]);
+
+	}
+	else
+	{
+		//target_host = "127.0.0.1";
+		target_host = "s8.irl.cs.tamu.edu";
+		power = 15;
+		sender_window = 50000;
+		p.RTT = 0.2;
+		p.bufferSize = 1;
+		p.pLoss[FORWARD_PATH] = 0.1;
+		p.pLoss[RETURN_PATH] = 0;
+		p.speed = 1e6 * 100;
 	}
 
-	LinkProperties p;
-	char *target_host = argv[1];
-	//char *target_host = "127.0.0.1";
-	int power = atof(argv[2]);
-	int sender_window = atof(argv[3]);
-	p.bufferSize = 1;
-	p.pLoss[FORWARD_PATH] = atof(argv[5]);
-	p.pLoss[RETURN_PATH] = atof(argv[6]);
-	p.RTT = atof(argv[4]);
-	p.speed = 1e6 * atof(argv[7]);
 	if ((p.speed/1e6) >10000 || p.speed <= 0 || p.RTT <= 0 || p.RTT > 30 || p.pLoss[FORWARD_PATH] >= 1 || p.pLoss[FORWARD_PATH] < 0 || p.pLoss[RETURN_PATH] >= 1 || p.pLoss[RETURN_PATH] < 0 || power <= 0 || sender_window <= 0)
 	{
 		std::cout << "invild parameter detected!, program exits" << std::endl;
@@ -55,7 +76,8 @@ int main(int argc, char ** argv)
 		int bytes = min(byteBufferSize - off, MAX_PKT_SIZE - sizeof(SenderDataHeader));
 		if ((status = ss.Send(charBuf+off,bytes)) != STATUS_OK)
 		{
-			//TODO
+			std::cout << "Sending failed" << std::endl;
+			return -1;
 		}
 		off += bytes;
 	}
@@ -65,6 +87,7 @@ int main(int argc, char ** argv)
 		std::cout << "Main:  Connect failed with status " << status << std::endl;
 		return -1;
 	}
+
 	std::cout << "Main:  transfer finished in " << (float)(timeGetTime() - program_init_time) / 1000 << " seconds"<< std::endl;
 	return 0;
 }

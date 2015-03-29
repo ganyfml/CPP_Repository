@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A0FEF8F2-2DAB-4420-898C-3546A3A1EC8C}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput>Olego.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>Olego.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bamlite.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bntseq.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwase.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwaseqio.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtgap.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\bwt_gen.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\QSufSort.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_lite.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\BedFile.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\utils.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawaln.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\common.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dlist.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dystring.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\errabort.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\hash.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\linefile.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\localmem.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\memalloc.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\obscure.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\pipeline.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\portable.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\portimpl.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\sqlNum.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\verbose.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\khash.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kseq.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\ksort.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kstring.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kvec.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicescore.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicesitemap.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\stdaln.h" />
+    <ClInclude Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bamlite.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bntseq.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwape.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwase.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwaseqio.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtgap.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtio.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtmisc.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_aux.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_chain.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_core.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwtsw2_main.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\bwt_gen.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_gen\QSufSort.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bwt_lite.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cs2nt.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\BedFile.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\cz\utils.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\is.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsaw.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawaln.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\jigsawindex.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\common.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dlist.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\dystring.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\errabort.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\hash.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\linefile.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\localmem.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\memalloc.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\obscure.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\osunix.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\pipeline.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\sqlNum.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\verbose.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\wildcmp.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kent\zlibFace.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\kstring.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\simple_dp.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicescore.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\splicesitemap.cpp" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\stdaln.c" />
+    <ClCompile Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\bed2junc.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\ChangeLog" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\common.mk" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\COPYING" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\INSTALL" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\Makefile" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\mergePEsam.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\qualfa2fq.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\README" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\sam2bed.pl" />
+    <None Include="C:\Users\GanYue\Desktop\olego.src.v1.0.0\xa2multi.pl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -16,6 +16,7 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 {
 	port = magic_port;
 	host = target_host;
+	link_property = *p;
 	if (!UDP_init())	return FAILED_SEND;
 	int try_count = 0;
 	DWORD time_init = timeGetTime();
@@ -53,6 +54,7 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 				std::cout << "[" << (float)(recv_time - time_init + time) / (1000) << "] <-- " << "failed recvfrom with " << WSAGetLastError() << std::endl;
 				return FAILED_RECV;
 			}
+			//TODO false packet received
 			if (byte_count != sizeof(ReceiverHeader))
 				continue;
 			else
@@ -65,9 +67,11 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 					std::cout << "[" << (float)(recv_time - time_init + time) / (1000) << "]" << " <-- SYN-ACK 0 window " << SYN_ACK->recvWnd << "; setting RTO to " << (float)RTO / (1e6) << std::endl;
 					return STATUS_OK;
 				}
+				//TODO false packet received
 				else continue;
 			}
 		}
+		//Timeout for this try
 		else  continue;
 	}
 	return TIMEOUT;
@@ -86,7 +90,6 @@ char *SenderSocket::generate_FIN()
 	return FIN_message;
 }
 
-
 char *SenderSocket::generate_SYN(LinkProperties *p)
 {
 	char* SYN_message = new char[sizeof(SenderSynHeader)];
@@ -101,9 +104,140 @@ char *SenderSocket::generate_SYN(LinkProperties *p)
 	return SYN_message;
 }
 
+char *SenderSocket::generate_Data_message(char *data, int data_length)
+{
+	if (data_length + sizeof(SenderDataHeader) > MAX_PKT_SIZE)	return NULL;
+	char* data_message = new char[sizeof(SenderDataHeader)+data_length];
+	SenderDataHeader *data_header = (SenderDataHeader*)data_message;
+	data_header->seq = sequence_number++;
+	data_header->flags.ACK = 0;
+	data_header->flags.SYN = 0;
+	data_header->flags.FIN = 0;
+	data_header->flags.reserved = 0;
+	data_header->flags.magic = MAGIC_PROTOCOL;
+	memcpy(data_message+sizeof(SenderDataHeader),data,data_length);
+	return data_message;
+}
+
 int SenderSocket::Send(char *data, int data_length)
 {
-	return STATUS_OK;
+	//std::string host_IP;
+	//char *data_message = generate_Data_message(data, data_length);
+	//if (data_message == NULL)	return FAILED_SEND;
+	//int status;
+	//std::cout << "--> " << ((SenderDataHeader*)data_message)->seq << std::endl;
+	//status = UDP_send(host, port, data_message, data_length + sizeof(SenderDataHeader), &host_IP);
+	//char *buff;
+	//int byte_count = UDP_recv(&buff);
+	//ReceiverHeader *recv = (ReceiverHeader *)buff;
+	//if (recv->flags.ACK)
+	//{
+	//	std::cout << "Receving : ACK " << recv->ackSeq << " (window " << (unsigned)recv->recvWnd << ")" << std::endl;
+	//}
+	//else
+	//{
+	//	std::cout << "Receving Error" << std::endl;
+	//}
+	//return STATUS_OK;
+	char *data_message = generate_Data_message(data, data_length);
+	if (data_message == NULL)	return FAILED_SEND;
+
+	int try_count = 0;
+	int dupACK = 0;
+	bool retransmission = false;
+	bool refresh_timer = true;
+	DWORD time_init = timeGetTime();
+	DWORD timer_left = 0;
+	long RTO_temp;
+	while (try_count < 50)
+	{
+		if (refresh_timer)
+		{
+			RTO_temp = retransmission ? RTO_temp * 2 : RTO;
+			int status;
+			std::string host_IP;
+			DWORD send_time = timeGetTime();
+			std::cout << "-->" << ((SenderDataHeader *)data_message)->seq << std::endl;
+			if ((status = UDP_send(host, port, data_message, (sizeof(SenderDataHeader) + data_length), &host_IP)) != STATUS_OK)
+			{
+				//std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "] --> " << "failed sendto with " << WSAGetLastError() << std::endl;
+				return status;
+			}
+		}		//std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "]" << " --> FIN 0 (attemp " << try_count << " of 5, RTO " << (float)(RTO_this_time / (1e6)) << ") to " << host_IP << std::endl;
+
+		fd_set fd;
+		struct timeval time_threshold;
+		time_threshold.tv_sec = 0;
+		time_threshold.tv_usec = refresh_timer ? RTO_temp : timer_left;
+		FD_ZERO(&fd);
+		FD_SET(socket_UDP, &fd);
+		int avaiable = select(0, &fd, NULL, NULL, &time_threshold);
+
+		if (avaiable > 0)
+		{
+			char *buff;
+			int byte_count = UDP_recv(&buff);
+			DWORD time_recv_something = timeGetTime();
+			timer_left = time_threshold.tv_usec - time_recv_something;
+			if (byte_count == SOCKET_ERROR)
+			{
+				//std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "] <-- " << "failed recvfrom with " << WSAGetLastError() << std::endl;
+				return FAILED_RECV;
+			}
+			if (byte_count != sizeof(ReceiverHeader))
+			{
+				//corrupt response
+				refresh_timer = false;
+				continue;
+			}
+			else
+			{
+				ReceiverHeader *Data_ACK = (ReceiverHeader*)buff;
+				std::cout << "<--" << ((ReceiverHeader *)Data_ACK)->ackSeq << std::endl;
+				if (Data_ACK->flags.ACK == 1 && Data_ACK->flags.FIN == 0
+					&& Data_ACK->flags.SYN == 0)
+				{
+					if (Data_ACK->ackSeq == sequence_number)
+					{
+						//Vaild ACK, expect next data
+						//TODO calculate new RTO
+						return STATUS_OK;
+					}
+					else if (Data_ACK->ackSeq == sequence_number-1)
+					{
+						//Vaild ACK, but expect this data again
+						dupACK++;
+						if (dupACK == 3)
+						{
+							//Do fast retransmission
+							refresh_timer = true;
+							retransmission = true;
+							try_count++;
+						}
+						else
+						{
+							refresh_timer = false;
+						}
+						continue;
+					}
+				}
+				else
+				{
+					//still corrupt response
+					refresh_timer = false;
+					continue;
+				}
+			}
+		}
+		else
+		{
+			//Timeout for this time, do the retransmission
+			retransmission = true;
+			refresh_timer = true;
+			try_count++;
+		}
+	}
+	return TIMEOUT;
 }
 
 int SenderSocket::Close(DWORD time)
