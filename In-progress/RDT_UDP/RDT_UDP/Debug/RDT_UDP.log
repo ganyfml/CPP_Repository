@@ -1,25 +1,27 @@
-﻿Build started 3/29/2015 4:48:18 PM.
+﻿Build started 3/31/2015 11:43:40 AM.
      1>Project "G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\RDT_UDP\RDT_UDP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Programming\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
          Main.cpp
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\sendersocket.h(27): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(22): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(23): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(25): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(26): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(27): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(28): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(37): warning C4305: '=' : truncation from 'double' to 'float'
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(39): warning C4305: '=' : truncation from 'double' to 'float'
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(54): warning C4244: 'initializing' : conversion from 'UINT64' to 'unsigned int', possible loss of data
-     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(76): warning C4244: 'initializing' : conversion from 'UINT64' to 'int', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\sendersocket.h(44): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(63): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(64): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(66): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(67): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(68): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(69): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(78): warning C4305: '=' : truncation from 'double' to 'float'
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(80): warning C4305: '=' : truncation from 'double' to 'float'
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(94): warning C4244: 'initializing' : conversion from 'UINT64' to 'unsigned int', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(120): warning C4244: 'initializing' : conversion from 'UINT64' to 'int', possible loss of data
+     1>g:\database_backup\programs_repository\c++_repository\in-progress\rdt_udp\rdt_udp\main.cpp(138): warning C4244: 'argument' : conversion from 'UINT64' to 'size_t', possible loss of data
        Link:
          E:\Programming\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\Debug\RDT_UDP.exe" /INCREMENTAL /NOLOGO Ws2_32.lib WINMM.LIB kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\Debug\RDT_UDP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\Debug\RDT_UDP.lib" /MACHINE:X86 Debug\Main.obj
          Debug\SenderSocket.obj
+         Debug\Checksum.obj
          RDT_UDP.vcxproj -> G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\Debug\RDT_UDP.exe
      1>Done Building Project "G:\Database_backup\Programs_Repository\C++_Repository\In-progress\RDT_UDP\RDT_UDP\RDT_UDP.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.70
+Time Elapsed 00:00:00.81

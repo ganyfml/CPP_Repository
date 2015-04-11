@@ -1,19 +1,8 @@
 #include "SenderSocket.h"
 
-/*
-#define STATUS_OK 0 // no error
-#define ALREADY_CONNECTED 1 // second call to ss.Open() without closing connection
-#define NOT_CONNECTED 2 // call to ss.Send()/Close() without ss.Open()
-#define INVALID_NAME 3 // ss.Open() with targetHost that has no DNS entry
-#define FAILED_SEND 4 // sendto() failed in kernel
-#define TIMEOUT 5 // timeout
-#define FAILED_RECV 6 // recvfrom() failed in kernel
-#define MAGIC_PORT		22345		//The port number that receiver listened
-#define MAX_PKT_SIZE	(1500-28)	//Maximum UDP packet size accepted by receiver
-*/
-
-int SenderSocket::Open(char *target_host, int magic_port, int sender_window, LinkProperties *p, DWORD time)
+int SenderSocket::Open(char *target_host, int magic_port, int sender_window1, LinkProperties *p, DWORD time)
 {
+	sender_window = sender_window1;
 	port = magic_port;
 	host = target_host;
 	link_property = *p;
@@ -22,7 +11,7 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 	DWORD time_init = timeGetTime();
 	while (try_count++ < 3)
 	{
-		long RTO_this_time = pow(2, try_count - 1);
+		long RTO_this_time = max(2*p->RTT*1e6,1e6);
 		int status;
 		std::string host_IP;
 		DWORD send_time = timeGetTime();
@@ -35,11 +24,11 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 			else std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "] --> " << "failed sendto with " << WSAGetLastError() << std::endl;
 			return status;
 		}
-		std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "]" << " --> SYN 0 (attemp " << try_count << " of 3, RTO " << RTO_this_time << ") to " << host_IP << std::endl;
+		//std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "]" << " --> SYN 0 (attemp " << try_count << " of 3, RTO " << (double)RTO_this_time*1e-6 << ") to " << host_IP << std::endl;
 		fd_set fd;
 		struct timeval time_threshold;
-		time_threshold.tv_sec = RTO_this_time;
-		time_threshold.tv_usec = 0;
+		time_threshold.tv_sec = 0;
+		time_threshold.tv_usec = RTO_this_time;
 		FD_ZERO(&fd);
 		FD_SET(socket_UDP, &fd);
 		int avaiable = select(0, &fd, NULL, NULL, &time_threshold);
@@ -64,7 +53,7 @@ int SenderSocket::Open(char *target_host, int magic_port, int sender_window, Lin
 					&& SYN_ACK->flags.SYN == 1)
 				{
 					RTO = (recv_time - send_time) * 3 * 1000;
-					std::cout << "[" << (float)(recv_time - time_init + time) / (1000) << "]" << " <-- SYN-ACK 0 window " << SYN_ACK->recvWnd << "; setting RTO to " << (float)RTO / (1e6) << std::endl;
+					//std::cout << "[" << (float)(recv_time - time_init + time) / (1000) << "]" << " <-- SYN-ACK 0 window " << SYN_ACK->recvWnd << "; setting RTO to " << (float)RTO / (1e6) << std::endl;
 					return STATUS_OK;
 				}
 				//TODO false packet received
@@ -81,7 +70,7 @@ char *SenderSocket::generate_FIN()
 {
 	char* FIN_message = new char[sizeof(SenderDataHeader)];
 	SenderDataHeader *FIN = (SenderDataHeader*)FIN_message;
-	FIN->seq = 0;
+	FIN->seq = sequence_number;
 	FIN->flags.ACK = 0;
 	FIN->flags.SYN = 0;
 	FIN->flags.FIN = 1;
@@ -119,26 +108,31 @@ char *SenderSocket::generate_Data_message(char *data, int data_length)
 	return data_message;
 }
 
+void SenderSocket::update_parameter_for_RTO_calculation(DWORD sample_RTT1)
+{
+	sample_RTT = (double)sample_RTT1/1000;
+	if (prev_estRTT == 0)
+		prev_estRTT = sample_RTT;
+	else prev_estRTT = 0.875 * prev_estRTT + 0.125 * sample_RTT;
+	if (prev_devRTT == -1)
+		prev_devRTT = 0;
+	else  prev_devRTT = 0.75 * prev_devRTT + 0.25 * abs(sample_RTT - prev_estRTT);
+	//std::cout << sample_RTT << " " << prev_estRTT << " " << prev_devRTT << std::endl;
+}
+
+DWORD SenderSocket::calculate_RTO()
+{
+	if (sample_RTT == 0 && prev_estRTT == 0 && prev_devRTT == -1)
+		return RTO;//first time
+	double estRTT = 0.875 * prev_estRTT + 0.125 * sample_RTT;
+	double devRTT = 0.75 * prev_devRTT + 0.25 * abs(sample_RTT - estRTT);
+	double RTO_ret = estRTT + 4 * max(devRTT, 0.010);
+	current_status.estRTT = estRTT;
+	return RTO_ret*1e6;
+}
+
 int SenderSocket::Send(char *data, int data_length)
 {
-	//std::string host_IP;
-	//char *data_message = generate_Data_message(data, data_length);
-	//if (data_message == NULL)	return FAILED_SEND;
-	//int status;
-	//std::cout << "--> " << ((SenderDataHeader*)data_message)->seq << std::endl;
-	//status = UDP_send(host, port, data_message, data_length + sizeof(SenderDataHeader), &host_IP);
-	//char *buff;
-	//int byte_count = UDP_recv(&buff);
-	//ReceiverHeader *recv = (ReceiverHeader *)buff;
-	//if (recv->flags.ACK)
-	//{
-	//	std::cout << "Receving : ACK " << recv->ackSeq << " (window " << (unsigned)recv->recvWnd << ")" << std::endl;
-	//}
-	//else
-	//{
-	//	std::cout << "Receving Error" << std::endl;
-	//}
-	//return STATUS_OK;
 	char *data_message = generate_Data_message(data, data_length);
 	if (data_message == NULL)	return FAILED_SEND;
 
@@ -148,16 +142,17 @@ int SenderSocket::Send(char *data, int data_length)
 	bool refresh_timer = true;
 	DWORD time_init = timeGetTime();
 	DWORD timer_left = 0;
-	long RTO_temp;
+	DWORD RTO_temp;
+	DWORD send_time = timeGetTime();
 	while (try_count < 50)
 	{
 		if (refresh_timer)
 		{
+			RTO = calculate_RTO();
 			RTO_temp = retransmission ? RTO_temp * 2 : RTO;
 			int status;
 			std::string host_IP;
-			DWORD send_time = timeGetTime();
-			std::cout << "-->" << ((SenderDataHeader *)data_message)->seq << std::endl;
+			//std::cout << "-->" << ((SenderDataHeader *)data_message)->seq << " With RTO: " << (double)RTO_temp * (1.0e-6) << std::endl;
 			if ((status = UDP_send(host, port, data_message, (sizeof(SenderDataHeader) + data_length), &host_IP)) != STATUS_OK)
 			{
 				//std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "] --> " << "failed sendto with " << WSAGetLastError() << std::endl;
@@ -193,14 +188,15 @@ int SenderSocket::Send(char *data, int data_length)
 			else
 			{
 				ReceiverHeader *Data_ACK = (ReceiverHeader*)buff;
-				std::cout << "<--" << ((ReceiverHeader *)Data_ACK)->ackSeq << std::endl;
+				//std::cout << "<--" << ((ReceiverHeader *)Data_ACK)->ackSeq << " with recvWnd: " << ((ReceiverHeader *)Data_ACK)->recvWnd << " with time passed: " << (time_recv_something - send_time)*1e-3 << std::endl;
 				if (Data_ACK->flags.ACK == 1 && Data_ACK->flags.FIN == 0
 					&& Data_ACK->flags.SYN == 0)
 				{
 					if (Data_ACK->ackSeq == sequence_number)
 					{
 						//Vaild ACK, expect next data
-						//TODO calculate new RTO
+						if(!retransmission)	update_parameter_for_RTO_calculation(time_recv_something - send_time);
+						current_status.effective_window = min(sender_window, Data_ACK->recvWnd);
 						return STATUS_OK;
 					}
 					else if (Data_ACK->ackSeq == sequence_number-1)
@@ -210,6 +206,7 @@ int SenderSocket::Send(char *data, int data_length)
 						if (dupACK == 3)
 						{
 							//Do fast retransmission
+							current_status.num_packet_fast_retrans++;
 							refresh_timer = true;
 							retransmission = true;
 							try_count++;
@@ -232,6 +229,7 @@ int SenderSocket::Send(char *data, int data_length)
 		else
 		{
 			//Timeout for this time, do the retransmission
+			current_status.num_packet_timeout++;
 			retransmission = true;
 			refresh_timer = true;
 			try_count++;
@@ -255,7 +253,7 @@ int SenderSocket::Close(DWORD time)
 			std::cout << "[" << (float)(send_time - time_init + time) / (1000) << "] --> " << "failed sendto with " << WSAGetLastError() << std::endl;
 			return status;
 		}
-		std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "]" << " --> FIN 0 (attemp " << try_count << " of 5, RTO " << (float)(RTO_this_time / (1e6)) << ") to " << host_IP << std::endl;
+		//std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "]" << " --> FIN 0 (attemp " << try_count << " of 5, RTO " << (float)(RTO_this_time / (1e6)) << ") to " << host_IP << std::endl;
 		fd_set fd;
 		struct timeval time_threshold;
 		time_threshold.tv_sec = 0;
@@ -278,10 +276,11 @@ int SenderSocket::Close(DWORD time)
 			else
 			{
 				ReceiverHeader *FIN_ACK = (ReceiverHeader*)buff;
-				if (FIN_ACK->ackSeq == 0 && FIN_ACK->flags.ACK == 1 && FIN_ACK->flags.FIN == 1
+				if (FIN_ACK->flags.ACK == 1 && FIN_ACK->flags.FIN == 1
 					&& FIN_ACK->flags.SYN == 0)
 				{
-					std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "]" << " <-- FIN-ACK 0 window " << FIN_ACK->recvWnd << std::endl;
+					std::cout << "[" << (float)(timeGetTime() - time_init + time) / (1000) << "]" << " <-- FIN-ACK " << FIN_ACK->ackSeq<< " window " << std::hex << FIN_ACK->recvWnd << std::endl;
+					checkSum = FIN_ACK->recvWnd;
 					return STATUS_OK;
 				}
 				else continue;

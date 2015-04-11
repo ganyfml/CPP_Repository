@@ -82,8 +82,10 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SenderSocket.cpp" />
+    <ClCompile Include="Checksum.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Checksum.h" />
     <ClInclude Include="PacketHeader.h" />
     <ClInclude Include="SenderSocket.h" />
   </ItemGroup>
